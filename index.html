@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>首頁 </title>
+    <link href="./css/normalize.css" rel="stylesheet" >
+    <link href="./css/common.css" rel="stylesheet" >
+    <link href="./css/header.css" rel="stylesheet" >
+    <link href="./css/footer.css" rel="stylesheet" >
+    <link href="./css/main.css" rel="stylesheet" >
+    <link href="./css/about_me.css" rel="stylesheet" >
+    <link href="./css/adopt.css" rel="stylesheet" >
+    <link href="./css/bookingroom.css" rel="stylesheet" >
+    <link href="./css/bookingroom_peopleroom.css" rel="stylesheet" >
+</head>
+<body>
+   <!-- 導覽列 -->
+   <header>
+        <nav>
+            <div class="logo">
+                <a href="./index.html"  target="_blank"><img id="logo" src="./img/svg/logo.svg"></a>
+            </div>
+            <div>
+               <ul class="header">
+                <!-- 關於我 -->
+                    <li>
+                        <a href="./about_me.html" class="link_style" target="_blank">
+                            <span>
+                                <img id="introduction" src="./img/svg/dog01.svg">
+                            </span>
+                            <span>民宿介紹</span>
+                        </a>
+                    </li>
+                <!-- 我要認養 -->
+                    <li class="adopt_menu">
+                        <a><span>我要認養</span></a>
+                        <!-- <a href="./adopt.html" class="link_style" target="_blank">
+                            <span>
+                                <img id="adopt" src="./img/svg/cat01.svg">
+                            </span>
+                            <span>我要認養</span>
+                        </a> -->
+                        
+                        <!-- 我要認養的下拉選單 -->
+                        <ul class="adopt_menu_select_menu">
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養須知</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養狗狗</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養貓貓</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養兔兔</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養鼠鼠</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>醫療團隊</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>    
+                    <!-- 住宿相關     -->
+                    <li>
+                        <a href="./bookingroom.html" class="link_style" target="_blank">
+                            <span>
+                                <img id="room" src="./img/svg/rabbit01.svg">
+                            </span>
+                            <span>住宿相關</span>
+                        </a>
+                    </li>
+                    <!-- 周邊商品 -->
+                    <li>
+                        <a href="#" class="link_style" target="_blank">
+                            <span>
+                                <img id="merchandise" src="./img/svg/mouse01.svg">
+                            </span>
+                            <span>周邊商品</span>
+                        </a>
+                    </li>
+                    <!-- 會員 -->
+                    <li>
+                        <a href="./user.html" class="link_style" target="_blank">
+                            <img id="user" src=./img/svg/user-circle-solid.svg>
+                        </a>
+                    </li>
+                    <!-- 我的訂單 -->
+                    <li>
+                        <a href="#" class="link_style" target="_blank">
+                            <img id="cart" src="./img/svg/shopping-cart.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 前導內容 -->
+    <div class="abandoned">
+        
+        <div class="abandoned_box">
+            
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog09.jfif" alt="被遺棄的動物" title="主人把狗狗送進收容所">
+            </div>
+            <!-- <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog03.jfif" alt="被遺棄的動物" title="主人把狗狗送進收容所"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_cat.jpg" alt="被遺棄的動物" title="被遺棄在山上的貓貓"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_rabbit_01.jfif" alt="被遺棄的動物" title="被遺棄在鄉下路邊被路過民眾發現的兔兔"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog06.jfif" alt="被遺棄的動物" title="被遺棄在收容所的狗狗"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_guineapig.jpg" alt="被遺棄的動物" title="被遺棄在公園的天竺鼠"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog01.jpg" alt="被遺棄的動物" title="主人把狗狗丟路邊揚長而去"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_cat05.jfif" alt="被遺棄的動物" title="被遺棄在路邊的貓貓"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog07.jfif" alt="被遺棄的動物" title="被遺棄在路邊的老狗"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog08.jfif" alt="被遺棄的動物" title="被遺棄在路邊的老狗"></div>
+            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_cat07.jfif" alt="被遺棄的動物" title="連用品一同被遺棄在路邊的無助貓貓"></div> -->
+        </div>
+        <div class="abandoned_description">
+            <br>
+            <p>這裡的每隻毛孩都有自己的故事......</p>
+            <br>
+            <p>有的是從繁殖場救援出來的，有的是被主人遺棄，有的是在路上流浪，</p>
+            <br>
+            <p>遭人驅趕，過著有一餐沒一餐的生活</p>
+            <br>
+            <p>在這裡的毛孩盼望著屬於自己的家，重拾起幸福的笑容</p>
+            <br>
+        </div>
+
+    </div>
+    <!-- 標語 -->
+    <div class="adopt_dont_abandon">
+        <div class="adopt_dont_abandon_slogan">
+            <a href="#" title="adopt" ><span><img class="slogan" src="./img/svg/slogan.svg" alt="領養不棄養" title="請支持領養不棄養" ></span></a>
+        </div>
+    </div>
+
+    <!-- <div class="adopt_box">
+        <div><h1>待認養動物</h1></div>
+        <div class="adopt_box_pic_box">
+            <div class="adopt_animals_box">
+                <div class="adopt_animals_description"><h2>狗狗</h2></div>
+                <div class="adopt_box_pic"><a href="#" title="adopt" ><img class="adopt_pic" src="./img/pic/dog01.jpg" alt="待認養動物圖片" title="待認養的動物" ></a></div>   
+            </div>
+            <div class="adopt_animals_box">
+                <div class="adopt_animals_description"><h2>貓貓</h2></div>
+                <div class="adopt_box_pic"><a href="#" title="adopt" ><img class="adopt_pic" src="./img/pic/cat01.jpg"alt="待認養動物圖片" title="待認養的動物"></a> </div>
+            </div>
+            <div class="adopt_animals_box">
+                <div class="adopt_animals_description"><h2>兔兔</h2></div>
+                <div class="adopt_box_pic"><a href="#" title="adopt" ><img class="adopt_pic" src="./img/pic/rabbit01.jpg"alt="待認養動物圖片" title="待認養的動物"></a></div> 
+           </div>
+           <div class="adopt_animals_box">
+                <div class="adopt_animals_description"><h2>鼠鼠</h2></div>
+                <div class="adopt_box_pic"><a href="#" title="adopt" ><img class="adopt_pic" src="./img/pic/mouse01.jpg"alt="待認養動物圖片" title="待認養的動物"></a></div>
+           </div>
+        </div>
+    </div> -->
+
+    <!-- 重要消息 -->
+    <div class="main_content"><h1>重要消息</h1>
+        <!--認養專區-->
+        <div class="content_box">
+            <div class=" content  content_box_pic">
+                <a href="./adopt.html" title="adopt" >
+                    <img class="content_pic" src="./img/pic/dog01.jpg" alt="待認養動物圖片" title="點我看待認養的動物" >
+                </a>
+            </div>
+            <div class=" content  content_box_descript">
+                <h2>認養專區</h2>
+                <p>本館有待認養的狗狗、貓貓、兔兔、鼠鼠</p>
+                <p>趕快來預約互動，給毛孩一個家</p>
+                <!-- <div class="content_link"><a href="#" target="_blank"><img src="./img/svg/dog01.svg">看更多資訊</a></div> -->
+            </div>
+        </div>
+            
+        <!--住宿相關-->
+        <div class="content_box">
+            <div div class=" content content_box_descript">
+                <h2>安心住宿</h2>
+                <p>可與想認養毛孩申請一同住宿</p>
+                <p>可帶自家毛孩一同住宿</p>
+                <p>要出遠門?毛孩請放心交給我們照顧</p>
+            </div>
+            <div class=" content ontent_box_pic">
+                <a href="./bookingroom.html" title="adopt" >
+                    <img class="content_pic" src="./img/住宿相關照片/1485000nn90675op9p65.jpg" alt="住宿圖片" title="點我進入住宿頁面" >
+                </a>
+            </div>
+        </div>
+
+        <!--周邊商品-->
+        <div  class="content_box">
+            <div class=" content ontent_box_pic">
+                <a href="#" title="adopt" >
+                    <img class="content_pic" src="./img/products/凍乾鮭魚排.jpg" alt="待認養動物圖片" title="點我看商品商品" >
+                </a>
+            </div>
+            <div div class=" content content_box_descript">
+                <h2>周邊商品</h2>
+                <p>賣出商品盈餘70%都會用在待認養的毛孩身上</p>
+            </div>
+        </div>
+        
+        <!--照片集-->
+        <div  class="content_box">
+            <div div class=" content content_box_descript">
+                <h2>照片集</h2>
+                <p>收藏了毛孩各種可愛照片，趕快來瞧瞧</p>
+            </div>
+            <div class=" content ontent_box_pic">
+                <a href="#" title="adopt" >
+                    <img class="content_pic" src="./img/圖片集/dog02.jpg" alt="待認養動物圖片" title="點我看動物攝影" >
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁尾 -->
+    <div class="footer">
+        <div class="footer_box logo">
+            <a href="./index.html"  target="_blank"><img id="logo" src=./img/svg/logo.svg></a>
+         </div>
+        <div class="footer_box">
+            <div class="footer_box_content">
+                <span><img src="./img/svg/envelope.svg"></span>
+                <span>goatruby@gmail.com</span>
+            </div>
+            <br>
+            <div class="footer_box_content">
+                <span><img src="./img/svg/map-marker-alt.svg"></span>    
+                <span>台北市中山區南京東路三段219號</span>
+            </div>
+            <br>
+            <div class="footer_box_content">
+                <span><img src="./img/svg/phone.svg"></span>
+                <span>0989350286</span>
+            </div>
+        </div> 
+        <div class="footer_box">
+            <div class="footer_box_icon"> 
+                <a href="#"><img src="./img/svg/facebook.svg" alt></a>
+                <br>
+                <a href="#"><img src="./img/svg/line.svg" alt></a>
+                <br>
+                <a href="#"><img src="./img/svg/instagram.svg" alt></a>
+            </div>
+       </div>
+    </div>
+
+        
+  
+    
+</body>
+</html>

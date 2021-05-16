@@ -1,0 +1,51 @@
+
+div.select_bottom > ul.bottom{
+    display:flex;
+    text-align:center;
+    vertical-align: middle;
+    justify-content: center;
+    padding:150px 20px 60px 20px;
+}
+
+div.select_bottom > ul.bottom > li > a > span > img{
+    width:100px;
+}
+div.select_bottom > ul.bottom > li > a > span > img path{
+    fill:green;
+}
+div.select_bottom > ul.bottom > li > a > span{
+    display:flex;
+    text-align: center;
+    flex-direction: row;
+    padding:20px;
+}
+/* #select_bottom , #select_bottom , #select_bottom , #select_bottom :hover{
+
+} */
+
+div.adopt{
+    display:flex;
+    text-align:center;
+    flex-direction: column;
+    padding:50px 10px 300px 10px;
+    width:100%;
+
+}
+.adopt_box_pic_box{
+    display:flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+}
+.adopt_box{
+    display:flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: row;
+    padding:10px;
+}
+
+div.adopt > div.adopt_box_pic_box > div.adopt_box > a > img{
+    width:100%;
+}

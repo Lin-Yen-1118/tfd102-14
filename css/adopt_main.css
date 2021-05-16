@@ -1,0 +1,79 @@
+/* div.adopt_pics > img{
+    background-image:url("");
+    display:flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+} */
+div.adoption_contect > div.adoption_desciption{
+   text-align:center;
+   color:rgb(87, 92, 92);
+}
+div.adoption_contect > div.adoption_desciption >h3{
+    margin-bottom:1em;
+}
+div.adoption_contect > div.adoption_desciption > p{
+    margin:0 0 10px;
+}
+div.adoption_contect > div.adoption_steps_box{
+    display:flex;
+    flex-wrap:wrap;
+    text-align:start;
+}
+div.adoption_contect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* div.adoption_contect> div.adoption_steps_box > div.adoption_steps{
+    border:2px solid black;
+    border-style:dashed;
+    display:flex;
+    background-color:rgba(92, 89, 78, 0.2);
+    border-radius: 40px 90px 90px 40px;
+    width:200px;
+    height: 100px;
+    vertical-align: middle;
+    text-align:start;
+    align-items: center;
+    padding:10px 10px;
+    margin:20px 8px;
+} */
+div.adoption_steps_pic{
+    margin: 40px 0px;
+}
+
+/* 認養步驟圖 */
+div.adoption_contect > div.adoption_steps_pic{
+    width:100%;
+    max-width:500px;
+    text-align:center;
+}
+/* 認養須知 */
+div.adoption_contect > div.adoption_notice >h4{
+    margin:10px 0px;
+}
+div.adoption_contect > div.adoption_notice > ol.adoption_notice_box > li{
+    position:relative;
+}
+div.adoption_contect > div.adoption_notice > ol.adoption_notice_box > li::before{
+    content:"";
+    background-image:url("../img/svg/paw.svg");
+    background-repeat: no-repeat;
+    background-size: 10px 12px;
+    /* border:1px solid red; */
+    width: 100%;
+    height:100%;
+    position:absolute;
+    left:-15px;
+    text-align: center;
+}
+/* div.adoption_contect> div.adoption_notice {
+    border:1px solid red;
+} */
+ 
+div.adoption_contect > div.adoption_steps_box > div.adoption_steps >p{
+    font-size:16px;
+}

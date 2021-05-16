@@ -1,0 +1,93 @@
+div.user{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-color: transparent;
+    border-radius:30px;
+    padding:20px;
+    background-color:#EDECE9; 
+    width:100%;
+    max-width:450px;
+}
+div.user_form{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+div.user > div.user_title{
+    font-size:24px;
+}
+div.user > div.user_form{
+    padding-bottom:50px;
+}
+input.user_form_input{
+    padding:10px;
+    border-radius:10px;
+    margin:10px 0px;
+    max-width:400px;
+    width:100%;
+    border-color: transparent;
+}
+
+div.user > div.user_signin_icons_box{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    /* border:1px solid blue; */
+    width: 100%;
+    max-width:200px;
+    height:100%;
+    height:100px;
+}
+div.user > div.user_login_icons_box > div.user_login_text{
+    display:flex;
+    height:100%;
+    font-size:20px;
+}
+div.user > div.user_signin_icons_box > div.user_signin_icons{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width:100%;  
+} 
+div.user > div.user_login_icons_box > div.user_login_icons >img{
+    width:30px;
+    margin:5px;
+}
+
+div.user_signin_box{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    border:1px solid red;
+    margin-top:50px;
+}
+div.user_signin{
+    margin:10px;
+}
+/*設定按鈕樣式*/
+input.user_form_input_bottom , div.user_signin_box > div.user_signin_bottom_box > input.user_signin_bottom{
+    border-radius:25px;
+    border-color:transparent; 
+    background-color:#b4b2ae;
+    font-size:26px;
+    max-width: 200px;
+    width:100%;
+    height: 40px;
+    padding:10px;
+    border:1px solid red;
+    transition: all .1s linear;
+}
+/*log-in滑鼠移入顯示效果*/
+div.user > div.user_form > form >input.user_form_input_bottom:hover{
+    background-color:#4b4946;
+    color:#ffffff;
+}
+/*sign-in滑鼠移入顯示效果*/
+div.user_signin_box > div.user_signin_bottom_box > input.user_signin_bottom:hover{
+    background-color:#4b4946;
+    color:#ffffff;
+}

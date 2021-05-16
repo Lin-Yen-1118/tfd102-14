@@ -1,0 +1,30 @@
+div.about_me_box{
+    display:flex;   
+    position:relative;
+    justify-content: center;
+    top:200px;
+    bottom:-200px;
+    border:1px solid red;
+    width: 100%;
+   
+    
+}
+div.about_me_box > img{
+    width:100%;
+    max-width:900px;
+    border:1px solid red;
+}
+
+div.about_me_descript{
+    position:absolute;
+    width:100%;
+    max-width: 750px;
+    top:500px;
+}   
+div.about_me_descript > span{
+    display:inline-block;
+    font-size:28px;
+    padding:10px 0px;
+
+}
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>住宿相關 </title>
+    <link href="./css/normalize.css" rel="stylesheet" >
+    <link href="./css/common.css" rel="stylesheet" >
+    <link href="./css/header.css" rel="stylesheet" >
+    <link href="./css/footer.css" rel="stylesheet" >
+    <link href="./css/main.css" rel="stylesheet" >
+    <link href="./css/about_me.css" rel="stylesheet" >
+    <link href="./css/adopt.css" rel="stylesheet" >
+    <link href="./css/bookingroom.css" rel="stylesheet" >   
+    <link href="./css/bookingroom_peopleroom.css" rel="stylesheet" >
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="./index.html"  target="_blank"><img id="logo" src="./img/svg/logo.svg"></a>
+            </div>
+            <div>
+                <ul class="header">
+                    <!-- 關於我 -->
+                    <li>
+                        <a href="./about_me.html" class="link_style" target="_blank">
+                            <span>
+                                <img id="introduction" src="./img/svg/dog01.svg">
+                            </span>
+                            <span>民宿介紹</span>
+                        </a>
+                    </li>
+                    <!-- 我要認養 -->
+                    <li class="adopt_menu">
+                        <a href="./adopt.html" class="link_style" target="_blank">
+                            <span>
+                                <img id="adopt" src="./img/svg/cat01.svg">
+                            </span>
+                            <span>我要認養</span>
+                        </a>
+                    
+                        <!-- 我要認養的下拉選單 -->
+                        <ul class="adopt_menu_select_menu">
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養須知</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養狗狗</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養貓貓</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養兔兔</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>認養鼠鼠</span>
+                                </a>
+                            </li>
+                            <li class="adopt_menu_select">
+                                <a href="./adopt.html" class="link_style" target="_blank">
+                                    <span>醫療團隊</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>    
+                    <!-- 住宿相關     -->
+                    <li>
+                        <a href="./bookingroom.html" class="link_style" target="_blank">
+                            <span>
+                                <img id="room" src="./img/svg/rabbit01.svg">
+                            </span>
+                            <span>住宿相關</span>
+                        </a>
+                    </li>
+                    <!-- 周邊商品 -->
+                    <li>
+                        <a href="#" class="link_style" target="_blank">
+                            <span>
+                                <img id="merchandise" src="./img/svg/mouse01.svg">
+                            </span>
+                            <span>周邊商品</span>
+                        </a>
+                    </li>
+                    <!-- 會員 -->
+                    <li>
+                        <a href="./user.html" class="link_style" target="_blank">
+                            <img id="user" src=./img/svg/user-circle-solid.svg>
+                        </a>
+                    </li>
+                    <!-- 我的訂單 -->
+                    <li>
+                        <a href="#" class="link_style" target="_blank">
+                            <img id="cart" src="./img/svg/shopping-cart.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="checkbox">
+        <form>
+            <input type="button" id="people" name="people">
+            <label for="people" >人(可攜寵)</label>
+       </form>
+    </div>
+
+    <div class="checkbox">
+        <input type="radio" id="people" name="people" value="people">
+        <label for="people">人(可攜寵)</label>
+    </div>
+
+    <div class="checkbox">
+        <input type="button" id="people" name="people" value="人(可攜寵)">
+        <label for="people">人(可攜寵)</label>
+    </div>
+
+    <div></div>
+    <div></div>
+
+    <!-- <div class="search">
+        <div class="searchbox">
+            <select name="guest">
+                <optgroup label="people">
+                  <option>請選擇住宿對象</option>
+                  <option>人</option>
+                  <option>人(有攜寵)</option>
+                </optgroup>
+              </select>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="searchbox">
+            <select name="searchbox_bookingroom_pet_boarding">
+                <optgroup label="寵物寄宿">
+                  <option disabled>寵物寄宿</option>
+                  <option value="dog">狗狗</option>
+                  <option value="cat">貓貓</option>
+                  <option value="rabbit">兔兔</option>
+                  <option value="mouse">鼠鼠</option>
+                </optgroup>
+              </select>
+        </div>
+    </div> -->
+
+  <div class="bookingroom_box">
+        <div class="bookingroom_pic">
+            <a href="#"  target="_blank"><img id="only_people" src="./img/svg/bookingroom_only_people.svg"></a>
+        </div>
+        <div class="bookingroom_pic">
+            <a href="#"  target="_blank"><img id="bringing_pet" src="./img/svg/bookingroom_bringing_pet.svg"></a>
+        </div>
+        <div class="bookingroom_pic">
+            <a href="#"  target="_blank"><img id="pet_boarding" src="./img/svg/bookingroom_pet_boarding.svg"></a>
+        </div>
+        <div class="bookingroom_pic">
+            <a href="#"  target="_blank"><img id="welcome" src="./img/svg/bookingroom_welcome.svg"></a>
+        </div>
+    </div> 
+
+    <!-- <div class="checkbox">
+        <form action="/action_page.php" method="get">
+            <input type="checkbox" id="guest_people" name="guest_people" value="people">
+            <label for="guest_people1">人要住宿(可攜寵)</label><br>
+            <input type="checkbox" id="guest_pets" name="vehicle2" value="pets">
+            <label for="veguest_petshicle2">寵物要寄宿</label><br>
+            <input type="submit" value="Submit">
+          </form>
+    </div>  -->
+    
+    <div class="footer">
+        <div class="footer_box logo">
+            <a href="./index.html"  target="_blank"><img id="logo" src=./img/svg/logo.svg></a>
+         </div>
+        <div class="footer_box">
+            <div class="footer_box_content">
+                <span><img src="./img/svg/envelope.svg"></span>
+                <span>goatruby@gmail.com</span>
+            </div>
+            <br>
+            <div class="footer_box_content">
+                <span><img src="./img/svg/map-marker-alt.svg"></span>    
+                <span>台北市中山區南京東路三段219號</span>
+            </div>
+            <br>
+            <div class="footer_box_content">
+                <span><img src="./img/svg/phone.svg"></span>
+                <span>0989350286</span>
+            </div>
+        </div> 
+        <div class="footer_box">
+            <div class="footer_box_icon"> 
+                <a href="#"><img src="./img/svg/facebook.svg" alt></a>
+                <br>
+                <a href="#"><img src="./img/svg/line.svg" alt></a>
+                <br>
+                <a href="#"><img src="./img/svg/instagram.svg" alt></a>
+            </div>
+       </div>
+    </div>
+    
+</body>
+</html>
