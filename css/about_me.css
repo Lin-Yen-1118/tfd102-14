@@ -4,13 +4,13 @@ div.about_me_box{
     justify-content: center;
     top:200px;
     bottom:-200px;
-    border:1px solid red;
+    /* border:1px solid red; */
     width: 100%;
 }
 div.about_me_box > img{
     width:100%;
     max-width:900px;
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 div.about_me_descript{
@@ -23,6 +23,7 @@ div.about_me_descript > span{
     display:inline-block;
     font-size:28px;
     padding:10px 0px;
-
 }
-
+div.adoption_notice >ol >li{
+    font-size:20px;
+}

@@ -9,7 +9,7 @@ nav{
     width:100%;
     position:fixed; 
     top:0;
-    z-index: 100;
+    z-index: 1;
 }
 nav > div > ul.header{
     display:flex;
@@ -53,26 +53,25 @@ nav > div > ul.header >li >a > span{
 }
 /* 以下為:我要領養-下拉選單 */
 li.adopt_menu{
-    border:1px solid red;
+    /* border:1px solid red; */
     position:relative;
 }
 ul.adopt_menu_select_menu{
-    border:1px solid red;
+    /* border:1px solid red; */
     position:absolute;
     width:10px;
     height:100%;
     top:100%;
     display:none;
     flex-direction: column;
-    background-color:tomato;
-    /* left:50%;無法對齊好頭痛 */
+    /* background-color:tomato; */
 }
 li.adopt_menu:hover >.adopt_menu_select_menu{
     display:block;
 }
 li.adopt_menu_select{
     display: block;
-    border:1px solid blue;
+    /* border:1px solid blue; */
     position:relative;
     width:100%;
     height:50px;
@@ -82,43 +81,18 @@ li.adopt_menu_select > a{
     position:absolute;
     width:100%;
     height:100%;
-    border:1px solid green;
+    /* border:1px solid green; */
 }
 li.adopt_menu_select > a > span{
     display: block;
     min-width:200px;
     min-height:50px;
     padding:0px 30px;
-    border:1px solid yellow;
+    /* border:1px solid yellow; */
     color:#000000;   
     font-size: 20px;
     text-align: center;
     background-color:#EDECE9;
     padding-top:12px;
 }
-/* 未點擊"我要認養"-隱藏選單 */
-nav > div > ul.header > li.adopt_menu >ul{
-    /* display:none; */
-    background-color:blue;
-}
-nav > div > ul.header > li.adopt_menu >ul.adopt_menu_select_menu >li >a >span{
-    background-color:#EDECE9;
-}
-nav > div > ul.header > li.adopt_menu :focus>ul.adopt_menu_select_menu >li >a >span{
-    display:block; 
-}
 
-
-/* 測試 */
- /* nav > div > ul.header > li.adopt_menu:focus{
-    display:block;
-} 
-nav > div > ul.header > li.adopt_menu:hover > ul{
-    background-color:red;
-}
-nav > div > ul.header > li.adopt_menu >ul.adopt_menu_select_menu >li >a >span:active{
-    color:rgb(158, 147, 149);
-}
-nav > div > ul.header > li.adopt_menu >ul.adopt_menu_select_menu >li.adopt_menu_select >a >span:active{
-    color:rgb(85, 88, 85);
-}  */

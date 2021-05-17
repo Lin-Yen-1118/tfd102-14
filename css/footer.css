@@ -10,12 +10,15 @@ div.footer > div.footer_box{
     display:flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items:start;
     width: 100%;
 }
-
+div.footer > div.footer_box > div.footer_box_content >span{
+    margin:0px 3px;
+}
 div.footer > div.footer_box > div.footer_box_content >span>img {
-    border:1px solid red;
+    width: 30px;
+    height:30px;
 }
 div.footer > div.footer_box > div.footer_box_icon > a > img{
     width: 25px;
@@ -32,12 +35,15 @@ div.footer > div.footer_box > div.footer_box_icon{
     justify-content: space-between;
     text-align: center;
     vertical-align: middle;
+} 
+div.footer > div.footer_box > div.footer_box_icon > div.footer_icon{
+    margin:0px 5px;   
 }    
-div.footer > div.footer_box > div.footer_box_icon > a{
+div.footer > div.footer_box > div.footer_box_icon > div.footer_icon >a{
     width: 30px;
     height: 30px;
 }
-div.footer > div.footer_box > div.footer_box_icon > img{
+div.footer > div.footer_box > div.footer_box_icon > div.footer_icon > a >img{
     width: 30px;
     height: 30px;
 }    

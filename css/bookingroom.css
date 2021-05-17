@@ -17,8 +17,15 @@ div.bookingroom_box {
 }
 div.bookingroom_box > div.bookingroom_pic{
     display:flex;
+    margin:10px 0px;
+}
+.booking_img{
+    width: 100%;
+    min-width:400px;
+    height: 100%;
 }
 div.bookingroom_box > div.bookingroom_pic > a >img{
    width:100%;
    max-width:500px;
+   
 }   

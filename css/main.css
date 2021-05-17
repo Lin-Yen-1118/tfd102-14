@@ -4,6 +4,8 @@ div.abandoned{
     text-align: center;
     flex-direction: column;
     padding:0px 40px;
+    text-align:center;
+    align-items: center;
 }
 .abandoned_box {
     display:flex;
@@ -12,6 +14,8 @@ div.abandoned{
     /* padding:100px 10px; */
     background-size:contain;
     overflow:hidden;
+    
+    margin-top:200px;
 }
 .abandoned > .abandoned_box > .abandoned_box_pic{
     display:flex;
@@ -19,7 +23,8 @@ div.abandoned{
     min-width: 300px;
     max-width: 1900px;
     text-align:center;
-    padding:0px 40px;
+   
+    
 }
 
 .abandoned_pic{

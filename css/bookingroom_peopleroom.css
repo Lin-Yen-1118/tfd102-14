@@ -1,18 +1,56 @@
-div.booking_info{
+div.booking_cards{
+    display:flex;
+    /* flex-direction: row; */
+    
+}
+div.booking_cards > div.booking_info{
     position:relative;
     top:200px;
     text-align: center;
     width:100%;
     height:100%;
+    margin:20px;
+    padding:15px;
+    border:5px solid rgb(58, 57, 56);
+    border-radius:20px;
 }
-div.booking_info_pic{
+div.booking_cards > div.booking_info > div.booking_info_pic{
     border:1px solid red;
     width:100%;
     height:500px;
+    margin:20px 0px;
 }
 
-div.booking_info > div.booking_info_pic >img{
+div.booking_cards > div.booking_info > div.booking_info_pic >img{
     border:1px solid red;
     width:500px;
     height:500px;
+}
+.booking_info_description{
+    text-align: start;
+}
+div.booking_cards > div.booking_info > div.booking_info_description > div.rooms_details >span{
+    border:1px solid rgb(15, 15, 15);
+    border-radius:2px;
+    padding:2px;
+    margin:0px 2px;
+}
+div.booking_cards > div.booking_info >div.booking_info_description > div.rooms_main_details{
+    margin:15px 0px;
+}
+div.booking_cards > div.booking_info >div.booking_info_description > div.rooms_main_details >h3{
+    margin:5px 0px;
+}
+div.booking_cards > div.booking_info >div.booking_info_description > div.rooms_main_details >p{
+    margin:7px 0px;
+}
+div.booking_cards > div.booking_info > div.rooms_prices >span{
+    display:flex;
+    justify-content: flex-end;
+    margin:35px 0px;
+} 
+div.booking_cards > div.booking_info > div.rooms_prices > span > p.prices{
+    color:rgb(12, 12, 241);
+    margin:0px 3px;
+    font-size:24px;
 }
