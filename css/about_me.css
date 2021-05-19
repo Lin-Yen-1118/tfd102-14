@@ -9,7 +9,7 @@ div.about_me_box{
 }
 div.about_me_box > img{
     width:100%;
-    max-width:900px;
+    max-width:1000px;
     /* border:1px solid red; */
     height:2100px;
     margin-top:-180px;
