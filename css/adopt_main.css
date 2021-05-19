@@ -78,3 +78,36 @@ div.adoption_contect> div.adoption_notice > ol.adoption_notice_box >li{
 div.adoption_contect > div.adoption_steps_box > div.adoption_steps >p{
     font-size:16px;
 }
+
+/* 照片分頁 */
+div.pagination_box {
+    display:flex;
+    margin:0 auto;
+}
+div.pagination_box > ul.pagination{
+    display:inline-block;
+    padding:0;
+    margin:0 auto;
+}
+ul.pagination li { 
+    display: inline; 
+}
+
+ul.pagination li a {
+    border:1px solid #726f6f;
+    border-radius: 5px;
+    color: rgb(50, 50, 51);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 28px;
+    transition: background-color .3s;
+    margin:0 3px;
+}
+ul.pagination li a.active {
+    background-color: #c4c4c4;
+    color: white;
+    border-radius:5px;
+    }
+ul.pagination li a:hover:not(.active) { background-color: #ddd; 
+    }
