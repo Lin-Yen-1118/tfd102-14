@@ -1,8 +1,7 @@
 div.booking_cards{
     display:flex;
     flex-wrap:wrap;
-    margin-bottom:500px;
-    
+    margin-bottom:100px; 
 }
 div.booking_cards > div.booking_info{
     
