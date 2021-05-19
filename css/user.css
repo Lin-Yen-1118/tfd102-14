@@ -1,3 +1,15 @@
+div.x_window{
+    display:flex;
+    flex-direction: row-reverse;
+    margin:10px 0px 50px 0px;
+    /* border:1px solid red; */
+    position:relative;
+    left:180px;
+}
+div.x_window>img{
+    width:30px;
+    height:30px;
+}
 div.user{
     display:flex;
     align-items: center;
@@ -73,7 +85,8 @@ div.user_signin{
 input.user_form_input_bottom , div.user_signin_box > div.user_signin_bottom_box > input.user_signin_bottom{
     border-radius:25px;
     border-color:transparent; 
-    background-color:#b4b2ae;
+    color:#ffffff;
+    background-color:#A63316;
     font-size:22px;
     max-width: 200px;
     width:100%;
@@ -84,11 +97,23 @@ input.user_form_input_bottom , div.user_signin_box > div.user_signin_bottom_box 
 }
 /*log-in滑鼠移入顯示效果*/
 div.user > div.user_form > form >input.user_form_input_bottom:hover{
-    background-color:#4b4946;
+    background-color:#4b1001;
     color:#ffffff;
 }
 /*sign-in滑鼠移入顯示效果*/
 div.user_signin_box > div.user_signin_bottom_box > input.user_signin_bottom:hover{
-    background-color:#4b4946;
+    background-color:#4b1001;
     color:#ffffff;
+}
+
+div.divider_line{
+    background-color: #000000;
+    width:500px;
+    height:2px;
+   margin:50px auto;
+}
+
+div.user > div.user_signin_icons_box > div >img{
+    /* border:1px solid red; */
+    width:30px;
 }
