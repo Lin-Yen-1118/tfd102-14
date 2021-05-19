@@ -14,7 +14,6 @@ div.abandoned{
     /* padding:100px 10px; */
     background-size:contain;
     overflow:hidden;
-    
     margin-top:200px;
 }
 .abandoned > .abandoned_box > .abandoned_box_pic{
@@ -23,8 +22,6 @@ div.abandoned{
     min-width: 300px;
     max-width: 1900px;
     text-align:center;
-   
-    
 }
 
 .abandoned_pic{
@@ -129,6 +126,7 @@ div.adopt_box > div.adopt_box_pic_box > div.adopt_animals_box >h2{
     justify-content: center;
     padding:60px 30px;
     text-align: center;
+    max-width:600px;
 }
 .content_box_descript > h2{
     padding:20px;
