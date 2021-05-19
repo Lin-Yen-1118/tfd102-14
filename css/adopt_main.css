@@ -70,9 +70,10 @@ div.adoption_contect > div.adoption_notice > ol.adoption_notice_box > li::before
     left:-15px;
     text-align: center;
 }
-/* div.adoption_contect> div.adoption_notice {
-    border:1px solid red;
-} */
+div.adoption_contect> div.adoption_notice > ol >li{
+    /* border:1px solid red; */
+    margin:5px 0px;
+}
  
 div.adoption_contect > div.adoption_steps_box > div.adoption_steps >p{
     font-size:16px;
