@@ -109,5 +109,6 @@ ul.pagination li a.active {
     color: white;
     border-radius:5px;
     }
-ul.pagination li a:hover:not(.active) { background-color: #ddd; 
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd; 
     }
