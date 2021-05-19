@@ -5,7 +5,6 @@ div.select_bottom > ul.bottom{
     vertical-align: middle;
     justify-content: center;
     padding:150px 20px 60px 20px; 
-    border:1px solid red;
     max-width: 500px;
 }
 div.select_bottom > ul.bottom > li > a > span > img{
