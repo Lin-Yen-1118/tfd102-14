@@ -18,13 +18,16 @@ div.abandoned{
 }
 .abandoned > .abandoned_box > .abandoned_box_pic{
     display:flex;
-    width:1500px;
+    width:1200px;
     /* min-width: 300px;
     max-width: 1900px; */
     text-align:center;
     padding:10px 0px;
 }
-
+.abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic{
+    width:200px;
+    /* border:1px solid red; */
+}
 .abandoned_pic{
     width:100%;
     height: auto;
@@ -46,7 +49,7 @@ div.index_adopt_box{
     display:flex;
     justify-content:center; 
     flex-direction: column;
-    width:1800px;
+    width:1200px;
     padding:100px 0px;
     /* background-color:#EDECE9;
     border-radius: 500px 300px 400px 500px;
@@ -65,12 +68,16 @@ div.index_adopt_box >div.index_adopt{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:center;
-    max-width:1500px;
+    max-width:1200px;
     height: 100%;
 }
 div.index_adopt_box >div.index_adopt >div.index_adopt_pic{
-    /* border:1px solid yellow; */
-
+    /* border:1px solid yellow;  */
+    width:250px;
+}
+div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a > img{
+    width:220px;
+    padding:5px;
 }
 div.index_adopt_box >div.index_adopt >div.index_adopt_pic:hover{
     transform:scale(1.1,1.1);
@@ -83,19 +90,16 @@ div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a {
     /* border:1px solid green; */
     position:relative;
     font-size:20px;
-    color:#ffffff;
+    color:#535151;
     /* width:200px; */
 }
 div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a:hover {
     /* border:1px solid green; */
     position:relative;
-    font-size:26px;
+    font-size:22px;
     color:#ffffff;
 }
-div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a>img{
-    width:300px;
-    margin:10px;
-}
+
 div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a >span{
     /* border:1px solid red; */
     position:absolute;
@@ -103,10 +107,7 @@ div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a >span{
     right: 50px;
     top:-35px;
 }
-
-
-
- /*領養不棄養標語*/
+/*領養不棄養標語*/
 .adopt_dont_abandon{
     display:flex;
     justify-content: center;
@@ -124,103 +125,199 @@ div.adopt_dont_abandon > div.adopt_dont_abandon_slogan > a > span > img.slogan{
     height:100%;
     min-width: 350px;
 } 
-
-
-/*adopt部分*/
-/* div.adopt_box{
-    background-size: contain;
-    display:flex;
-    flex-direction: column;
-    justify-content: center; 
-    background-color:#EDECE9 ;
-    padding:30px 0px;
-    border-radius: 50px;
-    border:1px solid red;
-    padding:30px;
-    margin:40px;
-}
-div.adopt_box > div >h1{
-    border:1px solid red;
-    display:flex;
-    justify-content: center; 
-
-}
-div.adopt_box > div.adopt_box_pic_box{
-    display:flex;
-    justify-content: space-around;
-    flex-direction:column;
-    border:1px solid red;
-}
-div.adopt_box > div.adopt_box_pic_box > div.adopt_box_pic{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: column;
-    border:1px solid blue;
-} 
-img.adopt_pic{
-    background-size: contain;
-    display:inline-block;
-    max-width: 110px;
-    max-height:110px;
-    border:0px;
-    border:1px solid red;
-}
-
-.adopt_animals_box {
-   border:1px solid blue;
-}
-div.adopt_box > div.adopt_box_pic_box > div.adopt_animals_box > div.adopt_box_pic {
-    border:1px solid yellow;
-}
-div.adopt_box > div.adopt_box_pic_box > div.adopt_animals_box >h2{
-    display:inline-block;
-} */
-.main_content{
-    padding:150px 40px;
-    margin-bottom: 120px;
+/*本館其他服務*/
+div.index_other_serves_box{
+    /* border:1px solid red; */
+    font-size: 0px;
     text-align: center;
+    display:flex;
+    justify-content:center; 
+    flex-direction: column;
+    width:1200px;
+    padding:100px 0px;
 }
-.main_content > h1{
+div.index_other_serves_box >h1{
     text-align: center;
     font-size: 40px;
 }
-.content_box{
+div.index_other_serves_box > div.index_other_serves{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    max-width:1200px;
+    height: 100%;
+    margin:10px 0px;
+}
+
+div.index_other_serves_box > div.index_other_serves >div.index_other_serves_main{
+    width:230px;
+    margin:0px 15px;
+}
+div.index_other_serves_box > div.index_other_serves >div.index_other_serves_main >a {
+    display:flex;
+    flex-direction: column;
+}
+div.index_other_serves_box > div.index_other_serves >div.index_other_serves_main:hover{
+    transform:scale(1.1,1.1);
+}
+div.index_other_serves_box > div.index_other_serves >div.index_other_serves_main > a:hover{
+    transform:scale(1.1,1.1);
+} 
+div.index_other_serves_box > div.index_other_serves >div.index_other_serves_main > a >h2{
+    margin:35px 0px;
+    font-weight: 700;
+    color:#000000;
+}
+div.index_other_serves_box > div.index_other_serves >div.index_other_serves_main > a >h2:hover{
+    font-size:30px;
+}
+/*協助我們-助糧計畫、小小志工*/
+div.index_give_help_box{
+    font-size: 0px;
+    text-align: center; 
+    display:flex;
+    justify-content:center; 
+    flex-direction: column;
+    width:1500px;
+    padding:100px 0px;
+    flex-wrap:wrap;
+    width:1200px;
+    /* border:1px solid red; */
+    margin-top:100px;
+}
+div.index_give_help_box > h1{
+    text-align: center;
+    font-size: 40px;
+}
+div.index_give_help_box > div.index_give_help{
+    display:flex; 
+    justify-content:center;
+    text-align: center;
+    font-size: 40px;
+    /* border:1px solid blue; */
+    flex-direction: row;
+    width:1200px;
+}    
+div.index_give_help_box > div.index_give_help > div.index_give_help_main{
+    /* border:1px solid green; */
+    width:300px;
+    margin:0px 50px;
+}
+div.index_give_help_box > div.index_give_help > div.index_give_help_main > a {
+    vertical-align: bottom;
+}
+div.index_give_help_box > div.index_give_help > div.index_give_help_main > a >h2{
+    margin:50px;
+}
+div.index_give_help_box > div.index_give_help > div.index_give_help_main > a > div{
+    height:150px;
+    margin:15px 0px 25px 0px;
+    /* border:1px solid red; */
+}
+div.index_give_help_box > div.index_give_help > div.index_give_help_main > a > div>p{
+    margin:15px 0px;
+    font-size:22px;
+    font-weight: 500;
+    color:#000000;
+    /* border:1px solid blue; */
+}
+div.index_give_help_box > div.index_give_help > div.index_give_help_main > a > div>p >span.index_give_help_main_text{
+    color:rgb(255,0,0);
+}
+div.index_give_help_box > div.index_give_help > div.index_give_help_main > a >span{
+    /* border:1px solid red; */
+    font-size:24px;
+}
+div.index_give_help_box > div.index_give_help > div.index_give_help_main:hover{
+    transform:scale(1.1,1.1);
+}
+/*動知識*/
+div.index_artical_box{
+    display:flex;
+    flex-direction:column;
+    /* padding:150px 40px; */
+    margin-bottom: 120px;
+    text-align: center;
+    width:1200px;
+    /* border:1px solid rgb(0, 255, 153); */
+}
+div.index_artical_box > h1{
+    /* text-align: center; */
+    font-size: 40px;
+}
+div.index_artical_box > div.index_artical_main_contant{
+    display:flex;
+    flex-direction: row;
+    /* border:1px solid rgb(50, 50, 223); */
+    width:1200px;
+}
+div.index_artical_box > div.index_artical_main_contant > div.index_artical{
     /* border:1px solid red; */
     display:flex;
-    width: 100%;
-    min-width:600px;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 400px;
     justify-content: center;
-    padding:60px 30px;
+    padding:60px 10px;
     text-align: center;
-    max-width:600px;
 }
-.content_box_descript > h2{
+div.index_artical_box  > div.index_artical_main_contant > div.index_artical > div.index_artical_contant > h2{
     padding:20px;
-    font-weight: 700;
+    font-weight: 700;    
+    height:100px;
+    text-align:left;
 }
-.content_box_descript > p{
+div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.index_artical_contant > div.index_artical_contant_pic >img{
+    width:350px;
+}
+   
+div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.index_artical_contant  > div.index_artical_contant_descript >p{
     text-align: left;
+    margin:10px 0px;
+    /* border:1px solid red; */
 }    
-.content_box_descript{
-    /* border:1px solid green; */
+div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.index_artical_contant > div.index_artical_contant_descript{
+    border:1px solid green;
     display:block;
-    min-width:300px;
-    max-width:800px;
-    text-align:center;
-    padding:50px 15px;
+    width:350px;
+    height:350px;
+    text-align:left;
+    padding:20px 15px;
 }
-/* .content_box_descript > h1{
-    border:1px solid blue;
+div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.index_artical_contant > div.index_artical_contant_descrip >div.index_artical_contant_descript_more >a{
+    border:1px solid red;
 }
-.content_box_descript > p{
-    border:1px solid yellow;
-} */
-/* .content{
-    border:2px solid black;
-} */
-.content_pic{
+div.index_artical_box > div.index_artical_main_contant >div.index_artical > div.index_artical_contant > div.content_pic{
     width: 100%;
     max-width:450px;
     min-width:300px;
     border-radius:300px 100px 300px 100px;
+}
+/*相關影片*/
+div.index_media_box{
+    padding:150px 40px;
+    margin-bottom: 120px;
+    text-align: center;
+    border:1px solid red;
+    display:flex;                 
+    flex-direction:column;
+    flex-wrap:wrap ;
+    width:600px;
+    margin:0 auto;
+}
+div.index_media_box > div.index_media_contant{
+    border:1px solid blue;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:600px;
+    justify-content:flex-start;
+    padding:60px 30px;
+    /* text-align: left; */
+}    
+div.index_media_box > div.index_media_contant > div.index_media{
+    width:400px;             
+    border:1px solid green;
+    margin:10px;
 }
