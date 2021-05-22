@@ -184,7 +184,6 @@ div.index_give_help_box{
     flex-wrap:wrap;
     width:1200px;
     /* border:1px solid red; */
-    margin-top:100px;
 }
 div.index_give_help_box > h1{
     text-align: center;
@@ -327,18 +326,17 @@ div.index_media_box > div.index_media_contant{
     flex-wrap: wrap;
     width:1200px;
     justify-content:flex-start;
-    padding:20px 5px;
     /* text-align: left; */
 }    
 div.index_media_box > div.index_media_contant > div.index_media{
     width:380px;             
     border:1px solid #000000;
     padding:10px;
-    margin:10px 5px;
+    margin:12px 10px;
 }   
 div.index_media_box > div.index_media_contant > div.index_media > iframe{
     width:360px;
-    height: 230px;
+    height:230px;
 }
 div.index_media_box > div.index_media_contant > div.index_media >h4{
     /* border:1px solid yellow; */
