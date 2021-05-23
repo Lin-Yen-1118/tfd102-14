@@ -51,6 +51,48 @@ nav > div > ul.header >li >a > span{
     display:inline-block;
     vertical-align:middle;
 }
+nav > div > ul.header >li >a:hover > span{
+    color:rgb(196, 191, 191);
+    /* font-size: larger; */
+}
+nav > div > ul.header >li >a:hover > span >img{
+    transform:rotate(360deg);
+    transition-duration: 1s;
+}
+nav > div >  ul.header > li >a:hover > img#user{
+    animation-name: user_icon;
+    animation-duration: 3s;
+    animation-direction: reverse; 
+}
+@keyframes user_icon {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(360deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+}
+  nav > div >  ul.header > li >a:hover > img#cart{
+    animation-name: cart_icon;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+}  
+@keyframes cart_icon {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+}
+
 /* 以下為:我要領養-下拉選單 */
 li.adopt_menu{
     /* border:1px solid red; */
@@ -93,6 +135,15 @@ li.adopt_menu_select > a > span{
     background-color:#EDECE9;
     height:50px;
     width:100px;
+}
+li.adopt_menu_select > a:focus >span{
+    background-color:#a0a099;
+    color:#EDECE9;
+    /* border:1px solid red; */
+}
+li.adopt_menu_select > a:hover >span{
+    background-color:#8d8d88;
+    color:#EDECE9;
 }
 
 /* 以下為:住宿-下拉選單 booking_rooms_menu */
@@ -138,4 +189,13 @@ li.booking_rooms_select > a > span{
     text-align: center;
     background-color:#EDECE9;
     height:50px;
+}
+li.booking_rooms_select > a:focus >span{
+    background-color:#a0a099;
+    color:#EDECE9;
+    /* border:1px solid red; */
+}
+li.booking_rooms_select > a:hover >span{
+    background-color:#8d8d88;
+    color:#EDECE9;
 }

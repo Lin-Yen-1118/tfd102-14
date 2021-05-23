@@ -3,7 +3,6 @@ div.abandoned{
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding:0px 40px;
     text-align:center;
     align-items: center;
 }
@@ -11,10 +10,11 @@ div.abandoned{
     display:flex;
     align-content: center; 
     display:block;
-    /* padding:100px 10px; */
     background-size:contain;
     overflow:hidden;
-    margin-top:200px;
+    position: relative;
+    top:100px;
+    padding-top:100px;
 }
 .abandoned > .abandoned_box > .abandoned_box_pic{
     display:flex;
