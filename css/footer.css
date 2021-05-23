@@ -18,7 +18,6 @@ div.footer > div.footer_box > div.footer_box_content{
     display:flex;
     flex-direction: row;
     width:100%;
-    max-width: 1500px;
     padding:20px;
 }
 div.footer > div.footer_box > div.footer_box_content > div.footer_info_box{
