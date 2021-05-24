@@ -39,7 +39,8 @@ div.abandoned{
     padding:20px;
     /* font-size:80px; */
     letter-spacing:8px;
-    line-height: 24px;
+    line-height: 20px;
+    margin-top:80px;
  }
 /* 領養區 */
 div.index_adopt_box{

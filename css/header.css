@@ -11,15 +11,36 @@ nav{
     top:0;
     z-index: 1;
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+    nav{
+        position:relative;
+        height:100px;
+        max-width:992px;
+        min-width:768px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    nav{
+        position:relative;
+        height:100px;
+        max-width:767px;
+        min-width:576px;
+    }
+}
+@media screen and (max-width: 575px){
+    nav{
+        position:relative;
+        height:100px;
+        min-width:575px;
+    }
+}
 nav > div > ul.header{
     display:flex;
 }
-#introduction , #adopt , #room , #merchandise , #user , #cart{
+#introduction , #adopt , #room , #merchandise , #user , #cart {
     width:30px;
     height:30px;
     margin:5px;
-    max-width: 100%;
-    max-height: 100%;
 }
 #user , #cart::before{
     content: "";
@@ -31,6 +52,36 @@ nav > div > ul.header{
     margin:0px;
     font-size: 0px;
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+    nav > div > ul.header{
+        flex-direction: column;
+        /* border:1px solid red; */
+        position:absolute;
+        top: 100px;
+        right:0px;
+        background-color:#EDECE9;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    nav > div > ul.header{
+        flex-direction: column;
+        /* border:1px solid red; */
+        position:absolute;
+        top: 100px;
+        right:0px;
+        background-color:#EDECE9;
+    }
+}
+@media screen and (max-width: 575px){
+    nav > div > ul.header{
+        flex-direction: column;
+        /* border:1px solid red; */
+        position:absolute;
+        top: 100px;
+        right:0px;
+        background-color:#EDECE9;
+    }
+}
 nav > div > ul.header > li{
     display:flex;
     align-items: center;
@@ -38,7 +89,6 @@ nav > div > ul.header > li{
     font-size:24px; 
     vertical-align: middle;
     text-align:center ;
-    /* position:relative; */
 }
 nav > div > ul.header >li >a{
     display:flex;
@@ -107,6 +157,24 @@ ul.adopt_menu_select_menu{
     display:none;
     flex-direction: column;
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+    ul.adopt_menu_select_menu{
+        left:-150px;
+        top:10px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    ul.adopt_menu_select_menu{
+        left:-150px;
+        top:10px;
+    }
+}
+@media screen and (max-width: 575px){
+    ul.adopt_menu_select_menu{
+        left:-150px;
+        top:10px;
+    }
+}
 li.adopt_menu:hover >.adopt_menu_select_menu{
     display:block;
 }
@@ -159,7 +227,24 @@ ul.booking_rooms_menu_select_menu{
     top:100%;
     display:none;
     flex-direction: column;
-    /* background-color:tomato; */
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    ul.booking_rooms_menu_select_menu{
+        left:-150px;
+        top:10px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    ul.booking_rooms_menu_select_menu{
+        left:-150px;
+        top:10px;
+    }
+}
+@media screen and (max-width: 575px){
+    ul.booking_rooms_menu_select_menu{
+        left:-150px;
+        top:10px;
+    }
 }
 li.booking_rooms_menu:hover >.booking_rooms_menu_select_menu{
     display:block;
@@ -199,3 +284,56 @@ li.booking_rooms_select > a:hover >span{
     background-color:#8d8d88;
     color:#EDECE9;
 }
+nav > div > ul.user_cart{
+    display:flex;
+    flex-direction: row;
+}
+nav > div > ul.user_cart >li{
+    margin:0px 5px;
+}
+
+/* RWD */
+nav >div.burger_menu>img{
+    content: "";
+    width:40px;
+    height:40px;
+    /* border:1px solid red; */
+    display:none;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    nav >div.burger_menu>img{
+        content: "";
+        width:40px;
+        height:40px;
+        /* border:1px solid red; */
+        display:flex;
+    }
+    /* nav > div >ul.header{
+        display:none;
+    } */
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    nav >div.burger_menu>img{
+        content: "";
+        width:40px;
+        height:40px;
+        display:flex;
+    }
+    /* nav > div >ul.header{
+        display:none;
+    } */
+}
+
+@media screen  and (max-width: 575px){
+    nav >div.burger_menu>img{
+        content: "";
+        width:40px;
+        height:40px;
+        display:flex;
+    }
+    /* nav > div >ul.header{
+        display:none;
+    } */
+}
+
+
