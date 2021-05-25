@@ -17,23 +17,24 @@
     <link href="./css/bookingroom.css" rel="stylesheet" >
 </head>            
 <body>
-    <header>
+   <!-- 導覽列 -->
+   <header>
         <nav>
             <div class="logo">
                 <a href="./index.html"  target="_blank"><img id="logo" src="./img/svg/logo.svg"></a>
             </div>
             <div>
-                <ul class="header">
-                    <!-- 關於我 -->
+                <ul class="header_bar">
+                     <!-- 關於我 -->
                     <li>
-                        <a href="./about_me.html" class="link_style" target="_blank">
+                        <a href="./about_me.html" class="link_style">
                             <span>
                                 <img id="introduction" src="./img/svg/dog01.svg">
                             </span>
                             <span>民宿介紹</span>
                         </a>
                     </li>
-                    <!-- 我要認養 -->
+                     <!-- 我要認養 -->
                     <li class="adopt_menu">
                         <a>
                             <span>
@@ -41,53 +42,66 @@
                             </span>
                             <span>我要認養</span>
                         </a>
-                    
-                        <!-- 我要認養的下拉選單 -->
+                         <!-- 我要認養的下拉選單 -->
                         <ul class="adopt_menu_select_menu">
                             <li class="adopt_menu_select">
-                                <a href="./adopt_main.html" class="link_style" target="_blank">
+                                <a href="./adopt_main.html" class="link_style">
                                     <span>認養須知</span>
                                 </a>
                             </li>
                             <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style" target="_blank">
+                                <a href="./adopt.html" class="link_style">
                                     <span>認養狗狗</span>
                                 </a>
                             </li>
                             <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style" target="_blank">
+                                <a href="./adopt.html" class="link_style">
                                     <span>認養貓貓</span>
                                 </a>
                             </li>
                             <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style" target="_blank">
+                                <a href="./adopt.html" class="link_style">
                                     <span>認養兔兔</span>
                                 </a>
                             </li>
                             <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style" target="_blank">
+                                <a href="./adopt.html" class="link_style">
                                     <span>認養鼠鼠</span>
                                 </a>
                             </li>
                             <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style" target="_blank">
+                                <a href="./adopt.html" class="link_style">
                                     <span>醫療團隊</span>
                                 </a>
                             </li>
                         </ul>
                     </li>    
                     <!-- 住宿相關     -->
-                    <li>
-                        <a href="./bookingroom_peopleroom.html" class="link_style" target="_blank">
+                    <li class="booking_rooms_menu">
+                        <a>
                             <span>
                                 <img id="room" src="./img/svg/rabbit01.svg">
                             </span>
                             <span>住宿相關</span>
                         </a>
+                        <!-- 住宿的下拉選單 -->
+                        <ul class="booking_rooms_menu_select_menu">
+                            <li class="booking_rooms_select">
+                                <a  href="./bookingroom_peopleroom.html" class="link_style">
+                                    <span>一般住宿</span>
+                                </a>
+                            </li>
+                            <li class="booking_rooms_select">
+                                <a  href="./bookingroom_peopleroom.html" class="link_style">
+                                    <span>毛孩寄宿</span>
+                                </a>
+                            </li>
+                        </ul>
+
                     </li>
                     <!-- 周邊商品 -->
                     <li>
-                        <a href="#" class="link_style" target="_blank">
+                        <a href="#" class="link_style">
                             <span>
                                 <img id="merchandise" src="./img/svg/mouse01.svg">
                             </span>
@@ -95,19 +109,39 @@
                         </a>
                     </li>
                     <!-- 會員 -->
-                    <li>
-                        <a href="./user.html" class="link_style" target="_blank">
+                    <!-- <li >
+                        <a href="./user.html" class="link_style">
+                            <img id="user" src=./img/svg/user-circle-solid.svg>
+                        </a>
+                    </li> -->
+                    <!-- 我的訂單 -->
+                    <!-- <li>
+                        <a href="#" class="link_style">
+                            <img id="cart" src="./img/svg/shopping-cart.svg">
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div>
+                <ul class="user_cart">
+                    <!-- 會員 -->
+                    <li >
+                        <a href="./user.html" class="link_style">
                             <img id="user" src=./img/svg/user-circle-solid.svg>
                         </a>
                     </li>
                     <!-- 我的訂單 -->
                     <li>
-                        <a href="#" class="link_style" target="_blank">
+                        <a href="#" class="link_style">
                             <img id="cart" src="./img/svg/shopping-cart.svg">
                         </a>
                     </li>
-                </ul>
-            </div>
+                </ul> 
+            </div>    
+            <!--RWD按鈕--->
+            <div class="burger_menu">
+                <img id="burger_icon"src="./img/svg/bars.svg">
+            </div> 
         </nav>
     </header>
   
@@ -200,8 +234,8 @@
             <ol class="adoption_notice_box">
                 <li>須年滿25歲並取得共同居住者同意</li>
                 <li>須有穩定收入</li>
-                <li>須配合結紮(犬、貓))</li>
-                <li>須配合植入晶片(犬、貓))</li>
+                <li>須配合結紮(犬、貓)</li>
+                <li>須配合植入晶片(犬、貓)</li>
                 <li>須簽認養切結書並同意後續追蹤</li>
                 <li>不得24小時綁繩或關籠</li>
                 <li>每年需施打預防針並於每月體內、體外除蟲(犬、貓)</li>
@@ -218,36 +252,198 @@
             </ol>
         </div>
     </div>
+    <!-- 養寵物需基本條件 -->
+    <div class="must_have_box">
+        <div class="must_have_condition">
+            <h3>養狗狗須具備基本條件</h3>
+            <div class="condition_contain">
+                <h4>吃的部分</h4>
+                <ul>
+                    <li>不要給狗狗吃人的食物，過度調味、高鹽多油食物對身體有害，飲食攝取應以天然成分為主</li>
+                    <li>不能吃:巧克力、含咖啡因製品、葡萄、葡萄乾、洋蔥其他蔥類、酒精成分製品</li>
+                </ul>
 
+                <h4>住的部分</h4>
+                <ul>
+                    <li>良好的生活環境:潮濕、陰涼、常曝曬烈陽的環境皆對毛孩身體有不良影響</li>
+                </ul>
+
+                <h4>其他的部分</h4>
+                <ul>
+                    <li>每天有時間陪伴，汪星人有情感的需求</li>
+                    <li>定期體內、體外驅蟲，施打八合一或十合一疫苗、狂犬病疫苗</li>
+                    <li>身體清潔、剪指甲、清耳朵</li>
+                    <li>生病時的緊急預備金</li>
+                    <li>有足夠耐心、愛心</li>
+                    <li>外出散步要繫牽繩，保護毛孩不放養，避免任何意外狀況</li>
+                    <li>做個負責的主人，幫牠施打晶片做寵物登記，不小心走失尋回機率也較高</li>
+                    <li>狗狗壽命可達十幾年，請當牠的依靠，牠會當你忠實的夥伴</li>
+                </ul>    
+            </div>
+        </div>
+        <div class="must_have_condition">
+            <h3>養貓貓須具備基本條件</h3>
+            <div class="condition_contain">
+                <h4>吃的部分</h4>
+                <ul>
+                    <li>不要給貓貓吃人的食物，過度調味、高鹽多油食物對身體有害，飲食攝取應以天然成分為主</li>
+                    <li>不能吃:巧克力、含咖啡因製品、葡萄、葡萄乾、洋蔥其他蔥類、酒精成分製品</li>
+                </ul>
+                <h4>住的部分</h4>
+                <ul>
+                    <li>良好的生活環境:潮濕、陰涼、常曝曬烈陽的環境皆對毛孩身體有不良影響</li>
+                    <li>可多利用垂直空間布置，貓貓喜歡高處以及隱蔽性高不被干擾的地方</li>
+                    <li>乾淨的貓砂盆</li>
+                </ul>
+                <h4>其他的部分</h4>
+                <ul>
+                    <li>每天有時間陪伴，喵星人也有情感的需求</li>
+                    <li>定期體內、體外驅蟲，施打三合一疫苗、狂犬病疫苗</li>
+                    <li>身體清潔、剪指甲、清耳朵</li>
+                    <li>生病時的緊急預備金</li>
+                    <li>有足夠耐心、愛心</li>
+                    <li>貓貓天生喜歡狩獵，可提供玩具給牠互動</li>
+                    <li>做個負責的主人，幫牠施打晶片做寵物登記，不小心走失尋回機率也較高</li>
+                    <li>貓貓壽命可達十幾年，在有限的生命裡，當牠的依靠</li>
+                </ul> 
+            </div>
+        </div>
+        <div  class="must_have_condition">
+            <h3>養兔兔須具備基本條件</h3>
+            <div class="condition_contain">
+                <h4>吃的部分</h4>
+                <ul>
+                    <li>兔兔主食是牧草(80%)，其次是適量新鮮綠葉蔬菜，少量水果當零食、少量飼料補充營養</li>
+                    <li>不能吃:巧克力、含咖啡因製品、酪梨、刺激性的蔬菜、酒精成分製品、肉</li>
+                    <li>兔兔需要乾淨煮沸過的水，飲水不乾淨會讓兔子拉肚子</li>
+                    <li>兔兔會吃自己的便便，因兔子有很大的螺旋形盲腸，含有豐富的腸道菌叢，可製造兔兔必須的營養素與維他命，排出的軟質糞便，稱為盲腸便或夜糞，含有蛋白質與維他命B群及腸道益菌</li>
+                </ul>
+                <h4>住的部分</h4>
+                <ul>
+                    <li>良好的生活環境:潮濕、陰涼、常曝曬烈陽的環境皆對毛孩身體有不良影響</li>
+                    <li>兔兔很會繁殖，也會爭地盤打架造成受傷，請分開飼養，可以合養相安無事的是極少數案例，且相伴的兔兔若其中一隻生病過世，另一隻極可能開始拒食到死為止</li>
+                </ul>
+                <h4>其他的部分</h4>
+                <ul>
+                    <li>每天有時間陪伴，兔兔也是會認主人的</li>
+                    <li>身體清潔、剪指甲</li>
+                    <li>正常情況不用幫牠清耳朵，兔兔自己會清理，除非是生病了，或是垂耳兔才需清潔耳朵</li>
+                    <li>須注意牙齒不可過長</li>
+                    <li>生病時的緊急預備金</li>
+                    <li>有足夠耐心、愛心</li>
+                    <li>兔兔不會像貓一樣吐毛球，如果因舔毛讓毛球阻塞腸道，出現不吃不喝、超過12小時沒有排泄等狀況，一定要盡速就醫治療</li>
+                    <li>兔子易骨折，勿將兔子置於高處，避免不慎摔傷</li>    
+                    <li>請不要學卡通抓兔子耳朵，要用正確方式抱兔兔</li>
+                    <li>兔兔壽命最長可達十幾年，在有限的生命裡，當牠的依靠</li>
+                </ul>
+            </div>
+        </div>
+        <div  class="must_have_condition">
+            <h3>養天竺鼠須具備基本條件</h3>
+            <div class="condition_contain">
+                <h4>吃的部分</h4>
+                <ul>
+                    <li>天天主食是牧草(80%)，其次是適量新鮮綠葉蔬菜，少量水果當零食、少量飼料補充營養，堅果類熱量過高不適合常吃</li>
+                    <li>不能吃:巧克力、含咖啡因製品、酪梨、刺激性的蔬菜、酒精成分製品、肉</li>
+                    <li>天竺鼠和人類以及其他靈長類動物都無法自行合成維他命C，必須每天都要補充</li>
+                    <li>天天需要乾淨煮沸過的水，飲水不乾淨會讓天天拉肚子</li>
+                </ul>
+                <h4>住的部分</h4>
+                <ul>
+                    <li>天天屎尿很多，養牠請有覺悟，要常清潔環境，且對飼養空間也有要求</li>
+                    <li>良好的生活環境:潮濕、陰涼、常曝曬烈陽的環境皆對毛孩身體有不良影響</li>
+                    <li>天天不是倉鼠，牠不會跑滾輪，長的也不小隻，也不會用木屑跟鼠砂</li>
+                    <li>天天很會繁殖，請公母分開飼養，且不可以跟兔子合養</li>
+                    <li>天天的籠子請不要選用鐵絲網底，鐵籠容易卡腳造成骨折或是足部發炎</li>
+                </ul>
+                <h4>其他的部分</h4>
+                <ul>
+                    <li>每天有時間陪伴，天竺鼠是群居性動物，也會認主人</li>
+                    <li>天天交流主要是靠叫聲，每個聲音都有其意義</li>
+                    <li>固定身體清潔、剪指甲</li>
+                    <li>正常情況不用常幫牠清耳朵，天天自己會清理，除非真的很髒，天天耳朵有天然色素，清理時發現有黑色素是正常的</li>
+                    <li>須注意牙齒不可過長</li>
+                    <li>生病時的緊急預備金</li>
+                    <li>有足夠耐心、愛心</li>
+                    <li>天天很會忍耐，就算身體不舒服也不易察覺，有任何異狀一定要盡速就醫治療</li>
+                    <li>天天吃自己的便便可以吸收到食物中全部的營養，不用特意阻止</li>
+                    <li>天天易骨折，勿將牠置於高處，避免不慎摔傷</li>    
+                    <li>天天平均壽命可達5~8年，在有限的生命裡，請當牠的依靠</li>
+                </ul>
+            </div>
+        </div>
+        <div  class="must_have_condition">
+            <h3>養倉鼠須具備基本條件</h3>
+            <div class="condition_contain">
+                <h4>吃的部分</h4>
+                <ul>
+                    <li>主食飼料，每日提供鼠體重十分之一的飼料量，小型倉鼠以寶特瓶蓋的量為參考，黃金鼠以奶粉勺的量為參考。可多不可少</li>
+                    <li>鼠鼠需要乾淨煮沸過的水，飲水不乾淨會讓牠拉肚子、生病</li>
+                    <li>不能吃:巧克力、含咖啡因製品、酪梨、刺激性的蔬菜、酒精成分製品、肉</li>
+                </ul>
+                <h4>住的部分</h4>
+                <ul>
+                    <li>倉鼠請一籠一鼠飼養，同性互殘、異性大量繁殖及互殘；老公公鼠為家族群居，仍有機率互殘</li>
+                    <li>基本需求:滾輪、水瓶（盆)</li>
+                    <li>良好的生活環境:潮濕、陰涼、常曝曬烈陽的環境皆對倉鼠身體有不良影響</li>
+                </ul>
+                <h4>其他的部分</h4>
+                <ul>
+                    <li>倉鼠不可用水洗澡，除非經醫生同意與指導。</li>
+                    <li>須注意鼠鼠牙齒不可過長</li>
+                    <li>生病時的緊急預備金</li>
+                    <li>有足夠耐心、愛心</li>
+                    <li>鼠鼠很脆弱，勿將牠置於高處，避免不慎摔傷</li>  
+                    <li>鼠鼠平均壽命可達2~3年，在有限的生命裡，請當牠的依靠</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁尾 -->
     <div class="footer">
-        <div class="footer_box logo">
-            <a href="./index.html"  target="_blank"><img id="logo" src=./img/svg/logo.svg></a>
-         </div>
         <div class="footer_box">
             <div class="footer_box_content">
-                <span><img src="./img/svg/envelope.svg"></span>
-                <span>goatruby@gmail.com</span>
+                <div class="footer_info_box footer_box_logo">
+                    <a href="./index.html"  target="_self">
+                        <img id="logo" src=./img/svg/logo.svg>
+                    </a>
+                </div>
+
+                <div class="footer_info_box footer_info"> 
+                    <div>盼窩|地址:台北市中山區盼窩里盼窩路520號</div>
+                    <br>
+                    <div>電話:02-XXXXXXX</div>
+                    <br>
+                    <div>營業時間:周一至周六 08:00~21:00</div>
+                    <br>
+                    <div class="footer_icon">
+                        <div class="footer_box_content_box_img">
+                            <a href="./index.html"  target="_self">
+                                <img src="./img/svg/facebook.svg">
+                            </a>
+                        </div>
+                        <div class="footer_box_content_box_img">
+                            <a href="./index.html"  target="_self">
+                                <img src="./img/svg/line.svg">
+                            </a>
+                        </div>
+                        <div class="footer_box_content_box_img">
+                            <a href="./index.html"  target="_self">
+                                <img src="./img/svg/instagram.svg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_info_box footer_statement"> 
+                    <p>
+                        本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
+                        參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，
+                        後續會由專人協助處理，連結:https://www.facebook.com/webindex/
+                        </p>
+                </div>
             </div>
-            <br>
-            <div class="footer_box_content">
-                <span><img src="./img/svg/map-marker-alt.svg"></span>
-                <span>台北市中山區南京東路三段219號</span>
-            </div>
-            <br>
-            <div class="footer_box_content">
-                <span><img src="./img/svg/phone.svg"></span>
-                <span>0989350286</span>
-            </div>
-        </div> 
-        <div class="footer_box">
-            <div class="footer_box_icon">
-                <img src="./img/svg/facebook.svg">
-                <br>
-                <img src="./img/svg/line.svg">
-                <br>
-                <img src="./img/svg/instagram.svg">
-            </div>
-       </div>
+        </div>
     </div>
 
 </body>

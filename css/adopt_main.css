@@ -112,3 +112,46 @@ ul.pagination li a.active {
 ul.pagination li a:hover:not(.active) {
     background-color: rgb(168, 161, 161); 
     }
+
+/* 養寵物需基本條件 */
+div.must_have_box{
+    margin:0 auto;
+    width:100%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    align-items: center;
+}
+div.must_have_box > div.must_have_condition{
+    border:1px solid #000000;
+    border-radius: 30px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    padding:10px;
+    margin:10px 0px;
+    text-align: start;
+    background-color: #EDECE9;
+    max-width:800px;
+}
+div.must_have_box > div.must_have_condition > h3{
+    display:inline-block;
+    /* border:1px solid blue; */
+    width:100%;
+    padding:30px 10px;
+    text-align: center;
+}
+div.must_have_box > div.must_have_condition > div{
+    padding:10px;
+}
+div.must_have_box > div.must_have_condition > div > ul{
+    padding:10px;
+    /* border:1px solid rgb(199, 193, 193); */
+}
+div.must_have_box > div.must_have_condition > div > ul >li{
+    padding:10px;
+    border-bottom:1px dotted #000000;
+    max-width:1000px;
+    white-space: wrap;
+    line-height:40px;
+}

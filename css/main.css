@@ -24,6 +24,22 @@ div.abandoned{
     text-align:center;
     padding:10px 0px;
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .abandoned > .abandoned_box > .abandoned_box_pic{
+        /* border:1px solid red; */
+        width:768px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .abandoned > .abandoned_box > .abandoned_box_pic{
+        width:576px;
+    }
+}
+@media screen and (max-width: 575px){
+    .abandoned > .abandoned_box > .abandoned_box_pic{
+        max-width:575px;
+    }
+}
 .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic{
     width:200px;
     /* border:1px solid red; */
@@ -42,6 +58,21 @@ div.abandoned{
     line-height: 20px;
     margin-top:80px;
  }
+ @media screen and (min-width: 768px) and (max-width: 992px){
+    .abandoned_description{
+        width:768px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .abandoned_description{
+        width:576px;
+    }
+}
+@media screen and (max-width: 575px){
+    .abandoned_description{
+        min-width:576px;
+    }
+}
 /* 領養區 */
 div.index_adopt_box{
     /* border:1px solid red;  */
@@ -55,6 +86,22 @@ div.index_adopt_box{
     /* background-color:#EDECE9;
     border-radius: 500px 300px 400px 500px;
     clip-path:circle(70% at 50% 50% ) ; */
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_adopt_box{
+        /* border:1px solid red; */
+        width:768px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_adopt_box{
+        width:576px;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_adopt_box{
+        max-width:576px;
+    }
 }
 div.index_adopt_box >h1{
     text-align: center;
@@ -80,12 +127,46 @@ div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a > img{
     width:220px;
     padding:5px;
 }
+/* @media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a > img{
+        border:1px solid red;
+        width:90px;
+        padding:0px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a > img{
+        width:576px;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a > img{
+        max-width:576px;
+    }
+} */
 div.index_adopt_box >div.index_adopt >div.index_adopt_pic:hover{
     transform:scale(1.1,1.1);
 }
 div.index_adopt_box >div.index_adopt_pic_box{
     /* border:1px solid red; */
     display:flex;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_adopt_box >div.index_adopt_pic_box{
+        /* border:1px solid red; */
+        width:600px;
+        padding:0px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_adopt_box >div.index_adopt_pic_box{
+        width:576px;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_adopt_box >div.index_adopt_pic_box{
+        max-width:576px;
+    }
 }
 div.index_adopt_box >div.index_adopt >div.index_adopt_pic > a {
     /* border:1px solid green; */
@@ -126,6 +207,24 @@ div.adopt_dont_abandon > div.adopt_dont_abandon_slogan > a > span > img.slogan{
     height:100%;
     min-width: 350px;
 } 
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.adopt_dont_abandon > div.adopt_dont_abandon_slogan > a > span > img.slogan{
+        width:600px;
+    }
+    
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.adopt_dont_abandon > div.adopt_dont_abandon_slogan > a > span > img.slogan{
+        min-width:500px;
+    }
+
+}
+@media screen and (max-width: 575px){
+    div.adopt_dont_abandon > div.adopt_dont_abandon_slogan > a > span > img.slogan{
+        min-width:500px;
+    }
+    
+}
 /*本館其他服務*/
 div.index_other_serves_box{
     /* border:1px solid red; */
@@ -136,6 +235,21 @@ div.index_other_serves_box{
     flex-direction: column;
     width:1200px;
     padding:100px 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_other_serves_box{
+        width:700px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_other_serves_box{
+        width:500px;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_other_serves_box{
+        min-width:500px;
+    }
 }
 div.index_other_serves_box >h1{
     text-align: center;
@@ -186,6 +300,21 @@ div.index_give_help_box{
     width:1200px;
     /* border:1px solid red; */
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_give_help_box{
+        width:700px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_give_help_box{
+        width:500px;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_give_help_box{
+        min-width:500px;
+    }
+}
 div.index_give_help_box > h1{
     text-align: center;
     font-size: 40px;
@@ -197,8 +326,23 @@ div.index_give_help_box > div.index_give_help{
     font-size: 40px;
     /* border:1px solid blue; */
     flex-direction: row;
-    width:1200px;
+    max-width:1200px;
 }    
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_give_help_box > div.index_give_help{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_give_help_box > div.index_give_help{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_give_help_box > div.index_give_help{
+        flex-direction: column;
+    }
+}
 div.index_give_help_box > div.index_give_help > div.index_give_help_main{
     /* border:1px solid green; */
     width:300px;
@@ -239,9 +383,26 @@ div.index_artical_box{
     /* padding:150px 40px; */
     margin-bottom: 120px;
     text-align: center;
-    width:1200px;
-    /* border:1px solid rgb(0, 255, 153); */
+    max-width:1200px;
 }
+/* @media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_artical_box{
+        max-width:700px;
+        border:1px solid red;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_artical_box{
+        min-width:576px;
+        max-width:767px;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_artical_box{
+        min-width:768px;
+        max-width:990px;
+    }
+} */
 div.index_artical_box > h1{
     /* text-align: center; */
     font-size: 40px;
@@ -252,28 +413,49 @@ div.index_artical_box > div.index_artical_main_contant{
     /* border:1px solid #000000; */
     width:1200px;
 }
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_artical_box > div.index_artical_main_contant{
+        max-width:700px;
+        /* border:1px solid red; */
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_artical_box > div.index_artical_main_contant{
+        max-width:700px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_artical_box > div.index_artical_main_contant{
+        max-width:700px;
+        flex-direction: column;
+    }
+}
 div.index_artical_box > div.index_artical_main_contant > div.index_artical{
     border:1px solid #000000;
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 400px;
+    max-width: 400px;
     height:720px;
     justify-content: center;
     padding:40px 5px;
     margin:12px;
     text-align: center;
 }
+
 div.index_artical_box  > div.index_artical_main_contant > div.index_artical > div.index_artical_contant > h2{
     padding:20px;
     font-weight: 700;    
     height:100px;
     text-align:left;
+    width:90%;
 }
 div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.index_artical_contant > div.index_artical_contant_pic >img{
     width:350px;
 }
-   
+
 div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.index_artical_contant  > div.index_artical_contant_descript >p{
     text-align: left;
     margin:10px 0px;
@@ -289,7 +471,8 @@ div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.
 div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.index_artical_contant > div.index_artical_contant_descript > div.index_artical_contant_descript_para{
     /* border:1px solid purple; */
     height: 270px;
-}
+    width:90%;
+}   
 div.index_artical_box > div.index_artical_main_contant > div.index_artical >div.index_artical_contant > div.index_artical_contant_descript >div.index_artical_contant_descript_more{
     /* border:1px solid red; */
     display:flex;
@@ -317,18 +500,50 @@ div.index_media_box{
     display:flex;                 
     flex-direction:column;
     flex-wrap:wrap ;
-    width:1200px;
+    max-width:1200px;
     margin:0 auto;
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_media_box{
+        max-width:700px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_media_box{
+        max-width:500px;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_media_box{
+        min-width:575px;
+    }
 }
 div.index_media_box > div.index_media_contant{
     /* border:1px solid blue; */
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
-    width:1200px;
+    max-width:1200px;
     justify-content:flex-start;
     /* text-align: left; */
 }    
+/* @media screen and (min-width: 768px) and (max-width: 992px){
+    div.index_media_box > div.index_media_contant{
+        display:inline-block;
+        max-width:768px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.index_media_box > div.index_media_contant{
+        max-width: ;
+    }
+}
+@media screen and (max-width: 575px){
+    div.index_media_box > div.index_media_contant{
+        
+    }
+    
+}   */
 div.index_media_box > div.index_media_contant > div.index_media{
     width:380px;             
     border:1px solid #000000;
@@ -344,3 +559,13 @@ div.index_media_box > div.index_media_contant > div.index_media >h4{
     text-align:left;
     padding-left:10px;
 }
+
+/* @media screen and (min-width: 768px) and (max-width: 992px){
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+}
+@media screen and (max-width: 575px){
+    
+} */

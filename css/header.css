@@ -34,9 +34,6 @@ nav{
         min-width:575px;
     }
 }
-nav > div > ul.header_bar{
-    display:flex;
-}
 #introduction , #adopt , #room , #merchandise , #user , #cart {
     width:30px;
     height:30px;
@@ -46,6 +43,7 @@ nav > div > ul.header_bar{
     content: "";
 }
 nav > div > ul.header_bar{
+    /* display:none; */
     display: flex;
     justify-content:left;
     list-style: none;
@@ -61,8 +59,11 @@ nav > div > ul.header_bar{
         right:0px;
         background-color:#EDECE9;
         display:none;
+        transform: translateX(-100%);
     }
-    
+    nav > div > ul.header_bar -on{
+        transform: translateX(0%);
+    }
 }
 @media screen and (min-width: 576px) and (max-width: 767px){
     nav > div > ul.header_bar{
