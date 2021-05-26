@@ -1,37 +1,4 @@
-/* div.about_me_box{
-    display:flex;   
-    position:relative;
-    justify-content: center;
-    top:200px;
-    bottom:-200px;
-   
-    width: 100%;
-}
-div.about_me_box > img{
-    width:100%;
-    max-width:1000px;
-   
-    height:2100px;
-    margin-top:-180px;
-}
 
-div.about_me_descript{
-    position:absolute;
-    width:100%;
-    max-width: 750px;
-    top:500px;
-}   
-div.about_me_descript > span{
-    display:inline-block;
-    font-size:28px;
-    padding:10px 0px;
-}
-div.adoption_notice >ol >li{
-    font-size:20px;
-} */
-
-
-/*新*/
 div.about_me{
     position:relative;
     top:150px;

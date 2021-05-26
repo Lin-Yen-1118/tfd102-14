@@ -1,57 +1,34 @@
-/* div.adopt_pics > img{
-    background-image:url("");
-    display:flex;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-
-} */
-div.adoption_contect > div.adoption_desciption{
-   text-align:center;
-   color:rgb(87, 92, 92);
+/* 前導 */
+div.adoption_desciption_box{
+   border:1px solid red;
+   text-align: center;
 }
-div.adoption_contect > div.adoption_desciption >h3{
-    margin-bottom:1em;
+div.adoption_desciption_box > div.adoption_desciption > img{
+    max-width:600px;
 }
-div.adoption_contect > div.adoption_desciption > p{
-    margin:0 0 10px;
+/* 領養步驟 */
+div.adoption_contect{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#D5E1DF;
 }
 div.adoption_contect > div.adoption_steps_box{
     display:flex;
     flex-wrap:wrap;
     text-align:start;
+    border:1px solid red;
+    max-width: 600px;
+    text-align: left;
+    line-height: 30px;
+    margin:30px 0px;
 }
-div.adoption_contect{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* 認養須知概述 */
+div.adoption_contect > div.adoption_notice{
+    border:1px solid yellow;
+    max-width:600px;
+    margin:20px 0px;
 }
-/* div.adoption_contect> div.adoption_steps_box > div.adoption_steps{
-    border:2px solid black;
-    border-style:dashed;
-    display:flex;
-    background-color:rgba(92, 89, 78, 0.2);
-    border-radius: 40px 90px 90px 40px;
-    width:200px;
-    height: 100px;
-    vertical-align: middle;
-    text-align:start;
-    align-items: center;
-    padding:10px 10px;
-    margin:20px 8px;
-} */
-div.adoption_steps_pic{
-    margin: 40px 0px;
-}
-
-/* 認養步驟圖 */
-div.adoption_contect > div.adoption_steps_pic{
-    width:100%;
-    max-width:500px;
-    text-align:center;
-}
-/* 認養須知 */
 div.adoption_contect > div.adoption_notice >h4{
     margin:10px 0px;
 }
@@ -78,41 +55,6 @@ div.adoption_contect> div.adoption_notice > ol.adoption_notice_box >li{
 div.adoption_contect > div.adoption_steps_box > div.adoption_steps >p{
     font-size:16px;
 }
-
-/* 照片分頁 */
-div.pagination_box {
-    display:flex;
-    margin:0 auto;
-}
-div.pagination_box > ul.pagination{
-    display:inline-block;
-    padding:0;
-    margin:0 auto;
-}
-ul.pagination li { 
-    display: inline; 
-}
-
-ul.pagination li a {
-    border:1px solid #726f6f;
-    border-radius: 5px;
-    color: rgb(50, 50, 51);
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 28px;
-    transition: background-color .3s;
-    margin:0 3px;
-}
-ul.pagination li a.active {
-    background-color: #c4c4c4;
-    color: #ffffff;
-    border-radius:5px;
-    }
-ul.pagination li a:hover:not(.active) {
-    background-color: rgb(168, 161, 161); 
-    }
-
 /* 養寵物需基本條件 */
 div.must_have_box{
     margin:0 auto;
@@ -121,37 +63,35 @@ div.must_have_box{
     flex-direction:column;
     text-align: center;
     align-items: center;
+    background-color:#c4c4c4;
+}
+div.must_have_box > div.must_have_condition:nth-child(n){
+    /* background-color:#BFC8D7; */
+    background-color:#F0E4D4;
+}
+div.must_have_box > div.must_have_condition:nth-child(2n){
+    /* background-color:#9FAC8F; */
+    /* background-color:#E3E2B4; */
+    background-color:#F2EEE5;
 }
 div.must_have_box > div.must_have_condition{
-    border:1px solid #000000;
-    border-radius: 30px;
     display:flex;
     flex-direction:column;
     justify-content: center;
     padding:10px;
     margin:10px 0px;
     text-align: start;
-    background-color: #EDECE9;
+    /* background-color: #EDECE9; */
     max-width:800px;
 }
-div.must_have_box > div.must_have_condition > h3{
+div.must_have_box > div.must_have_condition > div.condition_contain {
+    line-height: 40px;
+}
+div.must_have_box > div.must_have_condition > div.condition_contain > h3{
     display:inline-block;
     /* border:1px solid blue; */
     width:100%;
     padding:30px 10px;
     text-align: center;
 }
-div.must_have_box > div.must_have_condition > div{
-    padding:10px;
-}
-div.must_have_box > div.must_have_condition > div > ul{
-    padding:10px;
-    /* border:1px solid rgb(199, 193, 193); */
-}
-div.must_have_box > div.must_have_condition > div > ul >li{
-    padding:10px;
-    border-bottom:1px dotted #000000;
-    max-width:1000px;
-    white-space: wrap;
-    line-height:40px;
-}
+
