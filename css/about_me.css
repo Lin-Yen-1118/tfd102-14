@@ -1,86 +1,87 @@
 
-div.about_me{
-    position:relative;
-    top:150px;
-    /* border:1px solid red; */
+div.bg_grass{
+    border:1px solid red;
     width:100%;
+    display:flex;  
+    justify-content:center;
+    text-align: center;
 }
-div.about_me > div.about_me_box {
-    /* border:1px solid yellow; */
-    position:relative;
-    width:800px;
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.bg_bg_grass{
+       /* max-width: 300px; */
+       max-height: 200px;
+       width: 100%;
+       max-width:992px;
+       overflow: hidden;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.bg_bg_grass{
+        max-height: 100px;
+        width: 100%;
+        max-width:767px;
+        overflow: hidden;
+    }
+    
+}
+@media screen  and (max-width: 575px){
+    div.bg_bg_grass{
+        max-height: 100px;
+        width: 100%;
+        max-width:575px;
+        overflow: hidden;
+    }
+}
+div.about_me{
+    display:block;
+}
+div.about_me > div.about_me_box{
+   /* border:1px solid red; */
+   display:flex;
+   align-items: center;
+   margin:50px 20px;
+   padding:10px;
+   width:100%;
 }
 div.about_me > div.about_me_box > div.about_me_contain{
-    position:relative;
-    overflow: auto;
-    zoom: 1;
-    line-height: 30px;
+    display:flex;
+
 }
-div.about_me > div.about_me_box > div.about_me_contain >p{
-    padding:10px 0px;
-    margin-left:10px;
+div.about_me > div.about_me_box > div.about_me_contain >img{
+    border-radius: 50%;
+    width:300px;
 }
-div.about_me > div.about_me_box > div.about_me_contain > img{
-   float:left;
-   border-radius:50%;
-   width:250px;
+@media screen and (min-width: 768px) and (max-width: 992px){
+    div.about_me > div.about_me_box > div.about_me_contain >img{
+        width:100px;
+        height: 100px;
+    }
+
 }
-/* 給大家的話 */
-div.about_me > div.about_me_box_main{
-    position:relative;
-    width:800px;
+@media screen and (min-width: 576px) and (max-width: 767px){
+    div.about_me > div.about_me_box > div.about_me_contain >img{
+        width:100px;
+        height: 100px;
+    }
+
 }
-div.about_me > div.about_me_box_main > div.about_me_contain_to_reader{
-    position:relative;
-    overflow: auto;
-    zoom: 1;
-    /* border:1px solid red; */
-    margin-top:100px;
-    line-height: 30px;
+@media screen  and (max-width: 575px){
+    div.about_me > div.about_me_box > div.about_me_contain >img{
+        width:100px;
+        height: 100px;
+    }
 }
-div.about_me > div.about_me_box_main > div.about_me_contain_to_reader > img{
-    float:right;
-    border-radius:50%;
-    width:250px;
-}    
-div.about_me > div.about_me_box_main > div.about_me_contain_to_reader > p{
-    padding:10px 0px;
-}
-/* 有話要說 */
-div.about_me > div.about_me_how_to_do_box{
-    position:relative;
-    /* border:3px solid #000000; */
-    border-radius:10px;
-    width:800px;
-    margin-top:100px;
-}
-div.about_me > div.about_me_how_to_do_box > div.about_me_how_to_do_contant{
+.about_me_contain_text{
+    display: inline-block;
     padding:15px;
-    position:relative;
-    line-height: 30px;
-    /* border:2px solid #000000; */
+    line-height: 35px;
 }
-div.about_me > div.about_me_how_to_do_box > div.about_me_how_to_do_contant >img{
-    float:top;
-    border-radius:50%;
-    width:250px;
+div.about_me > div.about_me_box_main{
+    display:flex;
 }
-div.about_me > div.about_me_how_to_do_box > div.about_me_how_to_do_contant >p{
-    padding:10px 0px;
-    /* border:1px solid red; */
+div.bg_ev{
+    display:flex;  
+    justify-content:center;
+    text-align: center;
 }
-div.about_me > div.ours_descript_box{
-    position:relative;
-    width:800px;
-    margin-top:100px;
-    line-height: 30px;
-}
-div.about_me > div.ours_descript_box > div.ours_descript{
-    position:relative;
-}
-div.about_me > div.ours_descript_box > div.ours_descript >img{
-    float:top;
-    float:right;
-    border-radius:50%;
-    width:250px;
-}
+
