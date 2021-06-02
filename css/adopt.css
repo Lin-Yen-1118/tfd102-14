@@ -1,76 +1,171 @@
-div.select_bottom > ul.bottom{
-    display:flex;
-    text-align:center;
-    vertical-align: middle;
-    justify-content: center;
-    padding:150px 20px 60px 20px; 
-    max-width: 500px;
+/* div.bg {
+  width: 100%;
+  position: relative;
+} */
+div.breadcrumb {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin-top: 100px;
+  width: 300px;
 }
-div.select_bottom > ul.bottom > li > a > span > img{
-    width:100px;
+div.breadcrumb > a > p {
+  display: inline-block;
 }
-div.select_bottom > ul.bottom > li > a > span > img path{
-    fill:green;
+div.breadcrumb > a :after {
+  content: ">";
 }
-div.select_bottom > ul.bottom > li > a > span{
-    display:flex;
-    text-align: center;
-    flex-direction: row;
-    padding:20px;
+div.breadcrumb > a :after:last-child {
+  content: "111";
+  /* border: 1px solid blue; */
 }
-div.adopt{
-    display:flex;
-    text-align:center;
-    flex-direction: column;
-    padding:50px 10px 300px 10px;
-    width:100%;
+
+/* 前導文字 */
+div.lead_text {
+  text-align: center;
+  /* border: 1px solid yellow; */
+  margin-top: 30px;
 }
-.adopt_box_pic_box{
-    display:flex;
-    text-align: center;
-    vertical-align: middle;
-    justify-content: center;
+
+div.user_login {
+  position: absolute;
+  top: 150px;
+  left: 25%;
 }
-.adopt_box{
-    display:flex;
-    text-align: center;
-    vertical-align: middle;
-    justify-content: center;
-    flex-direction: row;
-    padding:10px;
+
+div.adopt {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  text-align: center;
 }
-div.adopt > div.adopt_box_pic_box > div.adopt_box > a > img{
-    width:100%;
+/* div.adopt > div.adoptBox {
+  border: 1px solid rgb(91, 16, 221);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+} */
+div.adopt > div.adoptBox {
+  display: grid;
+  /* grid-template-columns: auto, auto, auto; */
+  /* grid-template-columns: 300px 300px 300px; */
+  grid-template-columns: 35% auto 35%;
+  grid-template-rows: 500px 500px 500px 500px;
+  grid-auto-flow: row;
+  gap: 20px 15px;
+  /* border: 1px solid blue; */
+  margin-bottom: 50px;
 }
+div.adopt > div.adoptBox > div.adoptBoxContent > a > img.grid_item_dog {
+  /* border: 1px solid yellow; */
+}
+/* 照片與描述文字的外邊框 */
+div.adopt > div.adoptBox > div.adoptBoxContent {
+  border: 1px solid #000000;
+  position: relative;
+  /* padding: 5px; */
+}
+/* 照片留空間，不貼邊 */
+div.adopt > div.adoptBox > div.adoptBoxContent > a > img {
+  margin: 10px;
+}
+div.adopt > div.adoptBox > div.adoptBoxContent > div.picContent {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+}
+/* 待認養動物描述文字區塊 */
+div.adopt > div.adoptBox > div.adoptBoxContent > div.picContent > div {
+  text-align: start;
+  padding: 5px;
+  max-width: 90%;
+  max-height: 500px;
+  /* border: 1px solid yellow; */
+  line-height: 30px;
+  /* position: relative; */
+}
+/* 我要預約按鈕樣式設定 */
+div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn {
+  /* border: 1px solid blue; */
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+}
+div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn > input {
+  background-color: #a63316;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 200px;
+  height: 40px;
+}
+div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn > input:hover {
+  background-color: #4b1001;
+  color: #ffffff;
+}
+/* div.adopt > div.adoptBox > div.adoptBoxContent > p {
+  border: 1px solid red;
+  display: none;
+  overflow: hidden;
+}
+div.adopt > div.adoptBox > div.adoptBoxContent > a > img:checked ~ p {
+  display: block;
+  overflow: visible;
+} */
 /* 照片分頁 */
 div.pagination_box {
-    display:flex;
-    margin:0 auto;
+  display: flex;
+  margin: 0 auto;
 }
-div.pagination_box > ul.pagination{
-    display:inline-block;
-    padding:0;
-    margin:0 auto;
+div.pagination_box > ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0 auto;
 }
-ul.pagination li { 
-    display: inline; 
+ul.pagination li {
+  display: inline;
 }
 ul.pagination li a {
-    border:1px solid #726f6f;
-    border-radius: 5px;
-    color: rgb(50, 50, 51);
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-size: 28px;
-    transition: background-color .3s;
-    margin:0 3px;
+  border: 1px solid #726f6f;
+  border-radius: 5px;
+  color: rgb(50, 50, 51);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 28px;
+  transition: background-color 0.3s;
+  margin: 0 3px;
 }
 ul.pagination li a.active {
-    background-color: #c4c4c4;
-    color: #ffffff;
-    border-radius:5px;
+  background-color: #c4c4c4;
+  color: #ffffff;
+  border-radius: 5px;
 }
 ul.pagination li a:hover:not(.active) {
-    background-color: rgb(168, 161, 161); 
+  background-color: rgb(168, 161, 161);
+}
+*/
+
+/* 加入選擇器 */
+#page1:target,
+#page2:target {
+  border: solid 1px red;
+}
+
+/* /頁籤變換/ */
+#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
+#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
+#tab-4:target ~ #tab > ul li a[href$="#tab-4"] {
+  border: solid 1px red;
+}
+/* /頁籤內容顯示/ */
+#page1:target ~ #tab > div.adopt_box_pic_box,
+#page2:target ~ #tab > div.adopt_box_pic_box {
+  border: solid 1px red;
 }

@@ -1,342 +1,347 @@
 /*導覽列*/
-nav{
-    display:flex;
-    justify-content: space-between;
-    vertical-align: middle;
-    text-align: center; 
-    align-items: center;
-    background-color:#EDECE9;
-    width:100%;
-    position:fixed; 
-    top:0;
-    z-index: 1;
+nav {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+  background-color: #edece9;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  max-height: 60px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-    nav{
-        position:relative;
-        height:100px;
-        max-width:992px;
-        min-width:768px;
-    }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  nav {
+    position: relative;
+    height: 100px;
+    max-width: 992px;
+    min-width: 768px;
+  }
 }
-@media screen and (min-width: 576px) and (max-width: 767px){
-    nav{
-        position:relative;
-        height:100px;
-        max-width:767px;
-        min-width:576px;
-    }
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  nav {
+    position: relative;
+    height: 100px;
+    max-width: 767px;
+    min-width: 576px;
+  }
 }
-@media screen and (max-width: 575px){
-    nav{
-        position:relative;
-        height:100px;
-        min-width:575px;
-    }
+@media screen and (max-width: 575px) {
+  nav {
+    position: relative;
+    height: 100px;
+    min-width: 575px;
+  }
 }
-#introduction , #adopt , #room , #merchandise , #user , #cart {
-    width:30px;
-    height:30px;
-    margin:5px;
+#introduction,
+#adopt,
+#room,
+#merchandise,
+#user,
+#cart {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
 }
-#user , #cart::before{
-    content: "";
+#user,
+#cart::before {
+  content: "";
 }
-nav > div > ul.header_bar{
-    /* display:none; */
-    display: flex;
-    justify-content:left;
-    list-style: none;
-    margin:0px;
-    font-size: 0px;
+nav > div > ul.header_bar {
+  /* display:none; */
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  margin: 0px;
+  font-size: 0px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-    nav > div > ul.header_bar{
-        flex-direction: column;
-        /* border:1px solid red; */
-        position:absolute;
-        top: 100px;
-        right:0px;
-        background-color:#EDECE9;
-        display:none;
-        transform: translateX(-100%);
-    }
-    nav > div > ul.header_bar -on{
-        transform: translateX(0%);
-    }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  nav > div > ul.header_bar {
+    flex-direction: column;
+    /* border:1px solid red; */
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    background-color: #edece9;
+    display: none;
+    transform: translateX(-100%);
+  }
+  nav > div > ul.header_bar -on {
+    transform: translateX(0%);
+  }
 }
-@media screen and (min-width: 576px) and (max-width: 767px){
-    nav > div > ul.header_bar{
-        flex-direction: column;
-        /* border:1px solid red; */
-        position:absolute;
-        top: 100px;
-        right:0px;
-        background-color:#EDECE9;
-    }
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  nav > div > ul.header_bar {
+    flex-direction: column;
+    /* border:1px solid red; */
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    background-color: #edece9;
+  }
 }
-@media screen and (max-width: 575px){
-    nav > div > ul.header_bar{
-        flex-direction: column;
-        /* border:1px solid red; */
-        position:absolute;
-        top: 100px;
-        right:0px;
-        background-color:#EDECE9;
-    }
+@media screen and (max-width: 575px) {
+  nav > div > ul.header_bar {
+    flex-direction: column;
+    /* border:1px solid red; */
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    background-color: #edece9;
+  }
 }
-nav > div > ul.header_bar > li{
-    display:flex;
-    align-items: center;
-    padding-right: 15px;
-    font-size:24px; 
-    vertical-align: middle;
-    text-align:center ;
+nav > div > ul.header_bar > li {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 24px;
+  vertical-align: middle;
+  text-align: center;
 }
-nav > div > ul.header_bar >li >a{
-    display:flex;
-    color:#000000;
-    display: inline-block;
-    vertical-align: middle;
-    text-align:center ;
+nav > div > ul.header_bar > li > a {
+  display: flex;
+  color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
-nav > div > ul.header_bar >li >a > span{
-    display:inline-block;
-    vertical-align:middle;
+nav > div > ul.header_bar > li > a > span {
+  display: inline-block;
+  vertical-align: middle;
 }
-nav > div > ul.header_bar >li >a:hover > span{
-    color:rgb(196, 191, 191);
-    /* font-size: larger; */
+nav > div > ul.header_bar > li > a:hover > span {
+  color: rgb(196, 191, 191);
+  /* font-size: larger; */
 }
-nav > div > ul.header_bar >li >a:hover > span >img{
-    transform:rotate(360deg);
-    transition-duration: 1s;
+nav > div > ul.header_bar > li > a:hover > span > img {
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
-nav > div >  ul.user_cart > li >a:hover > img#user{
-    animation-name: user_icon;
-    animation-duration: 3s;
-    animation-direction: reverse; 
+nav > div > ul.user_cart > li > a:hover > img#user {
+  animation-name: user_icon;
+  animation-duration: 3s;
+  animation-direction: reverse;
 }
 @keyframes user_icon {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(360deg);
-    }
-    100%{
-      transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-  nav > div >  ul.user_cart > li >a:hover > img#cart{
-    animation-name: cart_icon;
-    animation-duration: 3s;
-    animation-iteration-count: 3;
-    animation-direction: alternate-reverse;
-}  
+nav > div > ul.user_cart > li > a:hover > img#cart {
+  animation-name: cart_icon;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-direction: alternate-reverse;
+}
 @keyframes cart_icon {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(180deg);
-    }
-    100%{
-      transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* 以下為:我要領養-下拉選單 */
-li.adopt_menu{
-    /* border:1px solid red; */
-    position:relative;
+li.adopt_menu {
+  /* border:1px solid red; */
+  position: relative;
 }
-ul.adopt_menu_select_menu{
-    /* border:1px solid red; */
-    position:absolute;
-    width:10px;
-    height:100%;
-    top:100%;
-    display:none;
-    flex-direction: column;
+ul.adopt_menu_select_menu {
+  /* border:1px solid red; */
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  top: 100%;
+  display: none;
+  flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-    ul.adopt_menu_select_menu{
-        left:-150px;
-        top:10px;
-    }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  ul.adopt_menu_select_menu {
+    left: -150px;
+    top: 10px;
+  }
 }
-@media screen and (min-width: 576px) and (max-width: 767px){
-    ul.adopt_menu_select_menu{
-        left:-150px;
-        top:10px;
-    }
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  ul.adopt_menu_select_menu {
+    left: -150px;
+    top: 10px;
+  }
 }
-@media screen and (max-width: 575px){
-    ul.adopt_menu_select_menu{
-        left:-150px;
-        top:10px;
-    }
+@media screen and (max-width: 575px) {
+  ul.adopt_menu_select_menu {
+    left: -150px;
+    top: 10px;
+  }
 }
-li.adopt_menu:hover >.adopt_menu_select_menu{
-    display:block;
+li.adopt_menu:hover > .adopt_menu_select_menu {
+  display: block;
 }
-li.adopt_menu_select{
-    display: block;
-    /* border:1px solid blue; */
-    position:relative;
-    width:100%;
-    height:50px;
+li.adopt_menu_select {
+  display: block;
+  /* border:1px solid blue; */
+  position: relative;
+  width: 100%;
+  height: 50px;
 }
-li.adopt_menu_select > a{
-    display: block;
-    position:absolute;
-    width:100%;
-    height:100%;
-    /* border:1px solid green; */
+li.adopt_menu_select > a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* border:1px solid green; */
 }
-li.adopt_menu_select > a > span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border:1px solid yellow; */
-    color:#000000;   
-    font-size: 20px;
-    text-align: center;
-    background-color:#EDECE9;
-    height:50px;
-    width:100px;
+li.adopt_menu_select > a > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border:1px solid yellow; */
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  background-color: #edece9;
+  height: 50px;
+  width: 100px;
 }
-li.adopt_menu_select > a:focus >span{
-    background-color:#a0a099;
-    color:#EDECE9;
-    /* border:1px solid red; */
+li.adopt_menu_select > a:focus > span {
+  background-color: #a0a099;
+  color: #edece9;
+  /* border:1px solid red; */
 }
-li.adopt_menu_select > a:hover >span{
-    background-color:#8d8d88;
-    color:#EDECE9;
+li.adopt_menu_select > a:hover > span {
+  background-color: #8d8d88;
+  color: #edece9;
 }
 
 /* 以下為:住宿-下拉選單 booking_rooms_menu */
-li.booking_rooms_menu{
-    /* border:1px solid red; */
-    position:relative;
+li.booking_rooms_menu {
+  /* border:1px solid red; */
+  position: relative;
 }
-ul.booking_rooms_menu_select_menu{
-    /* border:1px solid green; */
-    position:absolute;
-    width:10px;
-    height:100px;
-    top:100%;
-    display:none;
-    flex-direction: column;
+ul.booking_rooms_menu_select_menu {
+  /* border:1px solid green; */
+  position: absolute;
+  width: 10px;
+  height: 100px;
+  top: 100%;
+  display: none;
+  flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-    ul.booking_rooms_menu_select_menu{
-        left:-150px;
-        top:10px;
-    }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  ul.booking_rooms_menu_select_menu {
+    left: -150px;
+    top: 10px;
+  }
 }
-@media screen and (min-width: 576px) and (max-width: 767px){
-    ul.booking_rooms_menu_select_menu{
-        left:-150px;
-        top:10px;
-    }
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  ul.booking_rooms_menu_select_menu {
+    left: -150px;
+    top: 10px;
+  }
 }
-@media screen and (max-width: 575px){
-    ul.booking_rooms_menu_select_menu{
-        left:-150px;
-        top:10px;
-    }
+@media screen and (max-width: 575px) {
+  ul.booking_rooms_menu_select_menu {
+    left: -150px;
+    top: 10px;
+  }
 }
-li.booking_rooms_menu:hover >.booking_rooms_menu_select_menu{
-    display:block;
+li.booking_rooms_menu:hover > .booking_rooms_menu_select_menu {
+  display: block;
 }
-li.booking_rooms_select{
-    display: block;
-    /* border:1px solid blue; */
-    position:relative;
-    width:100%;
-    height:50px;
+li.booking_rooms_select {
+  display: block;
+  /* border:1px solid blue; */
+  position: relative;
+  width: 100%;
+  height: 50px;
 }
-li.booking_rooms_select > a{
-    display: block;
-    position:absolute;
-    width:100%;
-    height:100%;
-    /* border:1px solid green; */
+li.booking_rooms_select > a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* border:1px solid green; */
 }
-li.booking_rooms_select > a > span{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100px;
-    /* border:1px solid yellow; */
-    color:#000000;   
-    font-size: 20px;
-    text-align: center;
-    background-color:#EDECE9;
-    height:50px;
+li.booking_rooms_select > a > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  /* border:1px solid yellow; */
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  background-color: #edece9;
+  height: 50px;
 }
-li.booking_rooms_select > a:focus >span{
-    background-color:#a0a099;
-    color:#EDECE9;
-    /* border:1px solid red; */
+li.booking_rooms_select > a:focus > span {
+  background-color: #a0a099;
+  color: #edece9;
+  /* border:1px solid red; */
 }
-li.booking_rooms_select > a:hover >span{
-    background-color:#8d8d88;
-    color:#EDECE9;
+li.booking_rooms_select > a:hover > span {
+  background-color: #8d8d88;
+  color: #edece9;
 }
-nav > div > ul.user_cart{
-    display:flex;
-    flex-direction: row;
+nav > div > ul.user_cart {
+  display: flex;
+  flex-direction: row;
 }
-nav > div > ul.user_cart >li{
-    margin:0px 5px;
+nav > div > ul.user_cart > li {
+  margin: 0px 5px;
 }
 
 /* RWD */
-nav >div.burger_menu>img{
+nav > div.burger_menu > img {
+  content: "";
+  width: 40px;
+  height: 40px;
+  /* border:1px solid red; */
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  nav > div.burger_menu > img {
     content: "";
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
     /* border:1px solid red; */
-    display:none;
-}
-@media screen and (min-width: 768px) and (max-width: 992px){
-    nav >div.burger_menu>img{
-        content: "";
-        width:40px;
-        height:40px;
-        /* border:1px solid red; */
-        display:flex;
-    }
-    /* nav > div >ul.header{
+    display: flex;
+  }
+  /* nav > div >ul.header{
         display:none;
     } */
 }
-@media screen and (min-width: 576px) and (max-width: 767px){
-    nav >div.burger_menu>img{
-        content: "";
-        width:40px;
-        height:40px;
-        display:flex;
-    }
-    /* nav > div >ul.header{
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  nav > div.burger_menu > img {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: flex;
+  }
+  /* nav > div >ul.header{
         display:none;
     } */
 }
 
-@media screen  and (max-width: 575px){
-    nav >div.burger_menu>img{
-        content: "";
-        width:40px;
-        height:40px;
-        display:flex;
-    }
-    /* nav > div >ul.header{
+@media screen and (max-width: 575px) {
+  nav > div.burger_menu > img {
+    content: "";
+    width: 40px;
+    height: 40px;
+    display: flex;
+  }
+  /* nav > div >ul.header{
         display:none;
     } */
 }
-
-
