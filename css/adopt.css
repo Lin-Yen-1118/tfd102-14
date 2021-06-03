@@ -23,7 +23,7 @@ div.breadcrumb > a :after:last-child {
 div.lead_text {
   text-align: center;
   /* border: 1px solid yellow; */
-  margin-top: 30px;
+  margin: 30px 0px 56px 0px;
 }
 
 div.user_login {
@@ -37,7 +37,7 @@ div.adopt {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
   text-align: center;
 }
 /* div.adopt > div.adoptBox {
@@ -149,29 +149,36 @@ ul.pagination li a.active {
 ul.pagination li a:hover:not(.active) {
   background-color: rgb(168, 161, 161);
 }
-*/
 
-/* 加入選擇器 */
-/* #page1:target,
-#page2:target {
-  border: solid 1px red;
-} */
-
-/* /頁籤變換/ */
-/* #tab-1:target ~ #tab > ul li a[href$="#tab-1"],
-#tab-2:target ~ #tab > ul li a[href$="#tab-2"],
-#tab-3:target ~ #tab > ul li a[href$="#tab-3"],
-#tab-4:target ~ #tab > ul li a[href$="#tab-4"] {
-  border: solid 1px red;
-} */
-/* /頁籤內容顯示/ */
-/* #page1:target ~ #tab > div.adopt_box_pic_box,
-#page2:target ~ #tab > div.adopt_box_pic_box {
-  border: solid 1px red;
-} */
 /* 加入分頁選擇器 */
 #adoptDogPage1:target,
 #adoptDogPage2:target,
-#adoptDogPage3:target, {
+#adoptDogPage3:target {
+  border: solid 1px red;
+}
+#adoptCatPage1:target,
+#adoptCatPage2:target,
+#adoptCatPage3:target {
+  border: solid 1px red;
+}
+#adoptRabbitPage1:target,
+#adoptRabbitPage2:target,
+#adoptRabbitPage3:target {
+  border: solid 1px red;
+}
+#adoptGuineapigPage1:target,
+#adoptGuineapigPage2:target,
+#adoptGuineapigPage3:target {
+  border: solid 1px red;
+}
+#adoptHamsterPage1:target,
+#adoptHamsterPage2:target,
+#adoptHamsterPage3:target {
+  border: solid 1px red;
+}
+
+/* 認養鼠鼠內在區分兩種分頁:天竺鼠、倉鼠 */
+#adoptRodentPage1:target,
+#adoptRodentPage2:target {
   border: solid 1px red;
 }
