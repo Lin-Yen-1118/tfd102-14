@@ -117,7 +117,7 @@ div.adopt > div.adoptBox > div.adoptBoxContent > a > img:checked ~ p {
   display: block;
   overflow: visible;
 } */
-/* 照片分頁 */
+/* 分頁 */
 div.pagination_box {
   display: flex;
   margin: 0 auto;
@@ -132,7 +132,7 @@ ul.pagination li {
 }
 ul.pagination li a {
   border: 1px solid #726f6f;
-  border-radius: 5px;
+  border-radius: 10px;
   color: rgb(50, 50, 51);
   float: left;
   padding: 8px 16px;
@@ -152,20 +152,26 @@ ul.pagination li a:hover:not(.active) {
 */
 
 /* 加入選擇器 */
-#page1:target,
+/* #page1:target,
 #page2:target {
   border: solid 1px red;
-}
+} */
 
 /* /頁籤變換/ */
-#tab-1:target ~ #tab > ul li a[href$="#tab-1"],
+/* #tab-1:target ~ #tab > ul li a[href$="#tab-1"],
 #tab-2:target ~ #tab > ul li a[href$="#tab-2"],
 #tab-3:target ~ #tab > ul li a[href$="#tab-3"],
 #tab-4:target ~ #tab > ul li a[href$="#tab-4"] {
   border: solid 1px red;
-}
+} */
 /* /頁籤內容顯示/ */
-#page1:target ~ #tab > div.adopt_box_pic_box,
+/* #page1:target ~ #tab > div.adopt_box_pic_box,
 #page2:target ~ #tab > div.adopt_box_pic_box {
+  border: solid 1px red;
+} */
+/* 加入分頁選擇器 */
+#adoptDogPage1:target,
+#adoptDogPage2:target,
+#adoptDogPage3:target, {
   border: solid 1px red;
 }
