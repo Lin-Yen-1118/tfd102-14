@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <title>認養貓貓</title>
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/about_me.css" rel="stylesheet" />
+    <link href="./css/adopt.css" rel="stylesheet" />
+    <link href="./css/adopt_main.css" rel="stylesheet" />
+    <link href="./css/bookingroom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./index.html" target="_blank"
+            ><img id="logo" src="./img/svg/logo.svg"
+          /></a>
+        </div>
+        <div>
+          <ul class="header_bar">
+            <!-- 關於我 -->
+            <li>
+              <a href="./about_me.html" class="link_style">
+                <span>
+                  <img id="introduction" src="./img/svg/dog01.svg" />
+                </span>
+                <span>民宿介紹</span>
+              </a>
+            </li>
+            <!-- 我要認養 -->
+            <li class="adopt_menu">
+              <a>
+                <span>
+                  <img id="introduction" src="./img/svg/cat01.svg" />
+                </span>
+                <span>我要認養</span>
+              </a>
+              <!-- 我要認養的下拉選單 -->
+              <ul class="adopt_menu_select_menu">
+                <li class="adopt_menu_select">
+                  <a href="./adopt_main.html" class="link_style">
+                    <span>認養須知</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt_dog.html" class="link_style">
+                    <span>認養狗狗</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt_cat.html" class="link_style">
+                    <span>認養貓貓</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt_rabbit.html" class="link_style">
+                    <span>認養兔兔</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt_rodent.html" class="link_style">
+                    <span>認養鼠鼠</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt_rodent.html" class="link_style">
+                    <span>醫療團隊</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- 住宿相關     -->
+            <li class="booking_rooms_menu">
+              <a>
+                <span>
+                  <img id="room" src="./img/svg/rabbit01.svg" />
+                </span>
+                <span>住宿相關</span>
+              </a>
+              <!-- 住宿的下拉選單 -->
+              <ul class="booking_rooms_menu_select_menu">
+                <li class="booking_rooms_select">
+                  <a href="./bookingroom_peopleroom.html" class="link_style">
+                    <span>一般住宿</span>
+                  </a>
+                </li>
+                <li class="booking_rooms_select">
+                  <a href="./bookingroom_peopleroom.html" class="link_style">
+                    <span>毛孩寄宿</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- 周邊商品 -->
+            <li>
+              <a href="#" class="link_style">
+                <span>
+                  <img id="merchandise" src="./img/svg/mouse01.svg" />
+                </span>
+                <span>周邊商品</span>
+              </a>
+            </li>
+            <!-- 會員 -->
+            <!-- <li >
+                        <a href="./user.html" class="link_style">
+                            <img id="user" src=./img/svg/user-circle-solid.svg>
+                        </a>
+                    </li> -->
+            <!-- 我的訂單 -->
+            <!-- <li>
+                        <a href="#" class="link_style">
+                            <img id="cart" src="./img/svg/shopping-cart.svg">
+                        </a>
+                    </li> -->
+          </ul>
+        </div>
+        <div>
+          <ul class="user_cart">
+            <!-- 會員 -->
+            <li>
+              <a href="./user.html" class="link_style">
+                <img id="user" src=./img/svg/user-circle-solid.svg>
+              </a>
+            </li>
+            <!-- 我的訂單 -->
+            <li>
+              <a href="#" class="link_style">
+                <img id="cart" src="./img/svg/shopping-cart.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--RWD按鈕--->
+        <div class="burger_menu">
+          <img id="burger_icon" src="./img/svg/bars.svg" />
+        </div>
+      </nav>
+    </header>
+    <!-- 麵包屑 -->
+    <div class="breadcrumb">
+      <a href="#"><p>我要認養</p></a><a href="#"><p>認養貓貓</p></a>
+    </div>
+    <!-- 前導文字 -->
+    <div class="lead_text"><h3>這裡有許多浪浪在等家，趕快來預約互動吧</h3></div>
+    <div class="adopt" id="page1">
+      <div class="adoptBox">
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/001.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat01">編號:喵零壹</p>
+              <p class="date">進所日期:2019年7月1日</p>
+              <p class="animalSex">性別:公</p>
+              <p class="animalYears">年齡:約2歲</p>
+              <p class="animalLigation">節育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:吃貨一枚，愛玩</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input
+              type="button"
+              value="我要預約"
+              onclick="window.open('adoptForm.html')"
+            />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/002.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat02">編號:喵零貳</p>
+              <p class="date">進所日期:2019年8月2日</p>
+              <p class="animalSex">性別:母</p>
+              <p class="animalYears">年齡:約2歲</p>
+              <p class="animalLigation">節育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:活潑、喜歡玩逗貓棒</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/003.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat03">編號:喵零參</p>
+              <p class="date">進所日期:2019年8月13日</p>
+              <p class="animalSex">性別:母</p>
+              <p class="animalYears">年齡:約2歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:局部皮膚發炎</p>
+              <p class="animalHobby">描述:喜歡咬任何會動的東西</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/004.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat04">編號:喵零肆</p>
+              <p class="date">進所日期:2019年9月11日</p>
+              <p class="animalSex">性別:母</p>
+              <p class="animalYears">年齡:約3歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:很貪吃，黏人</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/005.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat05">編號:喵零伍</p>
+              <p class="date">進所日期:2020年1月6日</p>
+              <p class="animalSex">性別:母</p>
+              <p class="animalYears">年齡:約2歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:較膽小，愛吃肉泥</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/006.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat06">編號:喵零陸</p>
+              <p class="date">進所日期:2020年2月18日</p>
+              <p class="animalSex">性別:公</p>
+              <p class="animalYears">年齡:約2歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:傲嬌，貓心難測...</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/007.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat07">編號:貓零柒</p>
+              <p class="date">進所日期:2020年3月20日</p>
+              <p class="animalSex">性別:母</p>
+              <p class="animalYears">年齡:約2歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:愛撒嬌蹭蹭，愛講話</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/008.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat08">編號:貓零巴</p>
+              <p class="date">進所日期:2020年6月18日</p>
+              <p class="animalSex">性別:公</p>
+              <p class="animalYears">年齡:約3歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:優雅高貴</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/009.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat09">編號:喵零玖</p>
+              <p class="date">進所日期:2020年7月7日</p>
+              <p class="animalSex">性別:公</p>
+              <p class="animalYears">年齡:約3歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:活潑愛叫，好奇心旺盛</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/010.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat10">編號:喵伊零</p>
+              <p class="date">進所日期:2021年2月14日</p>
+              <p class="animalSex">性別:母</p>
+              <p class="animalYears">年齡:未滿1歲</p>
+              <p class="animalLigation">結育狀態:尚未節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">
+                描述:喜歡曬太陽、抓蟲，<br />會給你很多驚喜(驚嚇)
+              </p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/011.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat11">編號:喵伊伊</p>
+              <p class="date">進所日期:2021年2月18日</p>
+              <p class="animalSex">性別:母</p>
+              <p class="animalYears">年齡:約1歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:調皮搗蛋，很挑食、愛講話、跟屁蟲</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+        <div class="adoptBoxContent">
+          <a href="#" title="adopt">
+            <img
+              class="adopt_pic grid_item_animal"
+              src="./img-adjust_size/cat/012.jpg"
+              alt="待認養動物圖片"
+              title="貓貓"
+            />
+          </a>
+          <div class="picContent">
+            <div>
+              <p id="cat12">編號:喵伊二</p>
+              <p class="date">進所日期:2021年3月10日</p>
+              <p class="animalSex">性別:公</p>
+              <p class="animalYears">年齡:約2歲</p>
+              <p class="animalLigation">結育狀態:已節育</p>
+              <p class="animalHealth">健康狀況:健康</p>
+              <p class="animalHobby">描述:沉穩內斂，安靜又親人</p>
+            </div>
+          </div>
+          <!--我要預約按鈕-->
+          <div class="adoptBtn">
+            <input type="button" value="我要預約" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 照片分頁 -->
+    <div class="pagination_box">
+      <ul class="pagination">
+        <li><a href="#">«</a></li>
+        <li><a class="active" href="#page1">1</a></li>
+        <li><a href="#page2">2</a></li>
+        <li><a href="#page3">3</a></li>
+        <li><a href="#">»</a></li>
+      </ul>
+    </div>
+
+    <!-- 頁尾 -->
+    <div class="footer">
+      <div class="footer_box">
+        <div class="footer_box_content">
+          <div class="footer_info_box footer_box_logo">
+            <a href="./index.html" target="_self">
+              <img id="logo" src=./img/svg/logo.svg>
+            </a>
+          </div>
+
+          <div class="footer_info_box footer_info">
+            <div>盼窩|地址:台北市中山區盼窩里盼窩路520號</div>
+            <br />
+            <div>電話:02-XXXXXXX</div>
+            <br />
+            <div>營業時間:周一至周六 08:00~21:00</div>
+            <br />
+            <div class="footer_icon">
+              <div class="footer_box_content_box_img">
+                <a href="./index.html" target="_self">
+                  <img src="./img/svg/facebook.svg" />
+                </a>
+              </div>
+              <div class="footer_box_content_box_img">
+                <a href="./index.html" target="_self">
+                  <img src="./img/svg/line.svg" />
+                </a>
+              </div>
+              <div class="footer_box_content_box_img">
+                <a href="./index.html" target="_self">
+                  <img src="./img/svg/instagram.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_info_box footer_statement">
+            <p>
+              本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
+              參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，
+              後續會由專人協助處理，連結:https://www.facebook.com/webindex/
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

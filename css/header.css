@@ -115,6 +115,11 @@ nav > div > ul.header_bar > li > a:hover > span {
   color: rgb(196, 191, 191);
   /* font-size: larger; */
 }
+nav > div > ul.header_bar > li > a:selected > span {
+  color: rgb(164, 54, 54);
+  background-color: #8d8d88;
+}
+
 nav > div > ul.header_bar > li > a:hover > span > img {
   transform: rotate(360deg);
   transition-duration: 1s;

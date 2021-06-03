@@ -41,3 +41,9 @@ li {
 a {
   text-decoration: none;
 }
+a:visited {
+  color: #ff0000;
+}
+a:active {
+  color: #0000ff;
+}
