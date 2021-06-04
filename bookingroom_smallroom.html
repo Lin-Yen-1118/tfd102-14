@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <title>住宿相關</title>
+    <title>住宿相關-溫馨小房</title>
     <link href="./css/normalize.css" rel="stylesheet" />
     <link href="./css/common.css" rel="stylesheet" />
     <link href="./css/header.css" rel="stylesheet" />
@@ -147,10 +147,12 @@
     </header>
 
     <!-- 房型分頁 -->
-    <!-- <div class="pagination_box">
+    <div class="pagination_box">
       <ul class="pagination">
         <li>
-          <a id="SmallRoom" href="bookingroom_smallroom.html">溫馨小房</a>
+          <a class="active" id="SmallRoom" href="bookingroom_smallroom.html"
+            >溫馨小房</a
+          >
         </li>
         <li>
           <a id="LargeRoom" href="bookingroom_largeroom.html">寬敞大房</a>
@@ -159,124 +161,143 @@
           <a a id="LuxuryRoom" href="bookingroom_luxuryroom.html">豪華家庭房</a>
         </li>
       </ul>
-    </div> -->
+    </div>
+    <!-- 小型房型詳細資訊 -->
+    <div class="booking_cards">
+      <div class="booking_info">
+        <!-- 房型照片區塊 -->
+        <div class="booking_info_pic">
+          <!-- 一張大張房型照片 -->
+          <div class="room_pic_itemsBox main_room_pic">
+            <img class="rooms_pic" src=./img-adjust_size/room/L_room03.jpg>
+          </div>
+          <!-- 三張房型照片 -->
+          <div class="room_pic_itemsBox">
+            <div>
+              <img class="rooms_pic_items"
+              src=./img-adjust_size/room/bathroom03.jpg>
+            </div>
+            <div>
+              <img class="rooms_pic_items"
+              src=./img-adjust_size/room/room14.jpg>
+            </div>
+            <div>
+              <img class="rooms_pic_items"
+              src=./img-adjust_size/room/room18.jpg>
+            </div>
+          </div>
+        </div>
+        <!-- 房型資料介紹區塊 -->
+        <div class="booking_info_description">
+          <div class="rooms_main_details">
+            <h3>房型名稱:</h3>
+            <p>溫馨小房(建議入住人數:2~3人)</p>
+          </div>
+          <div class="rooms_main_details">
+            <h3>房間設施:</h3>
+          </div>
+          <div class="rooms_main_details rooms_details">
+            <span>30坪</span>
+            <span>冷氣</span>
+            <span>暖氣</span>
+            <span>獨立衛浴</span>
+            <span>雙人床(可加床)</span>
+            <span>除濕機</span>
+            <span>吹風機</span>
+            <span>免費WiFi</span>
+          </div>
+          <div class="rooms_main_details">
+            <h4>住宿請自備:</h4>
+          </div>
+          <div class="rooms_main_details">
+            <span>盥洗用品</span>
+          </div>
+          <div class="rooms_main_details">
+            <h3>公共設施:</h3>
+          </div>
+          <div class="rooms_main_details public_use">
+            <span>飲水機</span>
+            <span>投幣式洗衣機</span>
+            <span>投幣式烘衣機</span>
+            <span>免費停車場</span>
+            <span>免費行李寄放</span>
+          </div>
+          <div class="rooms_main_details">
+            <h3>住房政策:</h3>
+          </div>
+          <div class="rooms_main_details">
+            <p>本館全面禁菸</p>
+            <p>有攜帶毛孩住宿者，招待專屬點心乙份</p>
+            <p>因衛生考量，本館不主動提供毛巾，如有需求可至櫃台領取免費毛巾</p>
+            <p>毛巾僅供人使用，如寵物有需求請洽櫃台</p>
+            <p>有攜帶毛孩之旅客，請勿留毛孩單獨於房內，外出請記得繫牽繩喔</p>
+            <p>
+              攜帶毛孩來住宿者，如為狗狗及貓貓，需提供施打疫苗，以及體內、體外除蟲之證明
+            </p>
+          </div>
+        </div>
 
-    <div class="room_box">
-      <!-- 左邊區塊 -->
-      <!-- 漫畫照片 -->
-      <!-- <div class="bookingroom_box">
-        <div class="bookingroom_pic">
-          <a href="#" target="_blank"
-            ><img
-              class="booking_img only_people"
-              src="./img/svg/bookingroom_only_people.svg"
-          /></a>
+        <div class="rooms_main_details rooms_prices">
+          <span>
+            <p class="prices">NTD</p>
+            <p class="prices">2500</p>
+          </span>
         </div>
-        <div class="bookingroom_pic">
-          <a href="#" target="_blank"
-            ><img
-              class="booking_img bringing_pet"
-              src="./img/svg/bookingroom_bringing_pet.svg"
-          /></a>
-        </div>
-        <div class="bookingroom_pic">
-          <a href="#" target="_blank"
-            ><img
-              class="booking_img pet_boarding"
-              src="./img/svg/bookingroom_pet_boarding.svg"
-          /></a>
-        </div>
-        <div class="bookingroom_pic">
-          <a href="#" target="_blank"
-            ><img
-              class="booking_img welcome"
-              src="./img/svg/bookingroom_welcome.svg"
-          /></a>
-        </div>
-      </div> -->
-      <!-- 右邊區塊 -->
-      <div class="right_box">
-        <div class="room_leading">
-          <h2>本館共有三種房型可以選擇，歡迎來住宿放鬆</h2>
-        </div>
-        <!-- 房型照片與簡述 -->
-        <div class="room_review_box">
-          <div class="room_review">
-            <div class="room_pic">
-              <a href="./bookingroom_smallroom.html"
-                ><img class="rooms_pic"
-                src=./img-adjust_size/room/L_room03.jpg></a
-              >
-            </div>
-            <div class="room_overview">
-              <h3>溫馨小房</h3>
-              <p>適合2~3人住宿</p>
-            </div>
-          </div>
-          <div class="room_review">
-            <div class="room_pic">
-              <a href="./bookingroom_largeroom.html"
-                ><img class="rooms_pic"
-                src=./img-adjust_size/room/L_room01.jpg></a
-              >
-            </div>
-            <div class="room_overview">
-              <h3>寬敞大房</h3>
-              <p>適合3~5人住宿</p>
-            </div>
-          </div>
-          <div class="room_review">
-            <div class="room_pic">
-              <a href="./bookingroom_luxuryroom.html"
-                ><img class="rooms_pic"
-                src=./img-adjust_size/room/L_room05.jpg></a
-              >
-            </div>
-            <div class="room_overview">
-              <h3>豪華家庭房</h3>
-              <p>適合5~10人住宿</p>
-            </div>
-          </div>
-        </div>
-        <!-- 本館特點 -->
-        <div class="booking_features">
-          <!-- 標題 -->
-          <div class="booking_features_title"><h3>本館特色</h3></div>
-          <!-- 特點介紹 -->
-          <div class="features_content">
-            <div class="booking_features_box">
-              <div class="booking_features_box_pic">
-                <img src="./img-adjust_size/room-Building materials/001.jpg" />
-              </div>
-              <div class="booking_features_box_description">
-                <h3>康柏纖泥板</h3>
-                <p>無石綿、環保隔音建材，<br />擁有極佳隔熱及吸音功效</p>
-              </div>
-            </div>
 
-            <div class="booking_features_box">
-              <div class="booking_features_box_pic">
-                <img src="./img-adjust_size/room-Building materials/002.jpg" />
-              </div>
-              <div class="booking_features_box_description">
-                <h3>丹麥 Flugger 環保塗料</h3>
-                <p>寵物不小心牆壁啃了一塊也安全</p>
-              </div>
-            </div>
-
-            <div class="booking_features_box">
-              <div class="booking_features_box_pic">
-                <img src="./img-adjust_size/room-Building materials/003.jpg" />
-              </div>
-              <div class="booking_features_box_description">
-                <h3>天然無負擔的環保清潔劑</h3>
-                <p>使用淨毒五郎清潔環境，安全無負擔</p>
-              </div>
-            </div>
-          </div>
+        <div class="booking_button">
+          <input type="button" value="我要預訂" name="booking_room" />
         </div>
       </div>
     </div>
+
+    <!--待調整 -->
+    <!-- <div class="booking_features">
+        <div class="booking_features_box">
+            <div class="booking_features_box_pic">
+                <img src="./img/rooms/Building materials01.jpg"></div>
+            <div class="booking_features_box_description">
+                <h3>康柏纖泥板</h3>
+                <p>無石綿、環保隔音建材，擁有極佳隔熱及吸音功效</p>
+            </div>
+        </div>
+
+        <div class="booking_features_box">
+            <div class="booking_features_box_description">
+                <h3>丹麥 Flugger 環保塗料</h3>
+                <p>寵物不小心牆壁啃了一塊也安全</p>
+            </div>
+            <div class="booking_features_box_pic">
+                <img src="./img/rooms/Building materials02.jpg">
+            </div>
+        </div>
+
+        <div class="booking_features_box">
+            <div class="booking_features_box_pic">
+                <img src="./img/rooms/Building materials03.jpg">
+            </div>
+            <div class="booking_features_box_description">
+                <h3>使用天然無負擔的環保清潔劑</h3>
+                <p>使用淨毒五郎清潔環境，安全無負擔</p>
+            </div>
+        </div>
+
+    </div> -->
+
+    <!-- 可愛漫畫風圖 -->
+    <!-- <div class="bookingroom_box">
+        <div class="bookingroom_pic">
+            <a href="#"  target="_blank"><img class="booking_img only_people" src="./img/svg/bookingroom_only_people.svg"></a>
+        </div>
+        <div class="bookingroom_pic">
+            <a href="#"  target="_blank"><img class="booking_img bringing_pet" src="./img/svg/bookingroom_bringing_pet.svg"></a>
+        </div>
+        <div class="bookingroom_pic">
+            <a href="#"  target="_blank"><img class="booking_img pet_boarding" src="./img/svg/bookingroom_pet_boarding.svg"></a>
+        </div>
+        <div class="bookingroom_pic">
+            <a href="#"  target="_blank"><img class="booking_img welcome" src="./img/svg/bookingroom_welcome.svg"></a>
+        </div>
+    </div>  -->
 
     <!-- 頁尾 -->
     <div class="footer">

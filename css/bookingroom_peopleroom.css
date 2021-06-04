@@ -1,112 +1,418 @@
-div.booking_cards{
-    display:flex;
-    flex-wrap:wrap;
-    margin-bottom:100px; 
+/*主要內容區塊*/
+div.room_box {
+  /* border: 1px solid red; */
+  display: flex;
+  max-width: 1500px;
+  margin-top: 200px;
 }
-div.booking_cards > div.booking_info{
-    
-    position:relative;
-    top:200px;
-    text-align: center;
-    width:100%;
-    min-width:600px;
-    max-width:800px;
-    height:100%;
-    max-height:1400px;
-    margin:20px;
-    padding:15px;
-    border:5px solid rgb(58, 57, 56);
-    border-radius:20px;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box {
+    min-width: 768px;
+  }
 }
-div.booking_cards > div.booking_info > div.booking_info_pic{
-    width:100%;
-    height:500px;
-    margin:20px 0px;
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box {
+    min-width: 576px;
+  }
 }
-
-div.booking_cards > div.booking_info > div.booking_info_pic >img{
-    width:500px;
-    height:500px;
+@media screen and (max-width: 575px) {
+  div.room_box {
+    max-width: 575px;
+    width: 100%;
+  }
 }
-.booking_info_description{
-    text-align: start;  
+/*左邊:漫畫排版*/
+/* div.room_box > div.bookingroom_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 20px;
+  margin-right: 80px;
 }
-div.booking_cards > div.booking_info > div.booking_info_description > div.rooms_details >span{
-    border:1px solid rgb(15, 15, 15);
-    border-radius:2px;
-    padding:2px;
-    margin:3px 2px;
-    display:inline-block;
-
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box > div.bookingroom_box {
+    display: none;
+  }
 }
-div.booking_cards > div.booking_info >div.booking_info_description > div.rooms_main_details{
-    margin:15px 0px;
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box > div.bookingroom_box {
+    display: none;
+  }
 }
-div.booking_cards > div.booking_info >div.booking_info_description > div.rooms_main_details >h3{
-    margin:5px 0px;
+@media screen and (max-width: 575px) {
+  div.room_box > div.bookingroom_box {
+    display: none;
+  }
 }
-div.booking_cards > div.booking_info >div.booking_info_description > div.rooms_main_details >p{
-    margin:7px 0px;
-}
-div.booking_cards > div.booking_info > div.rooms_prices >span{
-    display:flex;
-    justify-content: flex-end;
-    margin:35px 0px;
-} 
-div.booking_cards > div.booking_info > div.rooms_prices > span > p.prices{
-    color:rgb(12, 12, 241);
-    margin:0px 3px;
-    font-size:24px;
+div.bookingroom_box > div.bookingroom_pic {
+  display: flex;
+  margin: 10px 0px;
 }
 
-/*本館住宿特色*/
-div.booking_features{
-    display:flex;
-    flex-direction: column;
-    border:1px solid red;
-    margin-top:50px;
+div.bookingroom_box > div.bookingroom_pic > a > img.booking_img {
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
 }
-div.booking_features > div.booking_features_box{
-    display:flex;
-    border:1px solid blue;
-    flex-direction: column;
-    vertical-align: middle;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.bookingroom_box > div.bookingroom_pic > a > img.booking_img {
+    min-width: 0px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.bookingroom_box > div.bookingroom_pic > a > img.booking_img {
+    min-width: 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.bookingroom_box > div.bookingroom_pic > a > img.booking_img {
+    min-width: 0px;
+  }
+} */
+/* 房型照片與簡述 */
+div.room_box > div.right_box {
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
 }
 
-div.booking_features > div.booking_features_box > div.booking_features_box_pic{
-    display:inline;
-    border:1px solid yellow;
-    width:100%;
-    max-width:500px;
+/* 前導文字 */
+div.room_box > div.right_box > div.room_leading {
+  text-align: center;
+  margin: 10px 0px;
+  /* border: 1px solid yellow; */
 }
-
-div.booking_features > div.booking_features_box > div.booking_features_box_description{
-    display:inline;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box > div.right_box > div.room_leading {
+    width: 100%;
+  }
 }
-/*漫畫格式*/
-
-div.bookingroom_box {
-    display:flex;
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box > div.right_box > div.room_leading {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box > div.right_box > div.room_leading {
+    width: 100%;
+  }
+}
+div.room_box > div > div.room_review_box {
+  max-width: 1200px;
+  display: flex;
+  line-height: 30px;
+  /* border: 1px solid green; */
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box > div > div.room_review_box {
     flex-direction: column;
     align-items: center;
-    vertical-align: middle;
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box > div > div.room_review_box {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box > div > div.room_review_box {
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+}
+div.room_box > div > div.room_review_box > div.room_review {
+  margin: 10px;
+  border: 1px solid rgb(211, 211, 211);
+  box-shadow: 0 0 3px 1px #c4c4c4;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 400px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box > div > div.room_review_box > div.room_review {
+    display: flex;
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box > div > div.room_review_box > div.room_review {
+    display: flex;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box > div > div.room_review_box > div.room_review {
+    display: flex;
+    max-width: 600px;
+  }
+}
+div.room_box > div > div.room_review_box > div.room_review > div.room_overview {
+  /* border: 1px solid blue; */
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box
+    > div
+    > div.room_review_box
+    > div.room_review
+    > div.room_overview {
+    margin-left: 10px;
+    min-width: 360px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box
+    > div
+    > div.room_review_box
+    > div.room_review
+    > div.room_overview {
+    margin-left: 10px;
+    min-width: 240px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box
+    > div
+    > div.room_review_box
+    > div.room_review
+    > div.room_overview {
+    margin-left: 10px;
+    min-width: 360px;
+  }
+}
+div.room_box
+  > div
+  > div.room_review_box
+  > div.room_review
+  > div.room_pic
+  > a
+  > img {
+  max-width: calc(1000px / 3);
+}
+/*本館住宿特色*/
+div.room_box > div > div.booking_features {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  /* border: 1px solid red; */
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box > div > div.booking_features {
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box > div > div.booking_features {
+    min-width: 576px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box > div > div.booking_features {
+    max-width: 576px;
     width: 100%;
-    height: 100%;
-    position:relative;
-    top:200px;
-    
+  }
 }
-div.bookingroom_box > div.bookingroom_pic{
-    display:flex;
-    margin:10px 0px;
+div.room_box > div > div.booking_features > div.booking_features_title {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
 }
-.booking_img{
+div.room_box > div > div.booking_features > div.features_content {
+  /* border: 1px solid red; */
+  display: flex;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box > div > div.booking_features > div.features_content {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box > div > div.booking_features > div.features_content {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box > div > div.booking_features > div.features_content {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+}
+div.room_box
+  > div
+  > div.booking_features
+  > div.features_content
+  > div.booking_features_box {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+  max-width: calc(1000px / 3);
+  margin: 20px;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box {
+    /* border: 1px solid green; */
+    flex-direction: row;
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box {
+    flex-direction: row;
+    min-width: 576px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box {
+    flex-direction: row;
+    max-width: 576px;
     width: 100%;
-    min-width:400px;
-    height: 100%;
+  }
 }
-div.bookingroom_box > div.bookingroom_pic > a >img{
-   width:100%;
-   max-width:500px;
-   
-}   
+
+div.room_box
+  > div
+  > div.booking_features
+  > div.features_content
+  > div.booking_features_box
+  > div.booking_features_box_pic {
+  display: inline;
+  /* border: 1px solid yellow; */
+}
+div.room_box
+  > div
+  > div.booking_features
+  > div.features_content
+  > div.booking_features_box
+  > div.booking_features_box_pic
+  > img {
+  border-radius: 50%;
+  box-shadow: 0 0 4px 3px #c4c4c4;
+  margin: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box
+    > div.booking_features_box_pic
+    > img {
+    max-width: 200px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box
+    > div.booking_features_box_pic
+    > img {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box
+    > div.booking_features_box_pic
+    > img {
+    max-width: 250px;
+  }
+}
+div.room_box
+  > div
+  > div.booking_features
+  > div.features_content
+  > div.booking_features_box
+  > div.booking_features_box_description {
+  display: inline;
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box
+    > div.booking_features_box_description {
+    min-width: 360px;
+    padding-top: 30px;
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box
+    > div.booking_features_box_description {
+    padding-top: 30px;
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box
+    > div.booking_features_box_description {
+    min-width: 360px;
+    padding-top: 30px;
+    padding-left: 10px;
+    text-align: left;
+  }
+}
+div.room_box
+  > div
+  > div.booking_features
+  > div.features_content
+  > div.booking_features_box
+  > div.booking_features_box_description
+  > h3 {
+  margin: 15px 0px;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+@media screen and (max-width: 575px) {
+  div.room_box
+    > div
+    > div.booking_features
+    > div.features_content
+    > div.booking_features_box
+    > div.booking_features_box_description
+    > h3 {
+    margin: 15px 0px;
+    min-width: 250px;
+  }
+}
