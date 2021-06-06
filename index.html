@@ -1,180 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <title>首頁 </title>
-    <link href="./css/normalize.css" rel="stylesheet" >
-    <link href="./css/common.css" rel="stylesheet" >
-    <link href="./css/header.css" rel="stylesheet" >
-    <link href="./css/footer.css" rel="stylesheet" >
-    <link href="./css/main.css" rel="stylesheet" >
-    <link href="./css/about_me.css" rel="stylesheet" >
-    <link href="./css/adopt.css" rel="stylesheet" >
-    <link href="./css/adopt_main.css" rel="stylesheet" >
-    <link href="./css/bookingroom.css" rel="stylesheet" >
-    <link href="./css/bookingroom_peopleroom.css" rel="stylesheet" >
-</head>
-<body>
-   <!-- 導覽列 -->
-   <header>
-        <nav>
-            <div class="logo">
-                <a href="./index.html"  target="_blank"><img id="logo" src="./img/svg/logo.svg"></a>
-            </div>
-            <div>
-                <ul class="header_bar">
-                 <!-- 關於我 -->
-                    <li>
-                        <a href="./about_me.html" class="link_style">
-                            <span>
-                                <img id="introduction" src="./img/svg/dog01.svg">
-                            </span>
-                            <span>民宿介紹</span>
-                        </a>
-                    </li>
-                     <!-- 我要認養 -->
-                    <li class="adopt_menu">
-                        <a>
-                            <span>
-                                <img id="introduction" src="./img/svg/cat01.svg">
-                            </span>
-                            <span>我要認養</span>
-                        </a>
-                        <!-- 我要認養的下拉選單 -->
-                        <ul class="adopt_menu_select_menu">
-                            <li class="adopt_menu_select">
-                                <a href="./adopt_main.html" class="link_style">
-                                    <span>認養須知</span>
-                                </a>
-                            </li>
-                            <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style">
-                                    <span>認養狗狗</span>
-                                </a>
-                            </li>
-                            <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style">
-                                    <span>認養貓貓</span>
-                                </a>
-                            </li>
-                            <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style">
-                                    <span>認養兔兔</span>
-                                </a>
-                            </li>
-                            <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style">
-                                    <span>認養鼠鼠</span>
-                                </a>
-                            </li>
-                            <li class="adopt_menu_select">
-                                <a href="./adopt.html" class="link_style">
-                                    <span>醫療團隊</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>    
-                    <!-- 住宿相關     -->
-                    <li class="booking_rooms_menu">
-                        <a>
-                            <span>
-                                <img id="room" src="./img/svg/rabbit01.svg">
-                            </span>
-                            <span>住宿相關</span>
-                        </a>
-                         <!-- 住宿的下拉選單 -->
-                        <ul class="booking_rooms_menu_select_menu">
-                            <li class="booking_rooms_select">
-                                <a  href="./bookingroom_peopleroom.html" class="link_style">
-                                    <span>一般住宿</span>
-                                </a>
-                            </li>
-                            <li class="booking_rooms_select">
-                                <a  href="./bookingroom_peopleroom.html" class="link_style">
-                                    <span>毛孩寄宿</span>
-                                </a>
-                            </li>
-                        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <title>首頁</title>
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/common.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link href="./css/footer.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/about_me.css" rel="stylesheet" />
+    <link href="./css/adopt.css" rel="stylesheet" />
+    <link href="./css/adopt_main.css" rel="stylesheet" />
+    <link href="./css/bookingroom.css" rel="stylesheet" />
+    <link href="./css/bookingroom_peopleroom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./index.html" target="_blank"
+            ><img id="logo" src="./img/svg/logo.svg"
+          /></a>
+        </div>
+        <div class="nav_bar">
+          <!-- 用input的checkbox與for特性做漢堡選單的選取器 -->
+          <input type="checkbox" name="" id="burger" />
+          <ul class="header_bar" id="nav_menu">
+            <!-- 關於我 -->
+            <li>
+              <a href="./about_me.html" class="link_style">
+                <span>
+                  <img id="introduction" src="./img/svg/dog01.svg" />
+                </span>
+                <span>民宿介紹</span>
+              </a>
+            </li>
+            <!-- 我要認養 -->
+            <li class="adopt_menu">
+              <a>
+                <span>
+                  <img id="introduction" src="./img/svg/cat01.svg" />
+                </span>
+                <span>我要認養</span>
+              </a>
+              <!-- 我要認養的下拉選單 -->
+              <ul class="adopt_menu_select_menu">
+                <li class="adopt_menu_select">
+                  <a href="./adopt_main.html" class="link_style">
+                    <span>認養須知</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt.html" class="link_style">
+                    <span>認養狗狗</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt.html" class="link_style">
+                    <span>認養貓貓</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt.html" class="link_style">
+                    <span>認養兔兔</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt.html" class="link_style">
+                    <span>認養鼠鼠</span>
+                  </a>
+                </li>
+                <li class="adopt_menu_select">
+                  <a href="./adopt.html" class="link_style">
+                    <span>醫療團隊</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- 住宿相關 -->
+            <li class="booking_rooms_menu">
+              <a>
+                <span>
+                  <img id="room" src="./img/svg/rabbit01.svg" />
+                </span>
+                <span>住宿相關</span>
+              </a>
+              <!-- 住宿的下拉選單 -->
+              <ul class="booking_rooms_menu_select_menu">
+                <li class="booking_rooms_select">
+                  <a href="./bookingroom_peopleroom.html" class="link_style">
+                    <span>一般住宿</span>
+                  </a>
+                </li>
+                <li class="booking_rooms_select">
+                  <a href="./bookingroom_peopleroom.html" class="link_style">
+                    <span>毛孩寄宿</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!-- 周邊商品 -->
+            <li>
+              <a href="#" class="link_style">
+                <span>
+                  <img id="merchandise" src="./img/svg/mouse01.svg" />
+                </span>
+                <span>周邊商品</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-                    </li>
-                    <!-- 周邊商品 -->
-                    <li>
-                        <a href="#" class="link_style">
-                            <span>
-                                <img id="merchandise" src="./img/svg/mouse01.svg">
-                            </span>
-                            <span>周邊商品</span>
-                        </a>
-                    </li>
-                    <!-- 會員 -->
-                    <!-- <li >
-                        <a href="./user.html" class="link_style">
-                            <img id="user" src=./img/svg/user-circle-solid.svg>
-                        </a>
-                    </li> -->
-                    <!-- 我的訂單 -->
-                    <!-- <li>
-                        <a href="#" class="link_style">
-                            <img id="cart" src="./img/svg/shopping-cart.svg">
-                        </a>
-                    </li> -->
-                </ul>
-            </div>
-            <div>
-                <ul class="user_cart">
-                     <!-- 會員 -->
-                     <li >
-                        <a href="./user.html" class="link_style">
-                            <img id="user" src=./img/svg/user-circle-solid.svg>
-                        </a>
-                    </li>
-                    <!-- 我的訂單 -->
-                    <li>
-                        <a href="#" class="link_style">
-                            <img id="cart" src="./img/svg/shopping-cart.svg">
-                        </a>
-                    </li>
-                </ul> 
-            </div>    
-            <!--RWD按鈕--->
-            <div class="burger_menu">
-                <img id="burger_icon"src="./img/svg/bars.svg">
-            </div> 
-        </nav>
+        <div>
+          <ul class="user_cart">
+            <!-- 會員 -->
+            <li>
+              <a href="./user.html" class="link_style">
+                <img id="user" src=./img/svg/user-circle-solid.svg>
+              </a>
+            </li>
+            <!-- 我的訂單 -->
+            <li>
+              <a href="#" class="link_style">
+                <img id="cart" src="./img/svg/shopping-cart.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--漢堡選單--->
+        <!-- 用input的checkbox與for特性做漢堡選單的選取器 -->
+        <label for="burger">
+          <div class="burger_box">
+            <div class="bgr_bar top"></div>
+            <div class="bgr_bar middle"></div>
+            <div class="bgr_bar bottom"></div>
+          </div>
+        </label>
+      </nav>
     </header>
 
     <!-- 前導內容 -->
     <div class="abandoned">
-        <div class="abandoned_box">
-            <h1>可以不要丟下我嗎</h1>
-            <br>
-            <br>
-            <br>
-            <h1>曾經的幸福，你，在哪裡?</h1>
-            <br>
-            <br>
-            <br>
-            <div class="abandoned_box_pic ">
-                <img class="abandoned_pic_pic" src="./img-adjust_size/dog/dog01-1-1.jpg" alt="被遺棄的動物" title="被遺棄的動物">
-                <img class="abandoned_pic_pic" src="./img-adjust_size/dog/dog01-1-2.jpg" alt="被遺棄的動物" title="被遺棄的動物">
-                <img class="abandoned_pic_pic" src="./img-adjust_size/dog/dog01-1-3.jpg" alt="被遺棄的動物" title="被遺棄的動物">
-                <img class="abandoned_pic_pic" src="./img-adjust_size/cat/cat01-1-4.jpg" alt="被遺棄的動物" title="被遺棄的動物">
-                <img class="abandoned_pic_pic" src="./img-adjust_size/dog/dog01-1-4.jpg" alt="被遺棄的動物" title="被遺棄的動物">
-            </div>
-            <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img-adjust_size/dog/banner.jpg" alt="被遺棄的動物" title="主人把狗狗送進收容所">
-            </div>
-            <div class="abandoned_box_pic ">
-                <img class="abandoned_pic_pic" src="./img/dog/dog49.jpg" alt="被遺棄的動物" title="主人把狗狗送進收容所">
-                <img class="abandoned_pic_pic" src="./img-adjust_size/cat/cat01-1-3.jpg" alt="被遺棄的動物" title="流浪的貓貓">
-                <img class="abandoned_pic_pic" src="./img-adjust_size/dog/sadnesdog_01.jpg" alt="被遺棄的動物" title="主人把狗狗送進收容所">
-                <img class="abandoned_pic_pic" src="./img/cat/cat16.jpg" alt="被遺棄的動物" title="流浪的貓貓">
-                <img class="abandoned_pic_pic" src="./img/dog/dog52.jpg" alt="被遺棄的動物" title="主人把狗狗送進收容所">
-            </div>
-            
-            <!-- <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog03.jfif" alt="被遺棄的動物" title="主人把狗狗送進收容所"></div>
+      <div class="abandoned_box">
+        <h1>可以不要丟下我嗎</h1>
+        <br />
+        <br />
+        <br />
+        <h1>曾經的幸福，你，在哪裡?</h1>
+        <br />
+        <br />
+        <br />
+        <div class="abandoned_box_pic">
+          <img
+            class="abandoned_pic_pic"
+            src="./img-adjust_size/dog/dog01-1-1.jpg"
+            alt="被遺棄的動物"
+            title="被遺棄的動物"
+          />
+          <img
+            class="abandoned_pic_pic"
+            src="./img-adjust_size/dog/dog01-1-2.jpg"
+            alt="被遺棄的動物"
+            title="被遺棄的動物"
+          />
+          <img
+            class="abandoned_pic_pic"
+            src="./img-adjust_size/dog/dog01-1-3.jpg"
+            alt="被遺棄的動物"
+            title="被遺棄的動物"
+          />
+          <img
+            class="abandoned_pic_pic"
+            src="./img-adjust_size/cat/cat01-1-4.jpg"
+            alt="被遺棄的動物"
+            title="被遺棄的動物"
+          />
+          <img
+            class="abandoned_pic_pic"
+            src="./img-adjust_size/dog/dog01-1-4.jpg"
+            alt="被遺棄的動物"
+            title="被遺棄的動物"
+          />
+        </div>
+        <div class="abandoned_box_pic">
+          <img
+            class="abandoned_pic"
+            src="./img-adjust_size/dog/banner.jpg"
+            alt="被遺棄的動物"
+            title="主人把狗狗送進收容所"
+          />
+        </div>
+        <div class="abandoned_box_pic">
+          <img
+            class="abandoned_pic_pic"
+            src="./img/dog/dog49.jpg"
+            alt="被遺棄的動物"
+            title="主人把狗狗送進收容所"
+          />
+          <img
+            class="abandoned_pic_pic"
+            src="./img-adjust_size/cat/cat01-1-3.jpg"
+            alt="被遺棄的動物"
+            title="流浪的貓貓"
+          />
+          <img
+            class="abandoned_pic_pic"
+            src="./img-adjust_size/dog/sadnesdog_01.jpg"
+            alt="被遺棄的動物"
+            title="主人把狗狗送進收容所"
+          />
+          <img
+            class="abandoned_pic_pic"
+            src="./img/cat/cat16.jpg"
+            alt="被遺棄的動物"
+            title="流浪的貓貓"
+          />
+          <img
+            class="abandoned_pic_pic"
+            src="./img/dog/dog52.jpg"
+            alt="被遺棄的動物"
+            title="主人把狗狗送進收容所"
+          />
+        </div>
+
+        <!-- <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog03.jfif" alt="被遺棄的動物" title="主人把狗狗送進收容所"></div>
             <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_cat.jpg" alt="被遺棄的動物" title="被遺棄在山上的貓貓"></div>
             <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_rabbit_01.jfif" alt="被遺棄的動物" title="被遺棄在鄉下路邊被路過民眾發現的兔兔"></div>
             <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog06.jfif" alt="被遺棄的動物" title="被遺棄在收容所的狗狗"></div>
@@ -184,285 +237,388 @@
             <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog07.jfif" alt="被遺棄的動物" title="被遺棄在路邊的老狗"></div>
             <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_dog08.jfif" alt="被遺棄的動物" title="被遺棄在路邊的老狗"></div>
             <div class="abandoned_box_pic"><img class="abandoned_pic" src="./img/abandoned/abandoned_cat07.jfif" alt="被遺棄的動物" title="連用品一同被遺棄在路邊的無助貓貓"></div> -->
-        </div>
-        <div class="abandoned_description">
-            <br>
-            <p>這裡的每隻毛孩都有自己的故事......</p>
-            <br>
-            <p>有的是從繁殖場救援出來的，有的是被主人遺棄，有的是在路上流浪，</p>
-            <br>
-            <p>遭人驅趕，過著有一餐沒一餐的生活</p>
-            <br>
-            <p>在這裡的毛孩盼望著屬於自己的家，重拾起幸福的笑容</p>
-            <br>
-        </div>
+      </div>
+      <div class="abandoned_description">
+        <br />
+        <p>這裡的每隻毛孩都有自己的故事......</p>
+        <br />
+        <p>有的是從繁殖場救援出來的，有的是被主人遺棄，有的是在路上流浪，</p>
+        <br />
+        <p>遭人驅趕，過著有一餐沒一餐的生活</p>
+        <br />
+        <p>在這裡的毛孩盼望著屬於自己的家，重拾起幸福的笑容</p>
+        <br />
+      </div>
     </div>
     <!-- 領養區 -->
     <div class="index_adopt_box">
-        <h1>這些毛孩，都在等待幸福</h1>
-        <div class="index_adopt index_adopt_pic_box">
-            <div class="index_adopt_pic index_adopt_pic_dog">
-                <a href="./adopt.html">
-                    <img src="./img-adjust_size/dog/dog01-2.jpg" alt="待領養的狗狗" title="待領養的狗狗">
-                    <span class="index_adopt_pic_link">點擊照片看更多</span>
-                </a>
-            </div>
-            <div class="index_adopt_pic index_adopt_pic_cat">
-                <a href="./adopt.html">
-                    <img src="./img-adjust_size/cat/cat01-1.jpg" alt="待領養的狗狗" title="待領養的貓貓">
-                    <span class="index_adopt_pic_link">點擊照片看更多</span>
-                </a>
-            </div>
-            <div class="index_adopt_pic index_adopt_pic_rabbit">
-                <a href="./adopt.html">
-                    <img src="./img-adjust_size/rabbit/rabbit01.jpg" alt="待領養的狗狗" title="待領養的兔兔">
-                    <span class="index_adopt_pic_link">點擊照片看更多</span>
-                </a>
-            </div>
-            <div class="index_adopt_pic index_adopt_pic_mouse">
-                <a href="./adopt.html">
-                    <img src="./img-adjust_size/mouse/mouse01.jpg" alt="待領養的狗狗" title="待領養的鼠鼠">
-                    <span class="index_adopt_pic_link">點擊照片看更多</span>
-                </a>
-            </div>
+      <h1>這些毛孩，都在等待幸福</h1>
+      <div class="index_adopt index_adopt_pic_box">
+        <div class="index_adopt_pic index_adopt_pic_dog">
+          <a href="./adopt.html">
+            <img
+              src="./img-adjust_size/dog/dog01-2.jpg"
+              alt="待領養的狗狗"
+              title="待領養的狗狗"
+            />
+            <span class="index_adopt_pic_link">點擊照片看更多</span>
+          </a>
         </div>
-
-        <div class="index_adopt index_adopt_see_more">
-
+        <div class="index_adopt_pic index_adopt_pic_cat">
+          <a href="./adopt.html">
+            <img
+              src="./img-adjust_size/cat/cat01-1.jpg"
+              alt="待領養的狗狗"
+              title="待領養的貓貓"
+            />
+            <span class="index_adopt_pic_link">點擊照片看更多</span>
+          </a>
         </div>
+        <div class="index_adopt_pic index_adopt_pic_rabbit">
+          <a href="./adopt.html">
+            <img
+              src="./img-adjust_size/rabbit/rabbit01.jpg"
+              alt="待領養的狗狗"
+              title="待領養的兔兔"
+            />
+            <span class="index_adopt_pic_link">點擊照片看更多</span>
+          </a>
+        </div>
+        <div class="index_adopt_pic index_adopt_pic_mouse">
+          <a href="./adopt.html">
+            <img
+              src="./img-adjust_size/mouse/mouse01.jpg"
+              alt="待領養的狗狗"
+              title="待領養的鼠鼠"
+            />
+            <span class="index_adopt_pic_link">點擊照片看更多</span>
+          </a>
+        </div>
+      </div>
 
+      <div class="index_adopt index_adopt_see_more"></div>
     </div>
     <!-- 領養不棄養標語 -->
     <div class="adopt_dont_abandon">
-        <div class="adopt_dont_abandon_slogan">
-            <a href="#" title="adopt" ><span><img class="slogan" src="./img/svg/slogan.svg" alt="領養不棄養" title="請支持領養不棄養" ></span></a>
-        </div>
+      <div class="adopt_dont_abandon_slogan">
+        <a href="#" title="adopt"
+          ><span
+            ><img
+              class="slogan"
+              src="./img/svg/slogan.svg"
+              alt="領養不棄養"
+              title="請支持領養不棄養" /></span
+        ></a>
+      </div>
     </div>
     <!-- 本館其他服務 -->
     <div class="index_other_serves_box">
-        <h1>本館其他服務</h1>
-        <div class="index_other_serves">
-            <div class="index_other_serves_main">
-                <a href="./adopt.html">
-                    <h2>一般住宿</h2>
-                    <img src="./img/svg/index_room.svg" alt="住宿服務" title="點擊看更多住宿房型">
-                    <span class="index_adopt_pic_link">點擊看更多</span>
-                </a>
-            </div>
-            <div class="index_other_serves_main">
-                <a href="./adopt.html">
-                    <h2>毛孩寄宿</h2>
-                    <img src="./img/svg/index_room_pet.svg" alt="毛孩寄宿與安親" title="點擊看更多房型">
-                    <span class="index_adopt_pic_link">點擊看更多</span>
-                </a>
-            </div>
-            <div class="index_other_serves_main">
-                <a href="./adopt.html">
-                    <h2>毛孩商品</h2>
-                    <img src="./img/svg/index_pet_products.svg" alt="毛孩相關商品" title="點擊看更多商品">
-                    <span class="index_adopt_pic_link">點擊看更多</span>
-                </a>
-            </div>
+      <h1>本館其他服務</h1>
+      <div class="index_other_serves">
+        <div class="index_other_serves_main">
+          <a href="./adopt.html">
+            <h2>一般住宿</h2>
+            <img
+              src="./img/svg/index_room.svg"
+              alt="住宿服務"
+              title="點擊看更多住宿房型"
+            />
+            <span class="index_adopt_pic_link">點擊看更多</span>
+          </a>
         </div>
+        <div class="index_other_serves_main">
+          <a href="./adopt.html">
+            <h2>毛孩寄宿</h2>
+            <img
+              src="./img/svg/index_room_pet.svg"
+              alt="毛孩寄宿與安親"
+              title="點擊看更多房型"
+            />
+            <span class="index_adopt_pic_link">點擊看更多</span>
+          </a>
+        </div>
+        <div class="index_other_serves_main">
+          <a href="./adopt.html">
+            <h2>毛孩商品</h2>
+            <img
+              src="./img/svg/index_pet_products.svg"
+              alt="毛孩相關商品"
+              title="點擊看更多商品"
+            />
+            <span class="index_adopt_pic_link">點擊看更多</span>
+          </a>
+        </div>
+      </div>
     </div>
-    <div>
-
-    </div>
+    <div></div>
     <!-- 協助我們-助糧計畫、小小志工 -->
     <div class="index_give_help_box">
-        <h1>協助毛孩生活更美好</h1>
-        <div class="index_give_help">
-            <div class="index_give_help_main">
-                <a href="./adopt.html">
-                    <h2>助糧計劃</h2>
-                    <img src="./img/svg/index_give_help.svg" alt="毛孩助糧計畫" title="點擊看助糧計劃詳情">
-                    <div>
-                        <p>助糧，<span class="index_give_help_main_text">不</span>捐款</p>
-                        <p>最<span class="index_give_help_main_text">食</span>在的幫助</p>
-                    </div>
-                    <span class="index_adopt_pic_link">點擊看助糧計劃詳情</span>
-                </a>
+      <h1>協助毛孩生活更美好</h1>
+      <div class="index_give_help">
+        <div class="index_give_help_main">
+          <a href="./adopt.html">
+            <h2>助糧計劃</h2>
+            <img
+              src="./img/svg/index_give_help.svg"
+              alt="毛孩助糧計畫"
+              title="點擊看助糧計劃詳情"
+            />
+            <div>
+              <p>助糧，<span class="index_give_help_main_text">不</span>捐款</p>
+              <p>最<span class="index_give_help_main_text">食</span>在的幫助</p>
             </div>
-            <div class="index_give_help_main">
-                <a href="./adopt.html">
-                    <h2>小小志工</h2>
-                    <img src="./img/svg/index_give_help_volunteer.svg" alt="小小志工" title="點擊看志工詳情">
-                    <div>
-                        <p>想親身照顧這些毛孩們嗎?</p>
-                        <p>歡迎報名當小小志工</p>
-                        <p>來被毛孩的純真融化</p>
-                    </div>
-                    <span class="index_adopt_pic_link">點擊看報名資訊</span>
-                </a>
-            </div>
+            <span class="index_adopt_pic_link">點擊看助糧計劃詳情</span>
+          </a>
         </div>
-    </div>
-   
-    <!--"動知識" -->
-  
-    <div class="index_artical_box">
-        <h1>動知識</h1> 
-        <!--不曾終止的動物之殤-->
-        <div class="index_artical_main_contant">
-            <div class="index_artical">
-                <div div class="index_artical_contant">
-                    <div class="index_artical_contant_pic">
-                        <img class="artical_contant_pic" src="./img-adjust_size/artical/01.jpg" alt="動物知識" title="點我看完整文章" > 
-                    </div>
-                    <h2>不曾終止的動物之殤</h2>
-                    <div class="index_artical_contant_descript">
-                        <div class="index_artical_contant_descript_para">
-                            <p>你曾巧遇浪浪嗎？</p>
-                            <p>你曾想過，牠們是從哪裡來的？</p>
-                            <p>在街頭的生活又面臨哪些問題？</p>
-                            <p>有一群人，為了解決流浪動物問題挺身而出、赴湯蹈火；</p>
-                            <p>卻也有些人假借動保行動悄然圖利、中飽私囊！</p>
-                            <p>為何流浪動物問題從未有終止的一天？</p>
-                            <p>而我們真有機會改變牠們的生活與命運嗎？</p>
-                       </div>
-                        <div class="index_artical_contant_descript_more">
-                            <a href="https://wuo-wuo.com/infographics/1264-stray-animal-info" title="artical" target="_blank">
-                                <span>more</span>
-                            </a>
-                        </div>
-                    </div>
-                   
-                    <br>
-                </div>
-                <!--毛小孩是過敏原?-->
+        <div class="index_give_help_main">
+          <a href="./adopt.html">
+            <h2>小小志工</h2>
+            <img
+              src="./img/svg/index_give_help_volunteer.svg"
+              alt="小小志工"
+              title="點擊看志工詳情"
+            />
+            <div>
+              <p>想親身照顧這些毛孩們嗎?</p>
+              <p>歡迎報名當小小志工</p>
+              <p>來被毛孩的純真融化</p>
             </div>
-            <div class="index_artical">
-                <div div class="index_artical_contant">
-                    <div class="index_artical_contant_pic">
-                        <img class="artical_contant_pic" src="./img-adjust_size/artical/02.jpg" alt="動物知識" title="點我看完整文章" > 
-                    </div>
-                    <h2>搬家?過敏?沒時間?可否給牠不離不棄的愛</h2>
-                    <div class="index_artical_contant_descript">
-                        <div class="index_artical_contant_descript_para">
-                            <p>在決定飼養寵物前，便要考慮清楚自己和家庭是否適合，有沒有過敏情況。</p>
-                            <p>不過，縱使有過敏情況出現，還是有許多人不離不棄，就算自己要吃藥抑制過敏，仍對家中寵物十分寵愛。</p>
-                            <p>本文列出8個人寵共處的建議</p>
-                        </div>
-                        <div class="index_artical_contant_descript_more">
-                            <a href="https://www.hk01.com/%E5%AF%B5%E7%89%A9/266577/%E9%A0%98%E9%A4%8A%E4%B8%8D%E6%A3%84%E9%A4%8A-%E6%AF%9B%E5%AD%A9%E8%A2%AB%E9%80%80%E9%A4%8A-%E5%BF%83%E7%90%86%E9%99%B0%E5%BD%B1%E9%9B%A3%E4%BB%A5%E7%A3%A8%E6%BB%85" title="artical" target="_blank">
-                                <span>more</span>
-                            </a>
-                            <!-- <a href="https://www.hk01.com/%E5%AF%B5%E7%89%A9/210466/%E5%AF%B5%E7%89%A9-%E7%9F%A5%E8%AD%98-%E9%81%8E%E6%95%8F%E7%9A%84%E4%BA%BA%E5%8F%8D%E8%80%8C%E4%B8%8D%E6%9C%83%E6%A3%84%E9%A4%8A-%E5%B0%88%E5%AE%B6-%E6%AF%9B%E5%AD%A9%E4%B8%8D%E6%98%AF%E9%81%8E%E6%95%8F%E5%8E%9F" title="artical" >
+            <span class="index_adopt_pic_link">點擊看報名資訊</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--"動知識" -->
+
+    <div class="index_artical_box">
+      <h1>動知識</h1>
+      <!--不曾終止的動物之殤-->
+      <div class="index_artical_main_contant">
+        <div class="index_artical">
+          <div div class="index_artical_contant">
+            <div class="index_artical_contant_pic">
+              <img
+                class="artical_contant_pic"
+                src="./img-adjust_size/artical/01.jpg"
+                alt="動物知識"
+                title="點我看完整文章"
+              />
+            </div>
+            <h2>不曾終止的動物之殤</h2>
+            <div class="index_artical_contant_descript">
+              <div class="index_artical_contant_descript_para">
+                <p>你曾巧遇浪浪嗎？</p>
+                <p>你曾想過，牠們是從哪裡來的？</p>
+                <p>在街頭的生活又面臨哪些問題？</p>
+                <p>有一群人，為了解決流浪動物問題挺身而出、赴湯蹈火；</p>
+                <p>卻也有些人假借動保行動悄然圖利、中飽私囊！</p>
+                <p>為何流浪動物問題從未有終止的一天？</p>
+                <p>而我們真有機會改變牠們的生活與命運嗎？</p>
+              </div>
+              <div class="index_artical_contant_descript_more">
+                <a
+                  href="https://wuo-wuo.com/infographics/1264-stray-animal-info"
+                  title="artical"
+                  target="_blank"
+                >
+                  <span>more</span>
+                </a>
+              </div>
+            </div>
+
+            <br />
+          </div>
+          <!--毛小孩是過敏原?-->
+        </div>
+        <div class="index_artical">
+          <div div class="index_artical_contant">
+            <div class="index_artical_contant_pic">
+              <img
+                class="artical_contant_pic"
+                src="./img-adjust_size/artical/02.jpg"
+                alt="動物知識"
+                title="點我看完整文章"
+              />
+            </div>
+            <h2>搬家?過敏?沒時間?可否給牠不離不棄的愛</h2>
+            <div class="index_artical_contant_descript">
+              <div class="index_artical_contant_descript_para">
+                <p>
+                  在決定飼養寵物前，便要考慮清楚自己和家庭是否適合，有沒有過敏情況。
+                </p>
+                <p>
+                  不過，縱使有過敏情況出現，還是有許多人不離不棄，就算自己要吃藥抑制過敏，仍對家中寵物十分寵愛。
+                </p>
+                <p>本文列出8個人寵共處的建議</p>
+              </div>
+              <div class="index_artical_contant_descript_more">
+                <a
+                  href="https://www.hk01.com/%E5%AF%B5%E7%89%A9/266577/%E9%A0%98%E9%A4%8A%E4%B8%8D%E6%A3%84%E9%A4%8A-%E6%AF%9B%E5%AD%A9%E8%A2%AB%E9%80%80%E9%A4%8A-%E5%BF%83%E7%90%86%E9%99%B0%E5%BD%B1%E9%9B%A3%E4%BB%A5%E7%A3%A8%E6%BB%85"
+                  title="artical"
+                  target="_blank"
+                >
+                  <span>more</span>
+                </a>
+                <!-- <a href="https://www.hk01.com/%E5%AF%B5%E7%89%A9/210466/%E5%AF%B5%E7%89%A9-%E7%9F%A5%E8%AD%98-%E9%81%8E%E6%95%8F%E7%9A%84%E4%BA%BA%E5%8F%8D%E8%80%8C%E4%B8%8D%E6%9C%83%E6%A3%84%E9%A4%8A-%E5%B0%88%E5%AE%B6-%E6%AF%9B%E5%AD%A9%E4%B8%8D%E6%98%AF%E9%81%8E%E6%95%8F%E5%8E%9F" title="artical" >
                                 <span>more</span>
                             </a> -->
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!-- 養寵物前評估 -->
-            <div class="index_artical">
-                <div div class="index_artical_contant">
-                    <div class="index_artical_contant_pic">
-                        <img class="artical_contant_pic" src="./img-adjust_size/artical/03.jpg" alt="動物知識" title="點我看完整文章" > 
-                    </div>
-                    <h2>8大新手養寵物前自我評估，我真的適合養寵物嗎？</h2>
-                    <div class="index_artical_contant_descript">
-                        <div class="index_artical_contant_descript_para">
-                            <p>本文內容以貓狗為主，收錄了養寵物前的自我評估條件</p>
-                            <p>飼養前的心理建設、選擇適合的寵物、金錢分配與用具準備、飼養相關須知等等</p>
-                        </div>
-                        <div class="index_artical_contant_descript_more">
-                            <a href="https://makedreambigger.com/keep-pets/" title="artical" target="_blank" >
-                              <span>more</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <!-- 養寵物前評估 -->
+        <div class="index_artical">
+          <div div class="index_artical_contant">
+            <div class="index_artical_contant_pic">
+              <img
+                class="artical_contant_pic"
+                src="./img-adjust_size/artical/03.jpg"
+                alt="動物知識"
+                title="點我看完整文章"
+              />
             </div>
-        </div>    
+            <h2>8大新手養寵物前自我評估，我真的適合養寵物嗎？</h2>
+            <div class="index_artical_contant_descript">
+              <div class="index_artical_contant_descript_para">
+                <p>本文內容以貓狗為主，收錄了養寵物前的自我評估條件</p>
+                <p>
+                  飼養前的心理建設、選擇適合的寵物、金錢分配與用具準備、飼養相關須知等等
+                </p>
+              </div>
+              <div class="index_artical_contant_descript_more">
+                <a
+                  href="https://makedreambigger.com/keep-pets/"
+                  title="artical"
+                  target="_blank"
+                >
+                  <span>more</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- 寵物相關影片 -->
     <div class="index_media_box">
-        <h1>相關影片</h1>
-        <div class="index_media_contant">
-            <div class="index_media">
-                <iframe src="https://www.youtube.com/embed/ikK-H-7QCP4?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <h4>收容所狗狗終於被領養，展開笑顏</h4>
-            </div>
-            <div class="index_media">
-                <iframe src="https://www.youtube.com/embed/gZFE4zgPZ00?start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <h4>電影&lt;十二夜&gt;名人訪談-領養篇</h4>
-            </div>
-            <div class="index_media">
-                <iframe src="https://www.youtube.com/embed/TYckVRo4Wa8?start=167" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <h4>遇到流浪狗該怎麼辦?</h4>
-            </div>
-            <div  class="index_media">
-                <iframe src="https://www.youtube.com/embed/AT_3kS6U4t0?start=167" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <h4>再養一隻，你準備好了嗎?</h4>
-            </div>
-            <div  class="index_media">
-                <iframe src="https://www.youtube.com/embed/cje2V2mZvWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <h4>流浪狗從哪裡來?</h4>
-            </div>
-            <div class="index_media">
-                <iframe src="https://www.youtube.com/embed/_zJzUprb8t8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                </iframe>
-                <h4>失散三年，狗狗終於與主人重逢</h4>
-            </div>
+      <h1>相關影片</h1>
+      <div class="index_media_contant">
+        <div class="index_media">
+          <iframe
+            src="https://www.youtube.com/embed/ikK-H-7QCP4?start=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <h4>收容所狗狗終於被領養，展開笑顏</h4>
         </div>
+        <div class="index_media">
+          <iframe
+            src="https://www.youtube.com/embed/gZFE4zgPZ00?start=15"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <h4>電影&lt;十二夜&gt;名人訪談-領養篇</h4>
+        </div>
+        <div class="index_media">
+          <iframe
+            src="https://www.youtube.com/embed/TYckVRo4Wa8?start=167"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <h4>遇到流浪狗該怎麼辦?</h4>
+        </div>
+        <div class="index_media">
+          <iframe
+            src="https://www.youtube.com/embed/AT_3kS6U4t0?start=167"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <h4>再養一隻，你準備好了嗎?</h4>
+        </div>
+        <div class="index_media">
+          <iframe
+            src="https://www.youtube.com/embed/cje2V2mZvWg"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <h4>流浪狗從哪裡來?</h4>
+        </div>
+        <div class="index_media">
+          <iframe
+            src="https://www.youtube.com/embed/_zJzUprb8t8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <h4>失散三年，狗狗終於與主人重逢</h4>
+        </div>
+      </div>
     </div>
 
     <!-- 頁尾 -->
     <div class="footer">
-        <div class="footer_box">
-            <div class="footer_box_content">
-                <div class="footer_info_box footer_box_logo">
-                    <a href="./index.html"  target="_self">
-                        <img id="logo" src=./img/svg/logo.svg>
-                    </a>
-                </div>
+      <div class="footer_box">
+        <div class="footer_box_content">
+          <div class="footer_info_box footer_box_logo">
+            <a href="./index.html" target="_self">
+              <img id="logo" src=./img/svg/logo.svg>
+            </a>
+          </div>
 
-                <div class="footer_info_box footer_info"> 
-                    <div>盼窩|地址:台北市中山區盼窩里盼窩路520號</div>
-                    <br>
-                    <div>電話:02-XXXXXXX</div>
-                    <br>
-                    <div>營業時間:周一至周六 08:00~21:00</div>
-                    <br>
-                    <div class="footer_icon">
-                        <div class="footer_box_content_box_img">
-                            <a href="./index.html"  target="_self">
-                                <img src="./img/svg/facebook.svg">
-                            </a>
-                        </div>
-                        <div class="footer_box_content_box_img">
-                            <a href="./index.html"  target="_self">
-                                <img src="./img/svg/line.svg">
-                            </a>
-                        </div>
-                        <div class="footer_box_content_box_img">
-                            <a href="./index.html"  target="_self">
-                                <img src="./img/svg/instagram.svg">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer_info_box footer_statement"> 
-                    <p>
-                        本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
-                        參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，
-                        後續會由專人協助處理，連結:https://www.facebook.com/webindex/
-                     </p>
-                </div>
+          <div class="footer_info_box footer_info">
+            <div>盼窩|地址:台北市中山區盼窩里盼窩路520號</div>
+            <br />
+            <div>電話:02-XXXXXXX</div>
+            <br />
+            <div>營業時間:周一至周六 08:00~21:00</div>
+            <br />
+            <div class="footer_icon">
+              <div class="footer_box_content_box_img">
+                <a href="./index.html" target="_self">
+                  <img src="./img/svg/facebook.svg" />
+                </a>
+              </div>
+              <div class="footer_box_content_box_img">
+                <a href="./index.html" target="_self">
+                  <img src="./img/svg/line.svg" />
+                </a>
+              </div>
+              <div class="footer_box_content_box_img">
+                <a href="./index.html" target="_self">
+                  <img src="./img/svg/instagram.svg" />
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="footer_info_box footer_statement">
+            <p>
+              本網站為緯育TibaMe前端設計工程師班第68期學員專題作品，本平台僅供學習、展示之用。
+              參考資源:XXXXXXXXXXXXX。若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，
+              後續會由專人協助處理，連結:https://www.facebook.com/webindex/
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $("burger_menu").on("click", function(){
-            $("header_bar").toggleClass("-on");
-        });
-    </script>
-</body>
+    <script src="./js/all.js"></script>
+  </body>
 </html>

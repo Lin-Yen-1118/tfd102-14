@@ -1,17 +1,8 @@
-/*var hamberger_bar = document.getElementsByClassName("burger_menu")[0];
-console.log(hamberger_bar);
-hamberger_bar.addEventListener("click", function(){
-    // console.log("123");
+"use strict";
 
-  });
-*/
-  
+var bgr_el = document.getElementById("bgr"); //宣告變數 漢堡選單id
 
-$(".burger_menu").click(function(){
-    $(".header_bar").hide();
-    });
-    $(".burger_menu").click(function(){
-    $(".header_bar").show();
-    });
-  });
-  
+var nav_el = document.getElementsByClassName("nav_bar")[0];
+if (nav_el.style.display === "none") {
+  bgr_el.style.display = "flex";
+}
