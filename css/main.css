@@ -893,7 +893,7 @@ div.index_media_box {
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-bottom: 250px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.index_media_box {

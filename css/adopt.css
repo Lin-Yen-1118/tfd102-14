@@ -50,10 +50,37 @@ div.adopt > div.adoptBox {
   grid-template-columns: 35% auto 35%;
   grid-template-rows: 500px 500px 500px 500px;
   grid-auto-flow: row;
-  gap: 20px 15px;
+  gap: 15px 15px;
   /* border: 1px solid blue; */
   margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.adopt > div.adoptBox {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px;
+    gap: 10px 10px;
+    /* border: 1px solid blue; */
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.adopt > div.adoptBox {
+    grid-template-columns: 700px;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px;
+    gap: 10px 10px;
+    grid-auto-flow: column;
+    /* border: 1px solid blue; */
+  }
+}
+@media screen and (max-width: 575px) {
+  div.adopt > div.adoptBox {
+    grid-template-columns: 700px;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px 500px;
+    gap: 10px 10px;
+    grid-auto-flow: column;
+    /* border: 1px solid blue; */
+  }
+}
+
 div.adopt > div.adoptBox > div.adoptBoxContent > a > img.grid_item_animal {
   /* border: 1px solid yellow; */
 }
@@ -63,6 +90,11 @@ div.adopt > div.adoptBox > div.adoptBoxContent {
   position: relative;
   /* padding: 5px; */
 }
+/* @media screen and (min-width: 768px) and (max-width: 992px) {
+  div.adopt > div.adoptBox > div.adoptBoxContent {
+    border: 1px solid rgb(9, 226, 194);
+  }
+} */
 /* 照片留空間，不貼邊 */
 div.adopt > div.adoptBox > div.adoptBoxContent > a > img {
   margin: 10px;

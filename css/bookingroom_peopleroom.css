@@ -3,7 +3,7 @@ div.room_box {
   /* border: 1px solid red; */
   display: flex;
   max-width: 1500px;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.room_box {
