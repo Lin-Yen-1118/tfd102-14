@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <title>住宿相關</title>
+    <title>會員專區-註冊</title>
     <link href="./css/normalize.css" rel="stylesheet" />
     <link href="./css/common.css" rel="stylesheet" />
     <link href="./css/header.css" rel="stylesheet" />
@@ -15,10 +15,10 @@
     <link href="./css/adopt.css" rel="stylesheet" />
     <link href="./css/adopt_main.css" rel="stylesheet" />
     <link href="./css/bookingroom.css" rel="stylesheet" />
-    <link href="./css/bookingroom_peopleroom.css" rel="stylesheet" />
-    <link href="./css/room_pet.css" rel="stylesheet" />
+    <link href="./css/user.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- 導覽列 -->
     <header>
       <nav>
         <div class="logo">
@@ -142,97 +142,64 @@
         </label>
       </nav>
     </header>
-
-    <div class="room_box">
-      <!-- 右邊區塊 -->
-      <div class="right_box">
-        <div class="room_leading">
-          <h2>本館提供毛孩安心的住宿環境，歡迎帶寶貝來寄宿</h2>
-        </div>
-        <!-- 房型照片與簡述 -->
-        <div class="room_review_box">
-          <div class="room_review">
-            <div class="room_pic">
-              <a href="./room_dog.html"
-                ><img class="rooms_pic"
-                src=./img-adjust_size/pet_room/room_dog01.jpg></a
-              >
-            </div>
-            <div class="room_overview">
-              <h3>狗狗房</h3>
-              <p>一犬一房</p>
-            </div>
+    <!-- <div class="backgroung"></div> -->
+    <div class="backgroung_cover">
+      <div class="user_box">
+        <!-- 註冊會員 -->
+        <div class="user user_signIn">
+          <div class="user_title">快速註冊</div>
+          <div class="user_form">
+            <form action="#" method="post">
+              <input
+                type="text"
+                class="user_form_input user_form_input_email"
+                name="account"
+                value=""
+                placeholder="輸入email"
+              />
+              <br />
+              <input
+                type="password"
+                class="user_form_input user_form_input_password"
+                name="password"
+                value=""
+                placeholder="輸入密碼"
+              />
+              <br />
+              <input
+                type="password"
+                class="user_form_input user_form_input_password"
+                name="password"
+                value=""
+                placeholder="再次輸入密碼"
+              />
+              <br />
+              <input
+                type="button"
+                class="
+                  user_form_input user_form_input_bottom user_botton
+                  signin_btn
+                "
+                name=""
+                value="註冊"
+              />
+            </form>
           </div>
-          <div class="room_review">
-            <div class="room_pic">
-              <a href="./room_cat.html"
-                ><img class="rooms_pic"
-                src=./img-adjust_size/pet_room/room_cat01.jpg></a
-              >
-            </div>
-            <div class="room_overview">
-              <h3>貓貓房</h3>
-              <p>一貓一房</p>
-            </div>
-          </div>
-          <div class="room_review">
-            <div class="room_pic">
-              <a href="./room_rabbitANDguineapig.html"
-                ><img class="rooms_pic"
-                src=./img-adjust_size/pet_room/room_rabbit_and_guineapig01.jpg></a
-              >
-            </div>
-            <div class="room_overview">
-              <h3>兔兔 | 天竺鼠</h3>
-              <p>隱密好房</p>
-            </div>
-          </div>
-          <div class="room_review">
-            <div class="room_pic">
-              <a href="./room_hamster.html"
-                ><img class="rooms_pic"
-                src=./img-adjust_size/pet_room/room_hamster01.jpg></a
-              >
-            </div>
-            <div class="room_overview">
-              <h3>倉鼠房</h3>
-              <p>好觀察的好房</p>
-            </div>
-          </div>
-        </div>
-        <!-- 本館特點 -->
-        <div class="booking_features">
-          <!-- 標題 -->
-          <div class="booking_features_title"><h3>本館特色</h3></div>
-          <!-- 特點介紹 -->
-          <div class="features_content">
-            <div class="booking_features_box">
-              <div class="booking_features_box_pic">
-                <img src="./img-adjust_size/pet_room/pet_sitter.jpg" />
+          <!-- 外部連結 -->
+          <div class="user_external_connection_box">
+            <div class="user_external_connection">其他登入方式</div>
+            <div class="user_social_meadia_icons">
+              <div class="social_meadia_icons_item">
+                <a href=""><img src=./img/svg/google.svg></a>
               </div>
-              <div class="booking_features_box_description">
-                <h3>專業寵物保姆</h3>
-                <p>毛孩交給專業又有愛心的保姆照顧好放心</p>
+              <div class="social_meadia_icons_item">
+                <a href=""><img src=./img/svg/facebook.svg></a>
               </div>
-            </div>
-
-            <div class="booking_features_box">
-              <div class="booking_features_box_pic">
-                <img src="./img-adjust_size/pet_room/remote_monitor.jpg" />
+              <div class="social_meadia_icons_item">
+                <a href=""> <img src=./img/svg/line.svg> </a>
               </div>
-              <div class="booking_features_box_description">
-                <h3>24小時高清遠端攝像機</h3>
-                <p>隨時都可以看到毛孩狀況，本館攝像機支援聲音傳輸</p>
-              </div>
-            </div>
-
-            <div class="booking_features_box">
-              <div class="booking_features_box_pic">
-                <img src="./img-adjust_size/pet_room/cohedin.jpg" />
-              </div>
-              <div class="booking_features_box_description">
-                <h3>醫療級六雙啶</h3>
-                <p>醫療級消毒水，住宿環境消毒使用好安心</p>
+              <div class="social_meadia_icons_item">
+                <a href=""> <img src=./img/svg/instagram.svg></a>
               </div>
             </div>
           </div>
@@ -285,5 +252,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/user.js"></script>
   </body>
 </html>

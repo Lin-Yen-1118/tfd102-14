@@ -26,12 +26,6 @@ div.lead_text {
   margin: 30px 0px 56px 0px;
 }
 
-div.user_login {
-  position: absolute;
-  top: 150px;
-  left: 25%;
-}
-
 div.adopt {
   /* border: 1px solid red; */
   display: flex;
@@ -118,19 +112,21 @@ div.adopt > div.adoptBox > div.adoptBoxContent > a > img:checked ~ p {
   overflow: visible;
 } */
 /* 分頁 */
-div.pagination_box {
+div.adopt_pagination_box {
   display: flex;
-  margin: 0 auto;
+  margin: 50px auto;
+
+  /* border: 1px solid red; */
 }
-div.pagination_box > ul.pagination {
+div.adopt_pagination_box > ul.pagination {
   display: inline-block;
   padding: 0;
   margin: 0 auto;
 }
-ul.pagination li {
+div.adopt_pagination_box > ul.pagination > li {
   display: inline;
 }
-ul.pagination li a {
+div.adopt_pagination_box > ul.pagination > li > a {
   border: 1px solid #726f6f;
   border-radius: 10px;
   color: rgb(50, 50, 51);
@@ -141,12 +137,12 @@ ul.pagination li a {
   transition: background-color 0.3s;
   margin: 0 3px;
 }
-ul.pagination li a.active {
+div.adopt_pagination_box > ul.pagination > li > a.active {
   background-color: #c4c4c4;
   color: #ffffff;
   border-radius: 5px;
 }
-ul.pagination li a:hover:not(.active) {
+div.adopt_pagination_box > ul.pagination > li > a:hover:not(.active) {
   background-color: rgb(168, 161, 161);
 }
 
@@ -181,4 +177,57 @@ ul.pagination li a:hover:not(.active) {
 #adoptRodentPage1:target,
 #adoptRodentPage2:target {
   border: solid 1px red;
+}
+
+/* 天竺鼠跟倉鼠的的分頁選擇器 */
+div.adopt_pagination_box_selecter {
+  /* border: 1px solid red; */
+  display: flex;
+  margin: 0 auto;
+}
+div.adopt_pagination_box_selecter > ul.pagination_selecter {
+  /* border: 1px solid blue; */
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  color: #575554;
+}
+div.adopt_pagination_box_selecter > ul.pagination_selecter > li {
+  /* border: 1px solid yellow; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 0px 10px;
+}
+div.adopt_pagination_box_selecter > ul.pagination_selecter > li > a.active {
+  /* border: 1px solid rgb(231, 10, 183); */
+  background-color: rgb(230, 178, 111);
+  border-radius: 20px;
+  border: 1.5px solid #c4c4c4;
+}
+div.adopt_pagination_box_selecter
+  > ul.pagination_selecter
+  > li
+  > a:not(active) {
+  /* border: 1px solid rgb(231, 10, 183); */
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 1.5px solid #c4c4c4;
+}
+
+div.adopt_pagination_box_selecter > ul.pagination_selecter > li > a:hover {
+  border: 1px solid #858080;
+}
+
+div.adopt_pagination_box_selecter > ul.pagination_selecter > li > a > p {
+  color: #575554;
+  /* border: 1px solid purple; */
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 0px 10px;
 }

@@ -3,7 +3,10 @@ div.footer {
   justify-content: center;
   background-color: #edece9;
   vertical-align: middle;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  /* border: 1px solid red; */
+  position: relative;
+  bottom: 0;
 }
 div.footer > div.footer_box {
   /* border:1px solid red; */

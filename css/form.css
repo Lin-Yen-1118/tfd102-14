@@ -1,0 +1,22 @@
+div.form {
+  border: 1px solid red;
+  margin-top: 100px;
+  display: flex;
+  height: 800px;
+}
+div.form > div.form_adopt {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+div.form > div.form_adopt > div.formTitle {
+  border: 1px solid rgb(101, 231, 21);
+  display: flex;
+  text-align: center;
+  margin: 15px 0px;
+}
+div.form > div.form_adopt > form > div.form_info {
+  border: 1px solid red;
+  margin: 10px 0px;
+}

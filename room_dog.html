@@ -19,6 +19,7 @@
     <link href="./css/room_pet.css" rel="stylesheet" />
   </head>
   <body>
+    <!-- 導覽列 -->
     <header>
       <nav>
         <div class="logo">
@@ -26,8 +27,10 @@
             ><img id="logo" src="./img/svg/logo.svg"
           /></a>
         </div>
-        <div>
-          <ul class="header_bar">
+        <div class="nav_bar">
+          <!-- 用input的checkbox與for特性做漢堡選單的選取器 -->
+          <input type="checkbox" name="" id="burger" />
+          <ul class="header_bar" id="nav_menu">
             <!-- 關於我 -->
             <li>
               <a href="./about_me.html" class="link_style">
@@ -79,7 +82,7 @@
                 </li>
               </ul>
             </li>
-            <!-- 住宿相關     -->
+            <!-- 住宿相關 -->
             <li class="booking_rooms_menu">
               <a>
                 <span>
@@ -112,6 +115,7 @@
             </li>
           </ul>
         </div>
+
         <div>
           <ul class="user_cart">
             <!-- 會員 -->
@@ -128,10 +132,15 @@
             </li>
           </ul>
         </div>
-        <!--RWD按鈕--->
-        <div class="burger_menu">
-          <img id="burger_icon" src="./img/svg/bars.svg" />
-        </div>
+        <!--漢堡選單--->
+        <!-- 用input的checkbox與for特性做漢堡選單的選取器 -->
+        <label for="burger">
+          <div class="burger_box">
+            <div class="bgr_bar top"></div>
+            <div class="bgr_bar middle"></div>
+            <div class="bgr_bar bottom"></div>
+          </div>
+        </label>
       </nav>
     </header>
 

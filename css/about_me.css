@@ -1,87 +1,92 @@
-
-div.bg_grass{
-    border:1px solid red;
-    width:100%;
-    display:flex;  
-    justify-content:center;
-    text-align: center;
+div.bg_grass {
+  /* border: 1px solid red; */
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-    div.bg_bg_grass{
-       /* max-width: 300px; */
-       max-height: 200px;
-       width: 100%;
-       max-width:992px;
-       overflow: hidden;
-    }
+div.bg_grass > img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid blue;
 }
-@media screen and (min-width: 576px) and (max-width: 767px){
-    div.bg_bg_grass{
-        max-height: 100px;
-        width: 100%;
-        max-width:767px;
-        overflow: hidden;
-    }
-    
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.bg_bg_grass {
+    /* max-width: 300px; */
+    max-height: 200px;
+    width: 100%;
+    max-width: 992px;
+    overflow: hidden;
+  }
 }
-@media screen  and (max-width: 575px){
-    div.bg_bg_grass{
-        max-height: 100px;
-        width: 100%;
-        max-width:575px;
-        overflow: hidden;
-    }
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.bg_bg_grass {
+    max-height: 100px;
+    width: 100%;
+    max-width: 767px;
+    overflow: hidden;
+  }
 }
-div.about_me{
-    display:block;
+@media screen and (max-width: 575px) {
+  div.bg_bg_grass {
+    max-height: 100px;
+    width: 100%;
+    max-width: 575px;
+    overflow: hidden;
+  }
 }
-div.about_me > div.about_me_box{
-   /* border:1px solid red; */
-   display:flex;
-   align-items: center;
-   margin:50px 20px;
-   padding:10px;
-   width:100%;
+div.about_me {
+  display: block;
 }
-div.about_me > div.about_me_box > div.about_me_contain{
-    display:flex;
-
+div.about_me > div.about_me_box {
+  /* border:1px solid red; */
+  display: flex;
+  align-items: center;
+  margin: 50px 20px;
+  padding: 10px;
+  width: 100%;
 }
-div.about_me > div.about_me_box > div.about_me_contain >img{
-    border-radius: 50%;
-    width:300px;
+div.about_me > div.about_me_box > div.about_me_contain {
+  display: flex;
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-    div.about_me > div.about_me_box > div.about_me_contain >img{
-        width:100px;
-        height: 100px;
-    }
-
+div.about_me > div.about_me_box > div.about_me_contain > img {
+  border-radius: 50%;
+  width: 300px;
 }
-@media screen and (min-width: 576px) and (max-width: 767px){
-    div.about_me > div.about_me_box > div.about_me_contain >img{
-        width:100px;
-        height: 100px;
-    }
-
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.about_me > div.about_me_box > div.about_me_contain > img {
+    width: 100px;
+    height: 100px;
+  }
 }
-@media screen  and (max-width: 575px){
-    div.about_me > div.about_me_box > div.about_me_contain >img{
-        width:100px;
-        height: 100px;
-    }
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.about_me > div.about_me_box > div.about_me_contain > img {
+    width: 100px;
+    height: 100px;
+  }
 }
-.about_me_contain_text{
-    display: inline-block;
-    padding:15px;
-    line-height: 35px;
+@media screen and (max-width: 575px) {
+  div.about_me > div.about_me_box > div.about_me_contain > img {
+    width: 100px;
+    height: 100px;
+  }
 }
-div.about_me > div.about_me_box_main{
-    display:flex;
+.about_me_contain_text {
+  display: inline-block;
+  padding: 15px;
+  line-height: 35px;
 }
-div.bg_ev{
-    display:flex;  
-    justify-content:center;
-    text-align: center;
+div.about_me > div.about_me_box_main {
+  display: flex;
 }
-
+div.bg_ev {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+div.bg_ev > img {
+  width: 199%;
+  height: 100%;
+  overflow: hidden;
+}

@@ -202,7 +202,7 @@ div.room_box > div > div.booking_features {
   flex-direction: column;
   max-width: 1200px;
   /* border: 1px solid red; */
-  margin-top: 50px;
+  margin: 120px 0px 250px 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.room_box > div > div.booking_features {
