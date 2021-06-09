@@ -72,6 +72,9 @@ div.adopt_box > div.adoption_notice > div.adoption_notice_content {
   /* border: 1px solid rgb(224, 12, 125); */
   max-width: 800px;
 }
+div.adopt_box > div.adoption_notice > div.adoption_notice_content > h4 {
+  margin: 10px 0px;
+}
 div.adopt_box > div.adoption_notice > ul {
   position: relative;
 }

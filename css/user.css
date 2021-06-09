@@ -15,6 +15,22 @@ div.backgroung_cover > div.user_box {
   /* border: 1px solid red; */
   display: flex;
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.backgroung_cover > div.user_box {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.backgroung_cover > div.user_box {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.backgroung_cover > div.user_box {
+    padding: 20px;
+  }
+}
+
 div.backgroung_cover > div.user_box > div.user_logIn {
   display: flex;
   /* border: 1px solid blue; */
@@ -39,6 +55,23 @@ div.backgroung_cover > div.user_box > div.user {
   max-width: 400px;
   /* border: 1px solid red; */
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.backgroung_cover > div.user_box > div.user {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.backgroung_cover > div.user_box > div.user {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.backgroung_cover > div.user_box > div.user {
+    width: 100%;
+  }
+}
+
 div.backgroung_cover > div.user_box > div.user > div.user_form {
   display: flex;
   align-items: center;

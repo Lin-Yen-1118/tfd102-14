@@ -117,12 +117,14 @@ div.room_box > div > div.room_review_box > div.room_review {
   box-shadow: 0 0 3px 1px #c4c4c4;
   border-radius: 10px;
   padding: 10px;
+  margin: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.room_box > div > div.room_review_box > div.room_review {
     display: flex;
     max-width: 768px;
     width: 100%;
+    margin: 10px 0px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -130,6 +132,7 @@ div.room_box > div > div.room_review_box > div.room_review {
     display: flex;
     max-width: 576px;
     width: 100%;
+    margin: 10px 0px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -139,6 +142,7 @@ div.room_box > div > div.room_review_box > div.room_review {
     max-width: 575px;
     margin: 15px 0px;
     width: 100%;
+    margin: 10px 0px;
   }
 }
 div.room_box > div > div.room_review_box > div.room_review > div.room_overview {

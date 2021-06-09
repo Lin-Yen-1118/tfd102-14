@@ -86,8 +86,9 @@ div.adopt > div.adoptBox > div.adoptBoxContent > a > img.grid_item_animal {
 }
 /* 照片與描述文字的外邊框 */
 div.adopt > div.adoptBox > div.adoptBoxContent {
-  border: 1px solid #000000;
+  border: 1px solid #928f8f;
   position: relative;
+  border-radius: 10px;
   /* padding: 5px; */
 }
 /* @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -159,8 +160,8 @@ div.adopt_pagination_box > ul.pagination > li {
   display: inline;
 }
 div.adopt_pagination_box > ul.pagination > li > a {
-  border: 1px solid #726f6f;
-  border-radius: 10px;
+  border: 1px solid #9e9a9a;
+  border-radius: 15px;
   color: rgb(50, 50, 51);
   float: left;
   padding: 8px 16px;
@@ -172,7 +173,7 @@ div.adopt_pagination_box > ul.pagination > li > a {
 div.adopt_pagination_box > ul.pagination > li > a.active {
   background-color: #c4c4c4;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 div.adopt_pagination_box > ul.pagination > li > a:hover:not(.active) {
   background-color: rgb(168, 161, 161);
