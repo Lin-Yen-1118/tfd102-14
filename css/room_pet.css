@@ -6,20 +6,42 @@ div.pet_booking_cards {
   /* border: 1px solid red; */
 }
 div.pet_booking_cards > div.booking_info {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  min-width: 600px;
   max-width: 800px;
   height: 100%;
-  max-height: 1400px;
-  margin: 20px;
   padding: 15px;
-  /* border: 5px solid rgb(58, 57, 56);
-  }
-  div.booking_cards > div.booking_info > div.booking_info_pic {
-    /* width: 100%; */
+  /* border: 1px solid rgb(223, 128, 33); */
+}
+div.booking_cards > div.booking_info > div.booking_info_pic {
+  /* width: 100%; */
   margin: 20px 0px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.booking_cards > div.booking_info > div.booking_info_pic {
+    /* width: 100%; */
+    margin: 0px;
+    width: 100%;
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.booking_cards > div.booking_info > div.booking_info_pic {
+    margin: 0px;
+    width: 100%;
+    max-width: 767px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.booking_cards > div.booking_info > div.booking_info_pic {
+    margin: 0px;
+    width: 100%;
+    max-width: 575px;
+  }
+}
+
 /* 房型照片尺寸調整 */
 div.pet_booking_cards
   > div.booking_info
@@ -35,13 +57,48 @@ div.pet_booking_cards
   > img.rooms_pic {
   /* border: 1px solid green; */
   max-width: 800px;
+  width: 100%;
 }
 
-div.pet_booking_cards > div.booking_info > .booking_info_description {
-  text-align: start;
-}
 div.pet_booking_cards
   > div.booking_info
+  > div.pet_room_box
+  > div.booking_info_description {
+  text-align: start;
+  /* border: 1px solid red; */
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description {
+    width: 100%;
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description {
+    width: 100%;
+    max-width: 767px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description {
+    width: 100%;
+    max-width: 575px;
+  }
+}
+
+div.pet_booking_cards
+  > div.booking_info
+  > div.pet_room_box
   > div.booking_info_description
   > div.rooms_details
   > span {
@@ -53,19 +110,119 @@ div.pet_booking_cards
 }
 div.pet_booking_cards
   > div.booking_info
+  > div.pet_room_box
   > div.booking_info_description
   > div.rooms_main_details {
   margin: 15px 0px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description
+    > div.rooms_main_details {
+    margin: 10px 0px;
+    width: 100%;
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description
+    > div.rooms_main_details {
+    margin: 10px 0px;
+    width: 100%;
+    max-width: 767px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description
+    > div.rooms_main_details {
+    margin: 10px 0px;
+    width: 100%;
+    max-width: 575px;
+  }
+}
+
 div.pet_booking_cards
   > div.booking_info
+  > div.pet_room_box
   > div.booking_info_description
   > div.rooms_main_details
   > h3 {
   margin: 5px 0px;
 }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description
+    > div.rooms_main_details
+    > h3 {
+    margin: 0px;
+    width: 100%;
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description
+    > div.rooms_main_details
+    > h3 {
+    margin: 0px;
+    width: 100%;
+    max-width: 767px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.pet_booking_cards
+    > div.booking_info
+    > div.pet_room_box
+    > div.booking_info_description
+    > div.rooms_main_details
+    > h3 {
+    margin: 0px;
+    width: 100%;
+    max-width: 575px;
+  }
+}
+
+div.pet_booking_cards > div.booking_info > div.pet_room_box {
+  /* border: 1px solid rgb(14, 14, 207); */
+  width: 100%;
+  padding: 20px 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.pet_booking_cards > div.booking_info > div.pet_room_box {
+    /* border: 1px solid rgb(14, 14, 207); */
+    width: 100%;
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.pet_booking_cards > div.booking_info > div.pet_room_box {
+    width: 100%;
+    max-width: 767px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.pet_booking_cards > div.booking_info > div.pet_room_box {
+    width: 100%;
+    max-width: 575px;
+  }
+}
+
 div.pet_booking_cards
   > div.booking_info
+  > div.pet_room_box
   > div.booking_info_description
   > div.rooms_main_details
   > p {
@@ -73,6 +230,7 @@ div.pet_booking_cards
 }
 div.pet_booking_cards
   > div.booking_info
+  > div.pet_room_box
   > div.booking_info_description
   > div.public_use
   > span {
@@ -81,12 +239,21 @@ div.pet_booking_cards
   padding: 2px;
   margin: 3px 2px;
 }
-div.pet_booking_cards > div.booking_info > div.rooms_prices > span {
+div.pet_booking_cards
+  > div.booking_info
+  > div.pet_room_box
+  > div.rooms_prices
+  > span {
   display: flex;
   justify-content: flex-end;
   margin: 35px 0px;
 }
-div.pet_booking_cards > div.booking_info > div.rooms_prices > span > p.prices {
+div.pet_booking_cards
+  > div.booking_info
+  > div.pet_room_box
+  > div.rooms_prices
+  > span
+  > p.prices {
   color: rgb(12, 12, 241);
   margin: 0px 3px;
   font-size: 28px;
@@ -94,7 +261,18 @@ div.pet_booking_cards > div.booking_info > div.rooms_prices > span > p.prices {
 }
 
 /* 按鈕樣式 */
-div.pet_booking_cards > div.booking_info > div.booking_button > input {
+div.pet_booking_cards
+  > div.booking_info
+  > div.pet_room_box
+  > div.booking_button {
+  display: flex;
+  justify-content: center;
+}
+div.pet_booking_cards
+  > div.booking_info
+  > div.pet_room_box
+  > div.booking_button
+  > input {
   border-radius: 25px;
   border-color: transparent;
   color: #ffffff;
@@ -107,7 +285,11 @@ div.pet_booking_cards > div.booking_info > div.booking_button > input {
 
   transition: all 0.1s linear;
 }
-div.pet_booking_cards > div.booking_info > div.booking_button > input:hover {
+div.pet_booking_cards
+  > div.booking_info
+  > div.pet_room_box
+  > div.booking_button
+  > input:hover {
   background-color: #4b1001;
   color: #ffffff;
 }
