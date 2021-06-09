@@ -50,16 +50,19 @@ div.abandoned {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
     max-width: calc(100% / 4);
+    height: calc(100% / 4);
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
     max-width: calc(100% / 4);
+    height: calc(100% / 4);
   }
 }
 @media screen and (max-width: 575px) {
   .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
     max-width: calc(100% / 4);
+    height: calc(100% / 4);
   }
 }
 .abandoned_pic {
