@@ -17,7 +17,7 @@ nav {
     position: relative;
     height: 100px;
     max-width: 992px;
-    min-width: 768px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -25,14 +25,14 @@ nav {
     position: relative;
     height: 100px;
     max-width: 767px;
-    min-width: 576px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
   nav {
     position: relative;
     height: 100px;
-    min-width: 575px;
+    width: 100%;
   }
 }
 #introduction,

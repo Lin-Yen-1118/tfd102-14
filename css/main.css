@@ -27,17 +27,20 @@ div.abandoned {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .abandoned > .abandoned_box > .abandoned_box_pic {
     /* border:1px solid red; */
-    width: 768px;
+    width: 100%;
+    max-width: 992px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .abandoned > .abandoned_box > .abandoned_box_pic {
-    width: 576px;
+    width: 100%;
+    max-width: 767px;
   }
 }
 @media screen and (max-width: 575px) {
   .abandoned > .abandoned_box > .abandoned_box_pic {
     max-width: 575px;
+    width: 100%;
   }
 }
 .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
@@ -46,17 +49,17 @@ div.abandoned {
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
-    max-width: calc(768px / 4);
+    max-width: calc(100% / 4);
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
-    max-width: calc(576px / 4);
+    max-width: calc(100% / 4);
   }
 }
 @media screen and (max-width: 575px) {
   .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
-    max-width: calc(575px / 4);
+    max-width: calc(100% / 4);
   }
 }
 .abandoned_pic {
@@ -178,18 +181,21 @@ div.index_adopt_box > div.index_adopt_pic_box {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.index_adopt_box > div.index_adopt_pic_box {
     /* border:1px solid red; */
-    max-width: 768px;
+    max-width: 992px;
+    width: 100%;
     padding: 0px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   div.index_adopt_box > div.index_adopt_pic_box {
-    max-width: 576px;
+    max-width: 767px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
   div.index_adopt_box > div.index_adopt_pic_box {
-    min-width: 576px;
+    max-width: 576px;
+    width: 100%;
   }
 }
 div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a {
@@ -268,7 +274,7 @@ div.adopt_dont_abandon > div.adopt_dont_abandon_slogan > a > span > img.slogan {
     > a
     > span
     > img.slogan {
-    max-width: calc(575px * 0.7);
+    max-width: calc(100% * 0.7);
   }
 }
 /*本館其他服務*/
