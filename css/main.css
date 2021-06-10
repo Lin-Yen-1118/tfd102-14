@@ -1,4 +1,4 @@
-/*abandoned部分*/
+/*前導區塊*/
 div.abandoned {
   display: flex;
   text-align: center;
@@ -6,7 +6,7 @@ div.abandoned {
   text-align: center;
   align-items: center;
 }
-.abandoned_box {
+div.abandoned > div.abandoned_box {
   display: flex;
   align-content: center;
   display: block;
@@ -16,65 +16,79 @@ div.abandoned {
   top: 100px;
   margin-top: 10px;
 }
-.abandoned > .abandoned_box > .abandoned_box_pic {
-  display: flex;
-  width: 1200px;
-  /* min-width: 300px;
-    max-width: 1900px; */
-  text-align: center;
-  padding: 10px 0px;
-}
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .abandoned > .abandoned_box > .abandoned_box_pic {
-    /* border:1px solid red; */
+  div.abandoned > div.abandoned_box {
     width: 100%;
     max-width: 992px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .abandoned > .abandoned_box > .abandoned_box_pic {
+  div.abandoned > div.abandoned_box {
     width: 100%;
     max-width: 767px;
   }
 }
 @media screen and (max-width: 575px) {
-  .abandoned > .abandoned_box > .abandoned_box_pic {
-    max-width: 575px;
+  div.abandoned > div.abandoned_box {
     width: 100%;
+    max-width: 575px;
   }
 }
-.abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
-  width: 200px;
-  /* border:1px solid red; */
+
+/* 圖片 */
+div.abandoned > div.abandoned_box > div.abandoned_box_pic {
+  display: flex;
+  width: 1200px;
+  text-align: center;
+  padding: 10px 0px;
+  height: 100%;
+  /* border: 1px solid red; */
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
+  div.abandoned > div.abandoned_box > div.abandoned_box_pic {
+    /* border: 1px solid red; */
     width: 100%;
-    max-width: calc(100% / 4);
-    max-height: calc(100% / 4);
+    max-width: 992px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
+  div.abandoned > div.abandoned_box > div.abandoned_box_pic {
     width: 100%;
-    max-width: calc(100% / 4);
-    max-height: calc(100% / 4);
+    max-width: 767px;
+    height: 100%;
   }
 }
 @media screen and (max-width: 575px) {
-  .abandoned > .abandoned_box > .abandoned_box_pic > img.abandoned_pic_pic {
+  div.abandoned > div.abandoned_box > div.abandoned_box_pic {
+    max-width: 575px;
     width: 100%;
-    max-width: calc(100% / 4);
-    max-height: calc(100% / 4);
+    height: 100%;
   }
 }
+/* 小圖 */
+/* div.abandoned > div.abandoned_box > div.pic_item {
+  width: 100%;
+  height: 100%;
+} */
+
+/* 小圖尺寸 */
+/* div.abandoned > div.abandoned_box > div.pic_item > div.abandoned_pic_pic {
+  width: calc(100% / 4);
+  height: calc(100% / 4);
+} */
+/* div.abandoned > div.abandoned_box >div.big_pic{
+  border:1px solid blue;
+  width:100%;
+  max-width:1200px;
+} */
+
 .abandoned_pic {
   width: 100%;
   height: 100%;
-  text-align: center;
-  /* padding: 0px 22px; */
+  /* text-align: center; */
 }
-.abandoned_description {
+div.abandoned > div.abandoned_description {
   text-align: center;
   padding: 20px;
   /* font-size:80px; */
@@ -83,23 +97,24 @@ div.abandoned {
   margin-top: 80px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .abandoned_description {
+  div.abandoned > div.abandoned_description {
     max-width: 992px;
     width: 100%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  .abandoned_description {
+  div.abandoned > div.abandoned_description {
     max-width: 767px;
     width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
-  .abandoned_description {
+  div.abandoned > div.abandoned_description {
     max-width: 575px;
     width: 100%;
   }
 }
+
 /* 領養區 */
 div.index_adopt_box {
   /* border:1px solid red;  */
@@ -129,8 +144,32 @@ div.index_adopt_box {
     width: 100%;
   }
 }
-div.index_adopt_box > h1 {
+div.index_adopt_box > div.index_adopt_box_title {
+  /* border: 1px solid red; */
+  width: 100%;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.index_adopt_box > div.index_adopt_box_title {
+    text-align: center;
+    width: 100%;
+    max-width: 992px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.index_adopt_box > div.index_adopt_box_title {
+    text-align: center;
+    width: 100%;
+    max-width: 767px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.index_adopt_box > div.index_adopt_box_title {
+    text-align: center;
+    width: 100%;
+    max-width: 575px;
+  }
 }
 div.index_adopt_box > div.index_adopt_description {
   font-size: 20px;
@@ -330,6 +369,7 @@ div.index_other_serves_box > div.index_other_serves {
   max-width: 1200px;
   height: 100%;
   margin: 10px 0px;
+  /* border:1px solid red; */
 }
 
 div.index_other_serves_box
@@ -337,7 +377,34 @@ div.index_other_serves_box
   > div.index_other_serves_main {
   width: 230px;
   margin: 0px 15px;
+  /* border:1px solid red; */
 }
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.index_other_serves_box
+    > div.index_other_serves
+    > div.index_other_serves_main {
+    margin: 30px 0px;
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.index_other_serves_box
+    > div.index_other_serves
+    > div.index_other_serves_main {
+    margin: 30px 0px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.index_other_serves_box
+    > div.index_other_serves
+    > div.index_other_serves_main {
+    margin: 30px 0px;
+
+    /* border: 1px solid red; */
+  }
+}
+
 div.index_other_serves_box
   > div.index_other_serves
   > div.index_other_serves_main
@@ -373,7 +440,15 @@ div.index_other_serves_box
   font-size: 30px;
 }
 /*協助我們-助糧計畫、小小志工*/
-div.index_give_help_box {
+div.other_box {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* max-width: 1200px; */
+}
+
+div.other_box > div.index_give_help_box {
   font-size: 0px;
   text-align: center;
   display: flex;
@@ -381,60 +456,67 @@ div.index_give_help_box {
   flex-direction: column;
   /* max-width: calc(1200px / 2); */
   width: 100%;
-  /* border: 1px solid red; */
+  /* border: 1px solid yellow; */
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_give_help_box {
+  div.other_box > div.index_give_help_box {
     width: 100%;
     max-width: 992px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_give_help_box {
+  div.other_box > div.index_give_help_box {
     width: 100%;
     max-width: 767px;
   }
 }
 @media screen and (max-width: 575px) {
-  div.index_give_help_box {
+  div.other_box > div.index_give_help_box {
     max-width: 575px;
     width: 100%;
   }
 }
-div.index_give_help_box > h1 {
+div.other_box > div.index_give_help_box > h1 {
   text-align: center;
 }
 /* 協助毛孩生活更美好 */
-div.index_give_help_box > div.index_give_help {
+div.other_box > div.index_give_help_box > div.index_give_help {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
   align-items: center;
-  margin: 0px;
+  margin: 10px 0px;
+  /* border: 1px solid red; */
+  max-width: 1200px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_give_help_box > div.index_give_help {
+  div.other_box > div.index_give_help_box > div.index_give_help {
     /* flex-direction: column; */
     max-width: 992px;
     width: 100%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_give_help_box > div.index_give_help {
+  div.other_box > div.index_give_help_box > div.index_give_help {
     /* flex-direction: column; */
     max-width: 767px;
     width: 100%;
+    /* flex-wrap: wrap; */
   }
 }
 @media screen and (max-width: 575px) {
-  div.index_give_help_box > div.index_give_help {
+  div.other_box > div.index_give_help_box > div.index_give_help {
     /* flex-direction: column; */
     max-width: 575px;
     width: 100%;
+    /* flex-wrap: wrap; */
   }
 }
-div.index_give_help_box > div.index_give_help > div.index_give_help_main {
+div.other_box
+  > div.index_give_help_box
+  > div.index_give_help
+  > div.index_give_help_main {
   /* border: 1px solid green; */
   display: inline-block;
   min-width: 300px;
@@ -442,27 +524,40 @@ div.index_give_help_box > div.index_give_help > div.index_give_help_main {
   margin: 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_give_help_box > div.index_give_help > div.index_give_help_main {
+  div.other_box
+    > div.index_give_help_box
+    > div.index_give_help
+    > div.index_give_help_main {
     width: 100%;
     padding: 0px;
     margin: 10px 0px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_give_help_box > div.index_give_help > div.index_give_help_main {
+  div.other_box
+    > div.index_give_help_box
+    > div.index_give_help
+    > div.index_give_help_main {
     width: 100%;
     padding: 0px;
-    margin: 10px 0px;
+    margin: 20px 0px;
   }
 }
 @media screen and (max-width: 575px) {
-  div.index_give_help_box > div.index_give_help > div.index_give_help_main {
+  div.other_box
+    > div.index_give_help_box
+    > div.index_give_help
+    > div.index_give_help_main {
     width: 100%;
     padding: 0px;
-    margin: 10px 0px;
+    margin: 20px 0px;
   }
 }
-div.index_give_help_box > div.index_give_help > div.index_give_help_main > a {
+div.other_box
+  > div.index_give_help_box
+  > div.index_give_help
+  > div.index_give_help_main
+  > a {
   vertical-align: bottom;
   /* border: 1px solid red; */
 }
@@ -488,7 +583,7 @@ div.index_give_help_box
     > a
     > img {
     /* border: 1px solid yellow; */
-    max-width: calc(100% * 0.7);
+    max-width: calc(100% * 0.5);
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -528,7 +623,7 @@ div.index_give_help_box
     > div.index_give_help_main
     > a
     > div {
-    height: 120px;
+    height: auto;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -537,7 +632,7 @@ div.index_give_help_box
     > div.index_give_help_main
     > a
     > div {
-    height: 120px;
+    height: auto;
   }
 }
 @media screen and (max-width: 575px) {
@@ -546,7 +641,7 @@ div.index_give_help_box
     > div.index_give_help_main
     > a
     > div {
-    height: 120px;
+    height: auto;
   }
 }
 div.index_give_help_box
@@ -899,11 +994,12 @@ div.index_artical_box
     > div.index_artical_contant_descript_box
     > div.index_artical_contant_descript
     > div.index_artical_contant_descript_para {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     height: 120px;
     width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding: 5px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {

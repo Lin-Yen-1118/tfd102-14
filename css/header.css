@@ -180,12 +180,14 @@ ul.adopt_menu_select_menu {
   ul.adopt_menu_select_menu {
     width: 50%;
     top: 90%;
+    z-index: 1;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   ul.adopt_menu_select_menu {
     width: 50%;
     top: 90%;
+    z-index: 1;
   }
 }
 
@@ -193,6 +195,7 @@ ul.adopt_menu_select_menu {
   ul.adopt_menu_select_menu {
     width: 50%;
     top: 90%;
+    z-index: 1;
   }
 }
 
