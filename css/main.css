@@ -1,121 +1,39 @@
-/*前導區塊*/
-div.abandoned {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
-div.abandoned > div.abandoned_box {
-  display: flex;
-  align-content: center;
-  display: block;
-  background-size: contain;
-  overflow: hidden;
-  position: relative;
-  top: 100px;
-  margin-top: 10px;
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  div.abandoned > div.abandoned_box {
-    width: 100%;
-    max-width: 992px;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.abandoned > div.abandoned_box {
-    width: 100%;
-    max-width: 767px;
-  }
-}
-@media screen and (max-width: 575px) {
-  div.abandoned > div.abandoned_box {
-    width: 100%;
-    max-width: 575px;
-  }
-}
-
-/* 圖片 */
-div.abandoned > div.abandoned_box > div.abandoned_box_pic {
-  display: flex;
-  width: 1200px;
-  text-align: center;
-  padding: 10px 0px;
-  height: 100%;
+/*banner*/
+div.pre_box {
   /* border: 1px solid red; */
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  div.abandoned > div.abandoned_box > div.abandoned_box_pic {
-    /* border: 1px solid red; */
-    width: 100%;
-    max-width: 992px;
-    height: 100%;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.abandoned > div.abandoned_box > div.abandoned_box_pic {
-    width: 100%;
-    max-width: 767px;
-    height: 100%;
-  }
-}
-@media screen and (max-width: 575px) {
-  div.abandoned > div.abandoned_box > div.abandoned_box_pic {
-    max-width: 575px;
-    width: 100%;
-    height: 100%;
-  }
-}
-/* 小圖 */
-/* div.abandoned > div.abandoned_box > div.pic_item {
+  position: flex;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-} */
-
-/* 小圖尺寸 */
-/* div.abandoned > div.abandoned_box > div.pic_item > div.abandoned_pic_pic {
-  width: calc(100% / 4);
-  height: calc(100% / 4);
-} */
-/* div.abandoned > div.abandoned_box >div.big_pic{
-  border:1px solid blue;
-  width:100%;
-  max-width:1200px;
-} */
-
-.abandoned_pic {
+  height: 600px;
+}
+div.pre_box > div.pre_box_content {
+  /* border: 1px solid red; */
+  position: relative;
+}
+div.pre_box > div.pre_box_content > div.pre_item_pic {
+  background-image: url("../img-adjust_size/bg/01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: 1px solid red; */
+  position: relative;
   width: 100%;
-  height: 100%;
-  /* text-align: center; */
+  height: 1000px;
+  background-position: 100% 80%;
+  background-attachment: fixed;
 }
-div.abandoned > div.abandoned_description {
-  text-align: center;
-  padding: 20px;
-  /* font-size:80px; */
-  letter-spacing: 8px;
-  line-height: 20px;
-  margin-top: 80px;
+div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt {
+  position: absolute;
+  /* border: 1px solid blue; */
+  top: 200px;
+  left: 150px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  div.abandoned > div.abandoned_description {
-    max-width: 992px;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.abandoned > div.abandoned_description {
-    max-width: 767px;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 575px) {
-  div.abandoned > div.abandoned_description {
-    max-width: 575px;
-    width: 100%;
-  }
+div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
+  font-size: 48px;
+  font-weight: 900;
+  color: #ccb89f;
 }
 
-/* 領養區 */
+/* index adopt */
 div.index_adopt_box {
   /* border:1px solid red;  */
   font-size: 0px;
@@ -125,6 +43,8 @@ div.index_adopt_box {
   flex-direction: column;
   max-width: 1200px;
   padding: 100px 0px;
+  width: 100%;
+  margin-top: 150px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.index_adopt_box {
@@ -171,41 +91,17 @@ div.index_adopt_box > div.index_adopt_box_title {
     max-width: 575px;
   }
 }
-div.index_adopt_box > div.index_adopt_description {
-  font-size: 20px;
-}
+
 div.index_adopt_box > div.index_adopt {
   /* border:1px solid blue; */
   display: flex;
   flex-direction: row;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   justify-content: center;
   max-width: 1200px;
   height: 100%;
 }
-div.index_adopt_box > div.index_adopt > div.index_adopt_pic {
-  /* border:1px solid yellow;  */
-  width: 250px;
-}
-div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a > img {
-  width: calc(1000px / 4);
-  padding: 5px;
-}
-/* @media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a > img {
-    width: calc(768px / 4);
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a > img {
-    width: calc(576px / 4);
-  }
-}
-@media screen and (max-width: 575px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a > img {
-    width: calc(575px / 4);
-  }
-} */
+
 div.index_adopt_box > div.index_adopt > div.index_adopt_pic:hover {
   transform: scale(1.05, 1.05);
 }
