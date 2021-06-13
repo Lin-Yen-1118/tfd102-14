@@ -115,6 +115,7 @@ nav > div > ul.header_bar > li > a {
 nav > div > ul.header_bar > li > a > span {
   display: inline-block;
   vertical-align: middle;
+  font-weight: 700;
 }
 nav > div > ul.header_bar > li > a:hover > span {
   color: rgb(196, 191, 191);

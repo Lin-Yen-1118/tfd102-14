@@ -28,23 +28,34 @@ div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt {
   left: 150px;
 }
 div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 900;
   color: #ccb89f;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: url("../img-adjust_size/bg/01.jpg");
+
+  background-position: bottom 20% right 50%;
+  line-height: 1.5;
+}
+div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
 }
 
 /* index adopt */
 div.index_adopt_box {
-  /* border:1px solid red;  */
+  /* border: 1px solid red; */
   font-size: 0px;
   text-align: center;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   flex-direction: column;
   max-width: 1200px;
   padding: 100px 0px;
   width: 100%;
-  margin-top: 150px;
+  margin-top: 550px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.index_adopt_box {
@@ -64,10 +75,12 @@ div.index_adopt_box {
     width: 100%;
   }
 }
+/* 認養標題 */
 div.index_adopt_box > div.index_adopt_box_title {
   /* border: 1px solid red; */
   width: 100%;
   text-align: center;
+  color: #535151;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -91,94 +104,209 @@ div.index_adopt_box > div.index_adopt_box_title {
     max-width: 575px;
   }
 }
-
-div.index_adopt_box > div.index_adopt {
-  /* border:1px solid blue; */
+/* 認養照片 */
+div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_item {
+  /* border: 1px solid blue; */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  height: 100%;
+  flex-direction: column;
 }
 
-div.index_adopt_box > div.index_adopt > div.index_adopt_pic:hover {
-  transform: scale(1.05, 1.05);
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic:hover {
-    transform: scale(1, 1);
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic:hover {
-    transform: scale(1, 1);
-  }
-}
-@media screen and (max-width: 575px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic:hover {
-    transform: scale(1, 1);
-  }
-}
-div.index_adopt_box > div.index_adopt_pic_box {
-  /* border:1px solid red; */
+div.index_adopt_box > div.index_adopt_item_box {
+  /* border: 1px solid rgb(208, 255, 0); */
   display: flex;
+  flex-direction: column;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_adopt_box > div.index_adopt_pic_box {
-    /* border:1px solid red; */
-    max-width: 992px;
-    width: 100%;
-    padding: 0px;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_adopt_box > div.index_adopt_pic_box {
-    max-width: 767px;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 575px) {
-  div.index_adopt_box > div.index_adopt_pic_box {
-    max-width: 576px;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-}
-div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a {
-  /* border: 1px solid green; */
+/* 認養照片調整位置 */
+div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_dog {
+  /* border: 1px solid red; */
   position: relative;
-  font-size: 20px;
-  color: #535151;
-  /* width:200px; */
+  right: 100px;
+}
+div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_cat {
+  /* border: 1px solid red; */
+  position: relative;
+  left: 90px;
+}
+div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_rabbit {
+  /* border: 1px solid red; */
+  position: relative;
+  right: 120px;
+}
+div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_guineapig {
+  /* border: 1px solid red; */
+  position: relative;
+  left: 140px;
+}
+div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_hamster {
+  /* border: 1px solid red; */
+  position: relative;
+  right: 65px;
+}
+/* 圖片加動畫 */
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_item
+  > div.adopt_pic
+  > a
+  > img {
+  height: 100%;
+  animation-name: adopt_pic;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes adopt_pic {
+  0% {
+    border-radius: 55% 45% 50% 40%;
+  }
+  /* 30% {
+    border-radius: 20%;
+  }
+  50% {
+    border-radius: 30%;
+  } */
+  100% {
+    border-radius: 40% 50% 45% 55%;
+  }
+}
+
+/* div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_item
+  > div.adopt_pic
+  > a
+  :hover {
+  transform: translateX(2px 2px);
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a {
-    color: #ffffff;
+  div.index_adopt_box > div.index_adopt > div.index_adopt_pic:hover {
+    transform: scale(1, 1);
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a {
-    color: #ffffff;
+  div.index_adopt_box > div.index_adopt > div.index_adopt_pic:hover {
+    transform: scale(1, 1);
   }
 }
 @media screen and (max-width: 575px) {
-  div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a {
-    color: #ffffff;
+  div.index_adopt_box > div.index_adopt > div.index_adopt_pic:hover {
+    transform: scale(1, 1);
   }
-}
-div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a:hover {
-  color: #ffffff;
-}
+} */
 
-div.index_adopt_box > div.index_adopt > div.index_adopt_pic > a > span {
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_item
+  > div.index_adopt_box
+  > div.index_adopt
+  > div.index_adopt_pic
+  > a
+  > span {
   /* border:1px solid red; */
   position: absolute;
   display: flex;
   top: -35px;
   padding: 0px 50px;
+}
+/* 點擊照片看更多連結 */
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_item
+  > div.adopt_link {
+  /* border: 3px solid rgb(13, 139, 202); */
+  position: absolute;
+  bottom: 0px;
+  /* background-color: rgba(255, 255, 250, 0.4); */
+  width: 100%;
+  height: 10%;
+}
+
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_item
+  > div.adopt_link
+  > a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 文字顏色 */
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_dog
+  > div.adopt_link
+  > a
+  > p {
+  color: rgb(38, 11, 145);
+}
+
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_cat
+  > div.adopt_link
+  > a
+  > p {
+  color: rgb(85, 84, 88);
+}
+
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_rabbit
+  > div.adopt_link
+  > a
+  > p {
+  color: rgb(170, 106, 9);
+}
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_guineapig
+  > div.adopt_link
+  > a
+  > p {
+  color: rgb(54, 83, 170);
+}
+
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_hamster
+  > div.adopt_link
+  > a
+  > p {
+  color: rgb(221, 221, 221);
+}
+/* 滑鼠移入圖片的文字的動畫 */
+div.index_adopt_box
+  > div.index_adopt_item_box
+  > div.index_adopt_item
+  > div.adopt_link
+  > a
+  > p {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(221, 221, 221);
+  animation-name: adopt_txt;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-delay: 2s;
+}
+
+@keyframes adopt_txt {
+  /* 10% {
+    color: #000000;
+  } */
+  50% {
+    color: #535151;
+  }
+
+  100% {
+    color: #a19f9f;
+  }
 }
 
 /*領養不棄養標語*/
