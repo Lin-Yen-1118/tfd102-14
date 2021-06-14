@@ -170,17 +170,55 @@ div.footer
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.footer > div.footer_box > div.footer_box_content > div.footer_statement {
     /* border:1px solid green; */
-    max-width: 600px;
+    max-width: 992px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   div.footer > div.footer_box > div.footer_box_content > div.footer_statement {
-    max-width: 600px;
+    max-width: 767px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
   div.footer > div.footer_box > div.footer_box_content > div.footer_statement {
-    max-width: 600px;
+    max-width: 575px;
     width: 100%;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  div.footer
+    > div.footer_box
+    > div.footer_box_content
+    > div.footer_statement
+    > p {
+    /* border:1px solid green; */
+    max-width: 992px;
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  div.footer
+    > div.footer_box
+    > div.footer_box_content
+    > div.footer_statement
+    > p {
+    max-width: 767px;
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  div.footer
+    > div.footer_box
+    > div.footer_box_content
+    > div.footer_statement
+    > p {
+    max-width: 575px;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
   }
 }

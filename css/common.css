@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0 auto;
+  border: 1px solid red;
 }
 body {
   /* font-family: "Noto Sans TC", "RocknRoll One", "Robot", "Times New Roman"; */
