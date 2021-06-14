@@ -123,7 +123,7 @@ div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
 
 /* index adopt */
 div.index_adopt_box {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   font-size: 0px;
   text-align: center;
   display: flex;
@@ -358,8 +358,8 @@ div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_item {
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_item {
-    /* border: 1px solid red; */
-    width: calc(100% / 3);
+    border: 1px solid red;
+    width: calc(100% / 2);
     display: flex;
     padding: 10px;
   }
@@ -671,116 +671,6 @@ div.adopt_dont_abandon > div.adopt_dont_abandon_slogan > a > span > img.slogan {
     max-width: calc(100% * 0.7);
   }
 }
-/*本館其他服務*/
-/* div.index_other_serves_box {
-  
-  font-size: 0px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 1200px;
-  padding: 100px 0px;
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_other_serves_box {
-    max-width: 992px;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_other_serves_box {
-    width: 100%;
-    max-width: 767px;
-  }
-}
-@media screen and (max-width: 575px) {
-  div.index_other_serves_box {
-    max-width: 575px;
-    width: 100%;
-  }
-}
-div.index_other_serves_box > h1 {
-  text-align: center;
-}
-div.index_other_serves_box > div.index_other_serves {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  height: 100%;
-  margin: 10px 0px;
-  
-}
-
-div.index_other_serves_box
-  > div.index_other_serves
-  > div.index_other_serves_main {
-  width: 230px;
-  margin: 0px 15px;
-  
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  div.index_other_serves_box
-    > div.index_other_serves
-    > div.index_other_serves_main {
-    margin: 30px 0px;
-    padding: 20px;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.index_other_serves_box
-    > div.index_other_serves
-    > div.index_other_serves_main {
-    margin: 30px 0px;
-  }
-}
-@media screen and (max-width: 575px) {
-  div.index_other_serves_box
-    > div.index_other_serves
-    > div.index_other_serves_main {
-    margin: 30px 0px;
-
-
-  }
-}
-
-div.index_other_serves_box
-  > div.index_other_serves
-  > div.index_other_serves_main
-  > a {
-  display: flex;
-  flex-direction: column;
-}
-div.index_other_serves_box
-  > div.index_other_serves
-  > div.index_other_serves_main:hover {
-  transform: scale(1.02, 1.02);
-}
-div.index_other_serves_box
-  > div.index_other_serves
-  > div.index_other_serves_main
-  > a:hover {
-  transform: scale(1.02, 1.02);
-}
-div.index_other_serves_box
-  > div.index_other_serves
-  > div.index_other_serves_main
-  > a
-  > h2 {
-  margin: 35px 0px;
-  font-weight: 700;
-  color: #000000;
-}
-div.index_other_serves_box
-  > div.index_other_serves
-  > div.index_other_serves_main
-  > a
-  > h2:hover {
-  font-size: 30px;
-} */
 
 /* 住宿服務 */
 div.index_room_box {
@@ -1323,7 +1213,7 @@ div.other_box {
   text-align: center;
 }
 div.other_box > div.index_give_help_box {
-  /* border: 1px solid rgb(92, 17, 204); */
+  border: 1px solid red;
   font-size: 0px;
   text-align: center;
   display: flex;
@@ -1359,25 +1249,30 @@ div.other_box > div.index_give_help_box > div.index_give_help {
   justify-content: center;
   text-align: center;
   margin: 10px 0px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 100%;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.other_box > div.index_give_help_box > div.index_give_help {
     max-width: 992px;
     width: 100%;
+    padding: 10px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   div.other_box > div.index_give_help_box > div.index_give_help {
+    flex-direction: column;
     max-width: 767px;
     width: 100%;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 575px) {
   div.other_box > div.index_give_help_box > div.index_give_help {
+    flex-direction: column;
     max-width: 575px;
     width: 100%;
+    padding: 10px;
   }
 }
 div.other_box
@@ -1435,8 +1330,8 @@ div.index_give_help_box
     > div.index_give_help_main
     > a
     > img {
-    /* border: 1px solid yellow; */
-    max-width: calc(100% * 0.5);
+    width: 100%;
+    max-width: 992px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -1445,8 +1340,8 @@ div.index_give_help_box
     > div.index_give_help_main
     > a
     > img {
-    /* border: 1px solid yellow; */
-    max-width: calc(100% * 0.7);
+    width: 100%;
+    max-width: 767px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1455,8 +1350,8 @@ div.index_give_help_box
     > div.index_give_help_main
     > a
     > img {
-    /* border: 1px solid yellow; */
-    max-width: calc(100% * 0.7);
+    width: 100%;
+    max-width: 575px;
   }
 }
 
@@ -1475,6 +1370,7 @@ div.index_give_help_box
     > a
     > div.index_give_help_txt {
     height: auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -1484,6 +1380,7 @@ div.index_give_help_box
     > a
     > div.index_give_help_txt {
     height: auto;
+    width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1501,13 +1398,39 @@ div.index_give_help_box
   > div.index_give_help_main
   > a
   > div.index_give_help_txt
+  > div.give_help_txt_content {
+  border: 1px solid red;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+div.index_give_help_box
+  > div.index_give_help
+  > div.index_give_help_main
+  > a
+  > div.index_give_help_txt
+  > div.give_help_txt_content
   > p {
-  margin: 15px 0px;
   font-size: 22px;
   font-weight: 500;
   color: #000000;
   text-align: start;
+  line-height: 1.8;
   /* border: 1px solid blue; */
+}
+div.index_give_help_box
+  > div.index_give_help
+  > div.index_give_help_main
+  > a
+  > div.index_give_help_txt
+  > div.give_help_txt_content
+  > p
+  > span {
+  color: rgb(245, 18, 18);
+  font-weight: 700;
 }
 
 /*動知識*/
