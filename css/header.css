@@ -252,18 +252,21 @@ li.adopt_menu_select > a > span {
     width: 100%;
     position: relative;
     z-index: 1;
+    background-color: rgba(255, 255, 250, 0.9);
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   li.adopt_menu_select > a > span {
     width: 100%;
     position: relative;
+    background-color: rgba(255, 255, 250, 0.9);
   }
 }
 @media screen and (max-width: 575px) {
   li.adopt_menu_select > a > span {
     width: 100%;
     position: relative;
+    background-color: rgba(255, 255, 250, 0.9);
   }
 }
 
@@ -359,7 +362,6 @@ li.booking_rooms_select > a > span {
   justify-content: center;
   align-items: center;
   width: 100px;
-  /* border: 1px solid rgb(233, 144, 10); */
   color: #000000;
   font-size: 20px;
   text-align: center;
@@ -370,16 +372,19 @@ li.booking_rooms_select > a > span {
 @media screen and (min-width: 768px) and (max-width: 992px) {
   li.booking_rooms_select > a > span {
     width: 100%;
+    background-color: rgba(255, 255, 250, 0.9);
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   li.booking_rooms_select > a > span {
     width: 100%;
+    background-color: rgba(255, 255, 250, 0.9);
   }
 }
 @media screen and (max-width: 575px) {
   li.booking_rooms_select > a > span {
     width: 100%;
+    background-color: rgba(255, 255, 250, 0.9);
   }
 }
 
