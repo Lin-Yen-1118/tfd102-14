@@ -1121,7 +1121,7 @@ div.index_petroom_box
   > div.room_link
   > p {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 22px;
   padding: 10px;
   font-weight: 700;
 }
@@ -1135,9 +1135,7 @@ div.index_petroom_box
     > div.petroom_item
     > div.room_link
     > p {
-    font-size: 20px;
     padding: 5px 10px;
-    font-weight: 700;
     text-align: start;
   }
 }
@@ -1150,9 +1148,7 @@ div.index_petroom_box
     > div.petroom_item
     > div.room_link
     > p {
-    font-size: 20px;
     padding: 5px 10px;
-    font-weight: 700;
     text-align: start;
   }
 }
@@ -1165,10 +1161,10 @@ div.index_petroom_box
     > div.petroom_item
     > div.room_link
     > p {
-    font-size: 16px;
-    /* padding: 5px 10px; */
-    font-weight: 700;
     text-align: start;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 2px;
   }
 }
 
@@ -1278,6 +1274,7 @@ div.other_box
   min-width: 300px;
   padding: 0 10px;
   margin: 0px;
+  text-align: start;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.other_box
@@ -1354,8 +1351,9 @@ div.index_give_help_box
   > div.index_give_help_main
   > a
   > div.index_give_help_txt
-  > h2 {
+  > h3 {
   margin: 10px 0px;
+  padding: 0px 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.index_give_help_box
@@ -1395,11 +1393,11 @@ div.index_give_help_box
   > div.give_help_txt_content {
   /* border: 1px solid red; */
   padding: 0px 10px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  align-items: center;
+  align-items: center; */
 }
 div.index_give_help_box
   > div.index_give_help
@@ -1408,8 +1406,6 @@ div.index_give_help_box
   > div.index_give_help_txt
   > div.give_help_txt_content
   > p {
-  font-size: 22px;
-  font-weight: 500;
   color: #000000;
   text-align: start;
   line-height: 1.8;
