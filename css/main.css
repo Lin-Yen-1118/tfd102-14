@@ -125,7 +125,7 @@ div.index_adopt_box {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   padding: 100px 0px;
   width: 100%;
   margin: 0 auto;
@@ -146,7 +146,6 @@ div.index_adopt_box {
   div.index_adopt_box {
     max-width: 575px;
     width: 100%;
-    padding: 10px;
     /* border: 1px solid red; */
   }
 }
@@ -156,6 +155,7 @@ div.index_adopt_box > div.index_adopt_box_title {
   width: 100%;
   text-align: center;
   color: #535151;
+  margin: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -219,7 +219,6 @@ div.index_adopt_box > div.index_adopt_item_box {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0px 10px;
   }
 }
 
@@ -347,7 +346,6 @@ div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_item {
     /* border: 1px solid red; */
     width: calc(100% / 3);
     display: flex;
-    padding: 10px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -355,7 +353,6 @@ div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_item {
     border: 1px solid red;
     width: calc(100% / 2);
     display: flex;
-    padding: 10px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -363,7 +360,7 @@ div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_item {
     /* border: 1px solid red; */
     width: calc(100% / 3);
     display: flex;
-    padding: 10px;
+
     margin: 0;
   }
 }
@@ -674,7 +671,6 @@ div.index_room_box {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 0px 10px;
   margin: 0 auto;
 }
 
@@ -704,9 +700,9 @@ div.index_room_box {
 
 div.index_room_box > div.room_title {
   /* border: 1px solid blue; */
+  margin: 10px;
 }
 div.index_room_box > div.index_room_content {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -719,21 +715,21 @@ div.index_room_box > div.index_room_content {
   div.index_room_box > div.index_room_content {
     flex-wrap: wrap;
     width: 90%;
-    padding: 10px;
+    /* padding: 10px; */
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   div.index_room_box > div.index_room_content {
     flex-wrap: wrap;
     width: 90%;
-    padding: 10px;
+    /* padding: 10px; */
   }
 }
 @media screen and (max-width: 575px) {
   div.index_room_box > div.index_room_content {
     flex-wrap: wrap;
     width: 90%;
-    padding: 10px;
+    /* padding: 10px; */
   }
 }
 
@@ -828,6 +824,7 @@ div.index_room_box
     background: none;
     opacity: 1;
     filter: blur(0px);
+    margin: -25px 0px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -843,6 +840,7 @@ div.index_room_box
     background: none;
     opacity: 1;
     filter: blur(0px);
+    margin: -25px 0px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -858,6 +856,7 @@ div.index_room_box
     background: none;
     opacity: 1;
     filter: blur(0px);
+    margin: -3px 0px;
   }
 }
 
@@ -936,8 +935,8 @@ div.index_petroom_box {
   /* position: relative; */
   width: 100%;
   /* height: 100%; */
-  margin: 20px 0px;
-  padding: 0px 10px;
+  margin: 30px 0px;
+  padding: 100px 0px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.index_petroom_box {
@@ -958,7 +957,10 @@ div.index_petroom_box {
     /* border: 1px solid red; */
   }
 }
-
+div.index_petroom_box > div.room_title {
+  margin: 10px;
+  text-align: center;
+}
 div.index_petroom_box > div.index_petroom_content {
   display: flex;
   flex-direction: column;
@@ -1210,6 +1212,7 @@ div.other_box > div.index_give_help_box {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  padding-bottom: 100px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.other_box > div.index_give_help_box {
@@ -1229,8 +1232,9 @@ div.other_box > div.index_give_help_box {
     width: 100%;
   }
 }
-div.other_box > div.index_give_help_box > h1 {
+div.other_box > div.index_give_help_box > div.other_box_title {
   text-align: center;
+  margin: 10px;
 }
 /* 協助毛孩生活更美好 */
 div.other_box > div.index_give_help_box > div.index_give_help {
@@ -1238,7 +1242,7 @@ div.other_box > div.index_give_help_box > div.index_give_help {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  margin: 10px 0px;
+  /* margin: 10px 0px; */
   /* border: 1px solid red; */
   width: 100%;
 }
@@ -1246,7 +1250,7 @@ div.other_box > div.index_give_help_box > div.index_give_help {
   div.other_box > div.index_give_help_box > div.index_give_help {
     max-width: 992px;
     width: 100%;
-    padding: 10px;
+    padding: 0px 10px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -1254,7 +1258,7 @@ div.other_box > div.index_give_help_box > div.index_give_help {
     flex-direction: column;
     max-width: 767px;
     width: 100%;
-    padding: 10px;
+    padding: 0px 10px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1262,7 +1266,7 @@ div.other_box > div.index_give_help_box > div.index_give_help {
     flex-direction: column;
     max-width: 575px;
     width: 100%;
-    padding: 10px;
+    padding: 0px 10px;
   }
 }
 div.other_box
