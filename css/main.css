@@ -88,8 +88,8 @@ div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt {
 }
 
 div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
-  font-size: 42px;
-  font-weight: 900;
+  font-size: 28px;
+  font-weight: 700;
   color: #ccb89f;
   background-clip: text;
   -webkit-background-clip: text;
@@ -99,27 +99,21 @@ div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
   background-position: bottom 20% right 50%;
   line-height: 1.5;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+/* @media screen and (min-width: 768px) and (max-width: 992px) {
   div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
-    font-size: 32px;
     font-weight: 700;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
-    font-size: 28px;
     font-weight: 700;
   }
 }
 @media screen and (max-width: 575px) {
   div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
-    font-size: 28px;
     font-weight: 700;
   }
-}
-
-div.pre_box > div.pre_box_content > div.pre_item_pic > div.pre_txt > p {
-}
+} */
 
 /* index adopt */
 div.index_adopt_box {
