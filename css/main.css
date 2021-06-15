@@ -941,7 +941,7 @@ div.index_petroom_box {
   flex-direction: column;
   /* position: relative; */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin: 20px 0px;
   padding: 0px 10px;
 }
@@ -970,7 +970,7 @@ div.index_petroom_box > div.index_petroom_content {
   flex-direction: column;
   /* border: 1px solid yellow; */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
