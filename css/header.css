@@ -1,20 +1,46 @@
 /*導覽列*/
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    position: sticky;
+    top: 15px;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header {
+    position: sticky;
+    top: 15px;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 575px) {
+  header {
+    position: sticky;
+    top: 15px;
+    z-index: 1;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
   text-align: center;
   align-items: center;
-  background-color: rgba(255, 255, 250, 0.2);
+  background-color: rgba(255, 255, 250, 0.8);
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1;
+  /* position: sticky;
+  top: 0px; */
   max-height: 60px;
+  /* border: 1px solid red; */
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   nav {
-    position: relative;
     height: 100px;
     max-width: 992px;
     width: 100%;
@@ -23,7 +49,6 @@ nav {
 }
 @media screen and (min-width: 576px) and (max-width: 767px) {
   nav {
-    position: relative;
     height: 100px;
     max-width: 767px;
     width: 100%;
@@ -32,7 +57,6 @@ nav {
 }
 @media screen and (max-width: 575px) {
   nav {
-    position: relative;
     height: 100px;
     width: 100%;
     padding-right: 20px;

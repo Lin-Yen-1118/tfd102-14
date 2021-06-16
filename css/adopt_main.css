@@ -30,37 +30,107 @@ div.adoption_desciption_box {
 div.adoption_desciption_box > div.adoption_desciption > img {
   max-width: 600px;
 }
-/* 如何領養? */ /* 認養須知概述 */ /*認養須提供訊息 */
-div.adopt_box {
-  /* border: 1px solid orange; */
+/* 如何領養? */
+div.adoptstep_box {
+  /* border: 1px solid red; */
+  display: flex;
+}
+div.adoptstep_box > div.adoptStep_box_content {
+  /* border: 1px solid blue; */
+}
+div.adoptstep_box > div.adoptStep_box_content > h2 {
+  margin: 20px 0px;
+  text-align: center;
+}
+div.adoptstep_box > div.adoptStep_box_content > div.adopt_item_box {
+  /* border: 1px solid red; */
+  display: flex;
+}
+div.adoptstep_box
+  > div.adoptStep_box_content
+  > div.adopt_item_box
+  > div.adopt_item {
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
-  border-top: 1px dashed #000000;
-  border-bottom: 1px dashed #000000;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  div.adopt_box {
-    width: 100%;
-    max-width: 992px;
-    padding: 10px;
+
+@keyframes adopt {
+  10% {
+    transform: rotate(0deg);
   }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  div.adopt_box {
-    width: 100%;
-    max-width: 992px;
-    padding: 10px;
+  20% {
+    transform: rotate(1deg);
   }
-}
-@media screen and (max-width: 575px) {
-  div.adopt_box {
-    width: 100%;
-    max-width: 992px;
-    padding: 10px;
+  30% {
+    transform: rotate(-1deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+  50% {
+    transform: rotate(-1deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(-1deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(1deg);
   }
 }
 
+div.adoptstep_box
+  > div.adoptStep_box_content
+  > div.adopt_item_box
+  > div.adopt_item
+  > img {
+  width: 100%;
+  border-radius: 30px;
+  padding: 10px;
+  animation-name: adopt;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-direction: alternate;
+
+  /* animation-direction: reverse; */
+  animation-iteration-count: infinite;
+  border: 1px solid red;
+}
+div.adoptstep_box
+  > div.adoptStep_box_content
+  > div.adopt_item_box
+  > div.adopt_item
+  > div.adopt_txt {
+  /* border: 1px solid blue; */
+  width: 100%;
+  padding: 5px 10px;
+}
+/* . */
+/* . */
+/* . */
+/* . */
+/* . */
+/* . */
+/* . */
+/* . */
+/* . */
+/* 之前寫的 */
 div.adopt_box > div.adoption_notice {
   /* border: 1px solid blue; */
   line-height: 30px;
