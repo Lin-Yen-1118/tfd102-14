@@ -38,19 +38,20 @@ div.adoptstep_box {
 div.adoptstep_box > div.adoptStep_box_content {
   /* border: 1px solid blue; */
 }
-div.adoptstep_box > div.adoptStep_box_content > h2 {
+div.adoptstep_box > div.adoptStep_box_content > h3 {
   margin: 20px 0px;
   text-align: center;
 }
 div.adoptstep_box > div.adoptStep_box_content > div.adopt_item_box {
   /* border: 1px solid red; */
   display: flex;
+  max-width: 1200px;
 }
 div.adoptstep_box
   > div.adoptStep_box_content
   > div.adopt_item_box
   > div.adopt_item {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -110,7 +111,7 @@ div.adoptstep_box
 
   /* animation-direction: reverse; */
   animation-iteration-count: infinite;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 div.adoptstep_box
   > div.adoptStep_box_content
@@ -121,6 +122,53 @@ div.adoptstep_box
   width: 100%;
   padding: 5px 10px;
 }
+
+div.adoption_box {
+  /* border: 1px solid rgb(125, 175, 9); */
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  max-width: 1200px;
+}
+div.adoption_box > div.adoption_notice {
+  /* border: 1px solid blue; */
+  line-height: 30px;
+  /* margin: 30px 0px; */
+  display: inline-block;
+  /* justify-content: flex-start; */
+}
+div.adoption_box > div.adoption_notice > div.adoption_notice_content {
+  /* border: 1px solid rgb(224, 12, 125); */
+  max-width: 800px;
+}
+div.adoption_box > div.adoption_notice > div.adoption_notice_content > h4 {
+  /* margin: 10px 0px; */
+}
+div.adoption_box > div.adoption_notice > div.adoption_notice_content > ul {
+  /* border: 1px solid blue; */
+  position: relative;
+}
+div.adoption_box > div.adoption_notice > div.adoption_notice_content > ul > li {
+  /* border:1px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+div.adoption_box
+  > div.adoption_notice
+  > div.adoption_notice_content
+  > ul
+  > li::before {
+  content: "";
+  background-image: url(../img/svg/paw.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 10px;
+  /* border: 1px solid red; */
+}
+
 /* . */
 /* . */
 /* . */
@@ -131,40 +179,25 @@ div.adoptstep_box
 /* . */
 /* . */
 /* 之前寫的 */
-div.adopt_box > div.adoption_notice {
-  /* border: 1px solid blue; */
-  line-height: 30px;
-  margin: 30px 0px;
-  display: block;
-  justify-content: flex-start;
-}
-div.adopt_box > div.adoption_notice > div.adoption_notice_content {
-  /* border: 1px solid rgb(224, 12, 125); */
-  max-width: 800px;
-}
-div.adopt_box > div.adoption_notice > div.adoption_notice_content > h4 {
-  margin: 10px 0px;
-}
-div.adopt_box > div.adoption_notice > ul {
-  position: relative;
-}
-div.adopt_box > div.adoption_notice > div.adoption_notice_content ul li {
-  /* border:1px solid red; */
-  display: flex;
-  align-items: center;
-}
-div.adopt_box > div.adoption_notice > div.adoption_notice_contentul li::before {
-  content: "";
-  background-image: url(../img/svg/paw.svg);
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  left: 10px;
-  /* border:1px solid red; */
-}
 
 /* 養寵物需有基本條件及知識 */
+/* 選擇器 */
+/* #feed_dig:target,
+#feed_cat:target,
+#feed_rabbit:target,
+#feed_guineapig,
+#feed_hamster:target {
+  border: solid 1px red;
+} */
+div ~ #tab > div:first-of-type,
+#feed_dig:target ~ #tab > div.dog_box,
+#feed_cat:target ~ #tab > div.cat_box,
+#feed_rabbit:target ~ #tab > div.rabbit_box,
+#feed_guineapig:target ~ #tab > div.guineapig_box,
+#feed_hamster:target ~ #tab > div.hamster_box {
+  border: solid 1px red;
+}
+
 div.basic_knowledge {
   /* border: 1px solid blue; */
   display: flex;
@@ -179,21 +212,28 @@ div.basic_knowledge > div.basic_knowledge_title {
   text-align: center;
 }
 div.basic_knowledge > div.animalsKnowadgeBox {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   line-height: 30px;
   margin: 30px 0px;
   padding: 20px 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-height: 1150px;
+  max-width: 1000px;
+  overflow: hidden;
+  flex-direction: row;
 }
 
 div.basic_knowledge > div.animalsKnowadgeBox > div.conditionBox {
-  border: 1px solid #d1cbcb;
+  border: 1px solid #c62020;
   display: flex;
   line-height: 30px;
   padding: 10px;
   margin: 20px 5px;
+  max-width: 750px;
+  margin-right: 200px;
+  margin-bottom: 1000px;
 }
 div.basic_knowledge > div.animalsKnowadgeBox > div.conditionBox:hover {
   box-shadow: 2px 2px 2px rgba(231, 231, 238, 0.6),
@@ -220,7 +260,7 @@ div.basic_knowledge > div.animalsKnowadgeBox > div.conditionBox:hover {
 }
 div.animalsKnowadgeBox > div.conditionBox > div.conditionContain {
   /* border:1px solid green; */
-  max-width: 350px;
+  /* max-width: 350px; */
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.basic_knowledge
@@ -413,6 +453,7 @@ div.basic_knowledge
   > div.picture_target
   > div.picture_target_item_box
   > div.picture_target_item
+  > a
   > img {
   border-radius: 50%;
   width: 80px;
@@ -424,6 +465,7 @@ div.basic_knowledge
     > div.picture_target
     > div.picture_target_item_box
     > div.picture_target_item
+    > a
     > img {
     width: 60px;
     height: 60px;
@@ -434,6 +476,7 @@ div.basic_knowledge
     > div.picture_target
     > div.picture_target_item_box
     > div.picture_target_item
+    > a
     > img {
     width: 50px;
     height: 50px;
@@ -444,6 +487,7 @@ div.basic_knowledge
     > div.picture_target
     > div.picture_target_item_box
     > div.picture_target_item
+    > a
     > img {
     width: 40px;
     height: 40px;
@@ -453,6 +497,7 @@ div.basic_knowledge
   > div.picture_target
   > div.picture_target_item_box
   > div.picture_target_item
+  > a
   > img:hover {
   width: calc(60px * 1.5);
   height: calc(60px * 1.5);

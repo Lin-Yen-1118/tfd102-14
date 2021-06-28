@@ -337,6 +337,7 @@ div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_hamster {
 div.index_adopt_box > div.index_adopt_item_box > div.index_adopt_item {
   /* border: 1px solid red; */
   width: 100%;
+  max-width: 1000px;
   display: flex;
   margin: 0 auto;
 }
