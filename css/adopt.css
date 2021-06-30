@@ -125,14 +125,15 @@ div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn {
   left: 15%;
 }
 div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn > input {
-  background-color: #a63316;
+  /* background-color: #a63316; */
+  background-color:#ea6b05ab;
   color: #ffffff;
   border-radius: 25px;
   width: 200px;
   height: 40px;
 }
 div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn > input:hover {
-  background-color: #4b1001;
+  background-color: #813b02ab;
   color: #ffffff;
 }
 /* div.adopt > div.adoptBox > div.adoptBoxContent > p {
@@ -171,12 +172,12 @@ div.adopt_pagination_box > ul.pagination > li > a {
   margin: 0 3px;
 }
 div.adopt_pagination_box > ul.pagination > li > a.active {
-  background-color: #c4c4c4;
+  background-color: rgb(230, 178, 111);
   color: #ffffff;
   border-radius: 15px;
 }
 div.adopt_pagination_box > ul.pagination > li > a:hover:not(.active) {
-  background-color: rgb(168, 161, 161);
+  background-color: rgb(230, 178, 113);
 }
 
 /* 加入分頁選擇器 */

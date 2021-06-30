@@ -129,17 +129,18 @@ div.adoption_box {
   justify-content: center;
   margin-top: 100px;
   max-width: 1200px;
+  padding-bottom: 500px;
 }
 div.adoption_box > div.adoption_notice {
   /* border: 1px solid blue; */
   line-height: 30px;
   /* margin: 30px 0px; */
   display: inline-block;
-  /* justify-content: flex-start; */
 }
 div.adoption_box > div.adoption_notice > div.adoption_notice_content {
   /* border: 1px solid rgb(224, 12, 125); */
   max-width: 800px;
+  
 }
 div.adoption_box > div.adoption_notice > div.adoption_notice_content > h4 {
   /* margin: 10px 0px; */
