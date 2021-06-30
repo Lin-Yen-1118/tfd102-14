@@ -126,14 +126,15 @@ div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn {
 }
 div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn > input {
   /* background-color: #a63316; */
-  background-color:#ea6b05ab;
+  background-color:#ea5d39;
   color: #ffffff;
   border-radius: 25px;
   width: 200px;
   height: 40px;
+  border:1px solid transparent;
 }
 div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn > input:hover {
-  background-color: #813b02ab;
+  background-color: #cf330c;
   color: #ffffff;
 }
 /* div.adopt > div.adoptBox > div.adoptBoxContent > p {

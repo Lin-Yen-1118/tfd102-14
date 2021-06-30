@@ -24,6 +24,8 @@ ul.pagination li a {
   font-size: 28px;
   transition: background-color 0.3s;
   margin: 0 3px;
+  box-shadow: #e7eaec 2px 2px 2px 1px;
+  position: relative;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   ul.pagination li a {
@@ -48,13 +50,26 @@ ul.pagination li a {
 }
 
 ul.pagination li a.active {
-  background-color: #9cb5d8;
-  color: #ffffff;
+  background-color: #e8e8e8;
+  /* background-color: #9cb5d8;
+  color: #ffffff; */
   border-radius: 5px;
 }
 ul.pagination li a:hover:not(.active) {
-  background-color: #d5e2f3;
+  /* background-color: #d5e2f3; */
 }
+ul.pagination li a:hover::before{
+  content:"";
+  background-image: url(../img/svg/paw.svg);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top:-70%;
+  left:40%;
+
+}
+
 /* 加入分頁選擇器 */
 #SmallRoom:target,
 #LargeRoom:target,
