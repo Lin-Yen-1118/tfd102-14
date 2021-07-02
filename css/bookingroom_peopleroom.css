@@ -465,3 +465,33 @@ div.room_box
     min-width: 250px;
   }
 }
+
+
+/* 照片牆 */
+div.photo_grid{
+  border:1px solid red;
+  display:flex;
+  flex-direction: column;
+  font-size:0px;
+  padding:50px
+}
+div.photo_grid >div.photo_grid_content{
+  /* border:1px solid blue; */
+  display:flex;
+  flex-direction: column;
+}
+div.photo_grid >div.photo_grid_content >div.photo_grid_title >h2{
+  padding:50px 0px;
+}
+div.photo_grid >div.photo_grid_content >div.photo_grid_item_box{
+  /* border:1px solid rgb(34, 158, 44); */
+  display:flex;
+  font-size:0px;
+  
+}
+div.photo_grid >div.photo_grid_content >div.photo_grid_item_box > div.photo_grid_item{
+  /* border:1px solid rgb(226, 223, 9); */
+}
+div.photo_grid >div.photo_grid_content >div.photo_grid_item_box > div.photo_grid_item >img{
+  /* border:1px solid rgb(226, 223, 9); */
+}

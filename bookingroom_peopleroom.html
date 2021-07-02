@@ -274,6 +274,59 @@
       </div>
     </div>
 
+    <!-- 照片牆 -->
+    <div class="photo_grid">
+      <div class="photo_grid_content">
+        <div class="photo_grid_title"><h2>照片牆</h2></div>
+
+        <div class="photo_grid_item_box">
+          <div class="photo_grid_item" >
+           
+            <img src="./img-adjust_size/room/001.jpg" id="imge">
+          </div>
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/002.jpg" id="imge02">
+          </div>
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/003.jpg" >
+          </div>
+        </div>
+        <div class="photo_grid_item_box">
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/004.jpg" >
+          </div>
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/005.jpg" >
+          </div>
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/006.jpg" >
+          </div>
+        </div> 
+        <div class="photo_grid_item_box">
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/007.jpg" >
+          </div>
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/008.jpg" >
+          </div>
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/009.jpg" >
+          </div>
+        </div>  
+        <div class="photo_grid_item_box">
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/010.jpg" >
+          </div>
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/011.jpg" >
+          </div>
+          <div class="photo_grid_item">
+            <img src="./img-adjust_size/room/012.jpg">
+          </div>
+        </div>   
+      </div>
+    </div>
+
     <!-- 頁尾 -->
     <div class="footer">
       <div class="footer_box">
@@ -319,5 +372,108 @@
         </div>
       </div>
     </div>
+
+
+    <script>
+      // var curIndex = 0; 
+      // var timeInterval = 1000; 
+      // var arr = new Array(); 
+      // arr[0] = "./img-adjust_size/room/001.jpg"; 
+      // arr[1] = "./img-adjust_size/room/002.jpg"; 
+      // arr[2] = "./img-adjust_size/room/003.jpg"; 
+      // arr[3] = "./img-adjust_size/room/004.jpg"; 
+      // arr[4] = "./img-adjust_size/room/005.jpg"; 
+      // arr[5] = "./img-adjust_size/room/006.jpg"; 
+      // arr[6] = "./img-adjust_size/room/007.jpg"; 
+      // arr[7] = "./img-adjust_size/room/008.jpg"; 
+      // arr[8] = "./img-adjust_size/room/009.jpg"; 
+      // arr[9] = "./img-adjust_size/room/010.jpg"; 
+      // arr[10] = "./img-adjust_size/room/011.jpg"; 
+      // arr[11] = "./img-adjust_size/room/012.jpg"; 
+      // arr[12] = "./img-adjust_size/room/013.jpg";
+      // arr[13] = "./img-adjust_size/room/014.jpg";
+      // setInterval(changeImg,timeInterval); 
+      // function changeImg() { 
+      // var obj = document.getElementById("imge"); 
+      // if (curIndex == arr.length-1) { 
+      // curIndex = 0; 
+      // } else { 
+      // curIndex += 1; 
+      // } 
+      // obj.src = arr[curIndex]; 
+      // } 
+
+
+      var curIndex = 0; 
+      var timeInterval = 1000; 
+      var arr = new Array(); 
+      arr[0] = "./img-adjust_size/room/001.jpg"; 
+      arr[1] = "./img-adjust_size/room/002.jpg"; 
+      arr[2] = "./img-adjust_size/room/003.jpg"; 
+      arr[3] = "./img-adjust_size/room/004.jpg"; 
+      arr[4] = "./img-adjust_size/room/005.jpg"; 
+      arr[5] = "./img-adjust_size/room/006.jpg"; 
+      arr[6] = "./img-adjust_size/room/007.jpg"; 
+      arr[7] = "./img-adjust_size/room/008.jpg"; 
+      arr[8] = "./img-adjust_size/room/009.jpg"; 
+      arr[9] = "./img-adjust_size/room/010.jpg"; 
+      arr[10] = "./img-adjust_size/room/011.jpg"; 
+      arr[11] = "./img-adjust_size/room/012.jpg"; 
+      arr[12] = "./img-adjust_size/room/013.jpg";
+      arr[13] = "./img-adjust_size/room/014.jpg";
+      setInterval(changeImg,timeInterval); 
+      function changeImg() { 
+      var obj = document.getElementById("image02"); 
+      if (curIndex == arr.length-1) { 
+      curIndex = 0; 
+      } else { 
+      curIndex += 1; 
+      } 
+      obj.src = arr[curIndex]; 
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // var curIndex=0;
+      // //時間間隔 單位毫秒
+      // var timeInterval=1000;
+      // var arr=new Array();
+      // arr[0]='"./img-adjust_size/room/001.jpg">';
+      // arr[1]='"./img-adjust_size/room/002.jpg">';
+      // arr[2]='"./img-adjust_size/room/003.jpg">';
+      // arr[3]='"./img-adjust_size/room/004.jpg">';
+      // arr[4]='"./img-adjust_size/room/005.jpg">';
+      // arr[5]='"./img-adjust_size/room/006.jpg">';
+      // arr[6]='"./img-adjust_size/room/007.jpg">';
+      // setInterval(changeImg,timeInterval);
+      // function changeImg()
+      // {
+      // var obj=document.getElementsByClassName("photo_grid_item");
+      // if (curIndex==arr.length-1)
+      // {
+      // curIndex=0;
+      // }
+      // else
+      // {
+      // curIndex+=1;
+      // }
+      // obj.src=arr[curIndex];
+      // }
+      // console.log(arr);
+
+
+    </script>
+
+   
   </body>
 </html>

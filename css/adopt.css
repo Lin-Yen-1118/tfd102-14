@@ -44,7 +44,9 @@ div.adopt {
   padding: 30px 50px;
 } */
 div.adopt > div.adoptBox {
-  display: grid;
+  display:flex;
+  flex-wrap: wrap;
+  /* display: grid; */
   /* grid-template-columns: auto, auto, auto; */
   /* grid-template-columns: 300px 300px 300px; */
   grid-template-columns: 35% auto 35%;
@@ -53,6 +55,8 @@ div.adopt > div.adoptBox {
   gap: 15px 15px;
   /* border: 1px solid blue; */
   margin-bottom: 50px;
+  width: 100%;
+  max-width: 1000px;
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   div.adopt > div.adoptBox {
@@ -87,8 +91,9 @@ div.adopt > div.adoptBox > div.adoptBoxContent > a > img.grid_item_animal {
 /* 照片與描述文字的外邊框 */
 div.adopt > div.adoptBox > div.adoptBoxContent {
   border: 1px solid #928f8f;
-  position: relative;
+
   border-radius: 10px;
+  
   /* padding: 5px; */
 }
 /* @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -104,6 +109,7 @@ div.adopt > div.adoptBox > div.adoptBoxContent > div.picContent {
   /* position: relative; */
   display: flex;
   flex-direction: column;
+  height:auto;
   /* border: 1px solid blue; */
 }
 /* 待認養動物描述文字區塊 */
@@ -112,17 +118,18 @@ div.adopt > div.adoptBox > div.adoptBoxContent > div.picContent > div {
   padding: 5px;
   max-width: 90%;
   max-height: 500px;
-  /* border: 1px solid yellow; */
   line-height: 30px;
+  /* word-break: break-all; */
   /* position: relative; */
 }
 /* 我要預約按鈕樣式設定 */
 div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn {
   /* border: 1px solid blue; */
   display: block;
-  position: absolute;
+  /* position: absolute; */
   bottom: 10px;
   left: 15%;
+  padding:12px;
 }
 div.adopt > div.adoptBox > div.adoptBoxContent > div.adoptBtn > input {
   /* background-color: #a63316; */
@@ -266,3 +273,5 @@ div.adopt_pagination_box_selecter > ul.pagination_selecter > li > a > p {
   padding: 10px;
   margin: 0px 10px;
 }
+
+
