@@ -288,18 +288,18 @@
             <img src="./img-adjust_size/room/002.jpg" id="imge02">
           </div>
           <div class="photo_grid_item">
-            <img src="./img-adjust_size/room/003.jpg" >
+            <img src="./img-adjust_size/room/003.jpg" class="pic">
           </div>
         </div>
         <div class="photo_grid_item_box">
           <div class="photo_grid_item">
-            <img src="./img-adjust_size/room/004.jpg" >
+            <img src="./img-adjust_size/room/004.jpg" class="pic">
           </div>
           <div class="photo_grid_item">
-            <img src="./img-adjust_size/room/005.jpg" >
+            <img src="./img-adjust_size/room/005.jpg" class="pic">
           </div>
           <div class="photo_grid_item">
-            <img src="./img-adjust_size/room/006.jpg" >
+            <img src="./img-adjust_size/room/006.jpg" class="pic">
           </div>
         </div> 
         <div class="photo_grid_item_box">
@@ -375,6 +375,35 @@
 
 
     <script>
+      var curIndex = 0;  
+      var timeInterval = 1000;  //圖片切換時間
+      var arr = new Array(); 
+      arr[0] = "./img-adjust_size/room/001.jpg"; 
+      arr[1] = "./img-adjust_size/room/002.jpg"; 
+      arr[2] = "./img-adjust_size/room/003.jpg"; 
+      arr[3] = "./img-adjust_size/room/004.jpg"; 
+      arr[4] = "./img-adjust_size/room/005.jpg"; 
+      arr[5] = "./img-adjust_size/room/006.jpg"; 
+      arr[6] = "./img-adjust_size/room/007.jpg"; 
+      arr[7] = "./img-adjust_size/room/008.jpg"; 
+      arr[8] = "./img-adjust_size/room/009.jpg"; 
+      arr[9] = "./img-adjust_size/room/010.jpg"; 
+      arr[10] = "./img-adjust_size/room/011.jpg"; 
+      arr[11] = "./img-adjust_size/room/012.jpg"; 
+      arr[12] = "./img-adjust_size/room/013.jpg";
+      arr[13] = "./img-adjust_size/room/014.jpg";
+      setInterval(changeImg,timeInterval); //通過setInterval()定時器方法設定每秒鐘執行一次changeImg()函數
+      function changeImg() { 
+      var obj = document.getElementById("imge02"); 
+      if (curIndex == arr.length-1) { 
+      curIndex = 2; 
+      } else { 
+      curIndex += 1; 
+      } 
+      obj.src = arr[curIndex]; 
+      } 
+
+
       // var curIndex = 0; 
       // var timeInterval = 1000; 
       // var arr = new Array(); 
@@ -394,43 +423,14 @@
       // arr[13] = "./img-adjust_size/room/014.jpg";
       // setInterval(changeImg,timeInterval); 
       // function changeImg() { 
-      // var obj = document.getElementById("imge"); 
+      // var obj = document.getElementById("image02"); 
       // if (curIndex == arr.length-1) { 
       // curIndex = 0; 
       // } else { 
       // curIndex += 1; 
       // } 
       // obj.src = arr[curIndex]; 
-      // } 
-
-
-      var curIndex = 0; 
-      var timeInterval = 1000; 
-      var arr = new Array(); 
-      arr[0] = "./img-adjust_size/room/001.jpg"; 
-      arr[1] = "./img-adjust_size/room/002.jpg"; 
-      arr[2] = "./img-adjust_size/room/003.jpg"; 
-      arr[3] = "./img-adjust_size/room/004.jpg"; 
-      arr[4] = "./img-adjust_size/room/005.jpg"; 
-      arr[5] = "./img-adjust_size/room/006.jpg"; 
-      arr[6] = "./img-adjust_size/room/007.jpg"; 
-      arr[7] = "./img-adjust_size/room/008.jpg"; 
-      arr[8] = "./img-adjust_size/room/009.jpg"; 
-      arr[9] = "./img-adjust_size/room/010.jpg"; 
-      arr[10] = "./img-adjust_size/room/011.jpg"; 
-      arr[11] = "./img-adjust_size/room/012.jpg"; 
-      arr[12] = "./img-adjust_size/room/013.jpg";
-      arr[13] = "./img-adjust_size/room/014.jpg";
-      setInterval(changeImg,timeInterval); 
-      function changeImg() { 
-      var obj = document.getElementById("image02"); 
-      if (curIndex == arr.length-1) { 
-      curIndex = 0; 
-      } else { 
-      curIndex += 1; 
-      } 
-      obj.src = arr[curIndex]; 
-      }
+      // }
 
 
 
@@ -470,6 +470,11 @@
       // obj.src=arr[curIndex];
       // }
       // console.log(arr);
+
+      
+
+ 
+
 
 
     </script>

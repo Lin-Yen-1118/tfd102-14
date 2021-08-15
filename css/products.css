@@ -1,0 +1,73 @@
+div.products_box{
+    margin:100px 0px;
+    /* border:1px solid red; */
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+div.products_box > div.products_box_content {
+    /* border:1px solid red; */
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width:80%;
+}
+div.products_box > div.products_box_content > div.products_items{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding:10px;
+    border:1px solid #6c6b6b;
+    border-radius: 20px;
+    width:300px;
+    height: 450px;
+    margin:10px;
+}
+
+div.products_box >  div.products_box_content > div.products_items > img{
+    /* border:1px solid blue; */
+    width: 100%;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+div.products_box >  div.products_box_content > div.products_items > div.products_content{
+    /* border:1px solid blue; */
+    width:100%;
+}   
+div.products_box >  div.products_box_content > div.products_items > div.products_content > h4{
+    display: block;
+    /* border:1px solid red; */
+}
+div.products_box >   div.products_box_content > div.products_items > div.products_content >p{
+    /* border:1px solid green; */
+    display: block;
+    padding-top:20px;
+}
+
+/* 按鈕樣式 */
+div.products_box > div.products_box_content > div.products_items > div.buying_button
+  > input{
+  border-radius: 20px;
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #ea5d39;
+  font-size: 20px;
+  max-width: 500px;
+  width: 100%;
+  padding: 5px 15px;
+  transition: all 0.1s linear;
+}
+div.products_box >  div.products_box_content >  div.products_items > div.buying_button
+  > input:hover {
+  background-color: #cf330c;
+  color: #ffffff;
+}
